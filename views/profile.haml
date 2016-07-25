@@ -1,0 +1,107 @@
+= partial("header")
+
+%body.profile
+	= partial("menu")
+	.header
+		.center
+			.content.name
+				%img{:src => '/images/demos/user.png'}
+				%h2 SAÚL GONZÁLEZ
+				%p saulsaulsaul@gmail.com | +01 (55) 7178118
+			.content.return.inversion
+				%h2 $50,000 MXN
+				%p INVERSION TOTAL
+			.content.return
+				%h2 $100,000 MXN
+				%p RETORNO TOTAL
+	%ul.submenu
+		.center
+			%li.margin Todos
+			%li.active Entrada y salida
+			%li CAP
+			%li Patrimoniales
+			%li Regeneración urbana
+				
+	.proyects
+		.center
+			.big_card
+				.card.active
+					%img{:src => '/images/demos/project.png'}
+					.text
+						%h2 TORRE CAMPOS ELISEOS
+						%p Marhnos Inmobiliaria, S.A. de C.V.
+						.money
+							%div
+								%h3 $50,000 MXN
+								%p INVERSIÓN
+							%div
+								%h3 $75,000 MXN
+								%p RETORNO
+						.fields
+							.field
+								%p TIR 
+								%h4 41.16%
+							.field
+								%p ROI 
+								%h4 3.12
+							.field
+								%p Horizonte de tiempo 
+								%h4 5 años
+						.crowdfunding
+							.bar
+								.fill
+							.percent 
+								%strong 70% 
+								Completado
+							.time Quedan XX días
+			.mini_card
+				%img{:src => '/images/demos/project.png'}
+				%h2 TORRE CAMPOS ELISEOS
+				%p Marhnos Inmobiliaria, S.A. de C.V.
+
+	.center 
+		%h2.title Línea de tiempo de tu inversion:
+		.timeline
+			.point#point1
+				.icon
+			.step#step3
+				%span Agosto/2017
+				.reach
+					%h2 Inicia desarrollo
+					.photos
+						%img{:src => '/images/demos/project.png'}
+						%img{:src => '/images/demos/project.png'}
+						%img{:src => '/images/demos/project.png'}
+						%img{:src => '/images/demos/project.png'}
+					.icon
+			.line.top#line4
+			.point#point4
+				.icon
+			.step.green#step4
+				%span Julio/2017
+				%p FONDEO COLECTIVO
+			.line.top#line5
+			.point#point5
+				.icon
+			.step#step5
+				%span Enero/2017
+				.reach
+					%h2 Proyecto Ejecutivo
+					%p Hacemos due dilligence exhaustivo de cada proyecto inmobiliario y seleccionamos sólo los mejores para que inicies tu portafolio.
+					%p Asimismo, trabajamos con bancos nacionales para que tus inversiones sean más seguras.
+			.line.top#line6
+			.point#point6
+				.icon
+			.step#step6
+				%span Agosto/2016
+				%p Inversión, bancos e inversionistas
+
+		
+	
+	= partial("footer")
+
+
+
+
+
+		

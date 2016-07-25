@@ -1,0 +1,104 @@
+$red: #ED1C24
+$black08: rgba(18, 17, 14, 0.8)
+$gray: #D4D4D4
+$white: #FFF
+$green: #14E06E
+
+.proyectos
+	.header_page
+		padding: 50px 0
+		background: $red
+		h1
+			text-align: center
+			font-size: 46px
+			color: #FFF
+			margin: 82px 0 97px
+	.submenu
+		border-bottom: 1px solid $gray
+		text-align: center
+		margin-bottom: 26px
+		padding-top: 30px
+		li
+			font-size: 14px
+			display: inline-block
+			margin: 0 20px
+			padding-bottom: 24px
+			border-bottom: 6px solid transparent
+			cursor: pointer
+			&.active
+				border-color: $red
+			&:hover
+				border-color: $red
+	select
+		display: none
+		width: 200px
+		margin: 0 auto 20px
+		border: 1px solid $red
+		padding: 6px 0
+		option
+			text-align: center
+
+	.cards
+		padding: 60px 0
+		.card
+			display: inline-block
+			width: 586px
+			height: 250px
+			margin-bottom: 26px
+			img
+				width: 175px
+				height: 250px
+			&:nth-child(2n)
+				margin-left: 14px
+
+	.warning
+		padding-bottom: 80px
+		text-align: center
+		font-size: 14px
+		color: $black08
+		border-bottom: 1px solid $gray
+		background-image: linear-gradient(to bottom, #fefefe, #fbfbfb), linear-gradient(#fbfbfb, #fbfbfb)
+		* 
+			display: inline-block
+		a
+			color: $red
+			&:hover
+				text-decoration: underline
+
+@media all and (max-width: 767px)
+	.proyectos
+		h1
+			font-size: 28px
+			padding: 0 20px
+			margin: 40px 0
+		.submenu
+			display: none
+		select
+			display: block
+		.cards
+			padding: 20px 0
+			.card
+				display: block
+				width: 280px
+				height: auto
+				margin: 0 auto 20px !important
+				img
+					width: 280px
+				.text
+					padding: 20px
+					.field
+						margin: 20px 20px 0 0
+					h2
+						font-size: 22px
+					p
+						font-size: 16px
+
+@media all and (min-width: 768px) and (max-width:1079px)
+	.proyectos 
+		.submenu 
+			li
+				margin: 0 10px
+		.cards
+			.card
+				display: block
+				margin: 0 auto 20px !important

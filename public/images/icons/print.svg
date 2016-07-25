@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>E38FD51F-39D5-4243-B94E-90446300CBC8</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="790" height="820"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="790" height="820" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Desktop--🖥" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TopFloor-SignUp" transform="translate(-982.000000, -529.000000)">
+            <text id="REGÍSTRATE" opacity="0.317513993" font-family="RobotoMono-Bold, Roboto Mono" font-size="274" font-weight="bold" letter-spacing="8.0588274" fill-opacity="0.05" fill="#12110E">
+                <tspan x="-179.427926" y="681">REGÍSTRATE</tspan>
+            </text>
+            <g id="Group-4" transform="translate(325.000000, 251.000000)">
+                <use id="Rectangle-101-Copy-14" stroke-opacity="0.8" stroke="#12110E" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" opacity="0.7" xlink:href="#path-1"></use>
+                <text id="Términos-y-Condicion" font-family="RobotoMono-Regular, Roboto Mono" font-size="18" font-weight="normal" letter-spacing="-0.5" fill-opacity="0.8" fill="#12110E">
+                    <tspan x="30" y="295">Términos y Condiciones</tspan>
+                </text>
+                <g id="Group-3" transform="translate(657.000000, 278.000000)">
+                    <g id="Print-Icon">
+                        <g id="XMLID_20_" transform="translate(1.100000, 7.700000)" fill="#ED1C24">
+                            <rect id="XMLID_75_" x="0.99" y="0" width="1.1" height="1.1"></rect>
+                        </g>
+                        <g id="XMLID_53_" transform="translate(5.500000, 17.600000)" fill="#ED1C24">
+                            <rect id="XMLID_68_" x="0.99" y="0.55" width="4.4" height="1.1"></rect>
+                        </g>
+                        <g id="XMLID_51_" transform="translate(3.300000, 7.700000)" fill="#FF0000">
+                            <rect id="XMLID_66_" x="0.88" y="0" width="1.1" height="1.1"></rect>
+                        </g>
+                        <g id="XMLID_52_" transform="translate(5.500000, 15.400000)" fill="#ED1C24">
+                            <rect id="XMLID_5_" x="0.99" y="0.88" width="8.8" height="1.1"></rect>
+                        </g>
+                        <g id="XMLID_56_" transform="translate(5.500000, 14.300000)" fill="#ED1C24">
+                            <rect id="XMLID_4_" x="0.99" y="0" width="8.8" height="1.1"></rect>
+                        </g>
+                        <g id="XMLID_76_" fill="#ED1C24">
+                            <path d="M17.6,13.2 L17.6,15.4 L17.6,16.5 L17.6,20.9 L4.4,20.9 L4.4,16.5 L4.4,15.4 L4.4,13.2 L17.6,13.2 L17.6,13.2 Z M18.7,0 L3.3,0 L3.3,5.5 L0,5.5 L0,16.5 L3.3,16.5 L3.3,22 L18.7,22 L18.7,16.5 L22,16.5 L22,5.5 L18.7,5.5 L18.7,0 L18.7,0 L18.7,0 Z M4.4,5.5 L4.4,1.1 L17.6,1.1 L17.6,5.5 L4.4,5.5 L4.4,5.5 L4.4,5.5 Z M1.1,15.4 L1.1,6.6 L20.9,6.6 L20.9,15.4 L18.7,15.4 L18.7,12.1 L3.3,12.1 L3.3,15.4 L1.1,15.4 L1.1,15.4 L1.1,15.4 Z" id="XMLID_184_"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

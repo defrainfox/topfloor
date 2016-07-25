@@ -1,0 +1,150 @@
+$red: #ED1C24
+$black08: rgba(18, 17, 14, 0.8)
+$gray: #D4D4D4
+$white: #FFF
+$green: #14E06E
+
+.run_simulador
+	.center
+		width: 96%
+	#menu
+		background: transparent
+	.data
+		float: left
+		width: 500px
+		padding: 50px 0
+		background: rgba(239, 239, 239, 0.25)
+		border-right: 1px solid $gray
+		height: 1400px
+		.text
+			margin: 40px 40px 40px
+			color: $black08
+			h1
+				font-size: 34px
+			h2
+				margin-top: 8px
+			a
+				display: inline-block
+				margin: 20px 0
+				color: $black08
+				&:hover
+					text-decoration: underline
+		.square
+			width: 360px
+			background: #FFF
+			margin: 0 auto
+			padding: 40px 32px
+			border: 1px solid $gray
+			color: $black08
+			h2
+				font-size: 18px
+				font-weight: 500
+				margin-bottom: 10px
+			a
+				color: #FFF
+			.button
+				text-align: center
+				margin-bottom: 56px
+			.money
+				position: relative
+				margin-top: 48px
+				span
+					position: absolute
+					font-size: 58px
+					font-weight: bold
+					color: rgba(18, 17, 14, 0.05)
+					top: -24px
+					left: -20px
+				h3
+					font-size: 34px
+				p
+					font-size: 16px
+					margin-top: 6px
+					color: $red
+				.currency
+					display: inline-block
+					margin: 0 -4px 0 -18px
+			.social
+				border-top: 1px dashed $gray
+				p
+					font-size: 16px
+					color: $black08
+					margin: 25px 0
+				span
+					color: $red
+					margin-right: 30px
+					font-size: 14px
+					cursor: pointer
+					.icon
+						display: inline-block
+						vertical-align: middle
+						width: 22px
+						height: 22px
+					.print
+						background: url(../images/icons/print.svg) center no-repeat
+					.email
+						background: url(../images/icons/email.svg) center no-repeat
+					.url
+						background: url(../images/icons/link.svg) center no-repeat
+	.timeline
+		position: relative
+		overflow-y: auto !important
+		padding: 95px 0 0 136px
+		height: 1400px
+		.cover_text
+			opacity: 1
+			margin-top: 260px
+		.name
+			display: inline-block
+			.icon
+				float: left
+				width: 24px
+				height: 24px
+				border: 2px solid $red
+				background: url(../images/icons/clock.svg) center no-repeat
+			p
+				float: left
+				height: 18px
+				font-size: 12px
+				font-weight: 500
+				color: $black08
+				border-top: 2px solid $black08
+				border-right: 2px solid $black08
+				border-bottom: 2px solid $black08
+				padding: 6px 10px 0
+		.line
+			margin: -2px 0 0 26px
+			width: 2px
+			height: 120px
+			background: $gray
+			&.top
+				margin-top: -24px
+		.point
+			display: inline-block
+			vertical-align: top
+			width: 70px
+			height: 70px
+			margin: -28px 0 0 -8px
+			.icon
+				margin: 28px auto 0
+				width: 18px
+				height: 18px
+				border-radius: 100px
+				background: $gray
+		.step
+			margin-top: -40px
+			display: inline-block
+			*
+				display: inline-block
+				font-size: 16px
+				padding: 22px 20px
+				color: $gray
+			span
+				margin: 0 20px
+			p
+				border: 1px solid $gray
+				box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
+		.green
+			p
+				background: #14E06E
+				border: solid 1px #14E06E

@@ -1,0 +1,113 @@
+= partial("header")
+
+%body.proyecto
+	= partial("menu")
+	.info
+		%h3.din-medium $176 millones MXN
+		%h4 INVERSIÓN COLECTIVA
+		.crowdfunding
+			%h2 
+				%strong$58 millones 
+				MXN Recaudado
+			.bar
+				.fill
+			.percent 
+				%strong 70% 
+				Financiado
+			.time Quedan XX días
+		.square.hide{:rel => '0'}
+			.down
+			%h3 DETALLES DE LA INVERSIÓN
+			.total
+				%h2 $1,474,902,469 MXN
+				%p Total financioado por TOP FLOOR
+			.total
+				%h2 $884,941,481.98 MXN
+				%p Monto total de la inversión
+			.total
+				%h2 20%
+				%p Inversión colectiva TOP FLOOR
+			%a.total{:href => '/'}
+				.print
+				%span Imprimir información
+
+		.square
+			.head
+				%h2 $50,000 MXN
+				%p INVERSIÓN MÍNIMA 
+				%span.trigger_tooltip{:rel => '0'}
+					.tooltip 
+						.icon
+						Valor mínimo a invertir en el proyecto.
+					(?)
+			.extras
+				.extra
+					%span A
+					%h2 $30,000 MXN
+					%p Pago inicial
+				.icon
+				.extra
+					%span B
+					%h2 $20,000 MXN
+					%p 4 pagos de $5,000
+			.details
+				.detail
+					%p TIR
+					%span.trigger_tooltip{:rel => '0'}
+						.tooltip 
+							.icon
+							Valor mínimo a invertir en el proyecto.
+						(?)
+					%h2 41.16 %
+				.detail
+					%p ROI
+					%span.trigger_tooltip{:rel => '0'}
+						.tooltip 
+							.icon
+							Valor mínimo a invertir en el proyecto.
+						(?)
+					%h2 3.12
+				.detail
+					%p Horizonte de tiempo
+					%span.trigger_tooltip{:rel => '0'} 
+						.tooltip 
+							.icon
+							Valor mínimo a invertir en el proyecto.
+						(?)
+					%h2 5 años
+			%a.button{:href => "/registro"}Empieza a Invertir
+			%a.button.black{:href => "/simulador"} Simula la Inversión
+	.gallery
+		.cover
+			.map
+				%iframe.gmap{:src =>"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJcSeU3j7_0YURCy_oCmBAb7M&key=AIzaSyCfpcwDah6xZBzZS4p9HQ16maJJnuMWUfY"}
+				.map_text
+					%h1.din-medium TORRE CAMPOS ELISEOS
+					%h2 Marhnos Inmobiliaria, S.A. De C.V.
+					.field
+						%p CALLE Y NÚMERO
+						%span Avenida Campos Eliseos 290
+					.field
+						%p COLONIA
+						%span Polanco IV sección
+					.field
+						%p C.P.
+						%span 115060
+					.field
+						%p ALCALDÍA
+						%span Miguel Hidalgo
+					.field
+						%p ESTADO
+						%span Ciudad de México
+				%a{:href => '/proyecto'} < Regresar al proyecto
+				.social
+					%p Comparte este proyecto:
+					:plain
+						<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					:plain 
+						<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&mobile_iframe=true&appId=146843335490482&width=144&height=20" width="144" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				
+
+
+
+		

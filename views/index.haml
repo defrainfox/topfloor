@@ -1,0 +1,168 @@
+= partial("header")
+
+%body.home
+	
+	= partial("menu")
+	#welcome
+		.center
+			%img.logo{:src => '/images/general/logo.svg'}
+			%h1 We build this city
+			%iframe{:src => 'https://player.vimeo.com/video/134629585', :frameborder => '0'}
+	#featured.section
+		.cover_text PROYECTOS
+		.center
+			%h3 PROYECTO DESTACADO
+			%a.card{:href => "/proyecto"}
+				%img{:src => '/images/demos/project.png'}
+				.text
+					%h2 TORRE CAMPOS ELISEOS
+					%p Marhnos Inmobiliaria, S.A. de C.V.
+					.field
+						%p TIR 
+						%h4 41.16%
+					.field
+						%p ROI 
+						%h4 3.12
+					.field
+						%p Horizonte de tiempo 
+						%h4 5 años
+			%a.button{:href => '/proyectos'}	Ver todos los proyectos
+	#why.section
+		.center
+			%h3 ¿POR QUÉ INVERTIR A TRAVÉS DE TOP FLOOR?
+			#step1.step
+				.line
+				%span 1
+				.square
+					%h2 Mayores Rendimientos
+					%p Damos la oportunidad a cualquier persona con visión de hacer crecer su patrimonio permitiendoles acceder a inversiones inmobiliarias con rendimientos de hasta 30% anual
+					.icon
+				.square.down
+			#line1-2v.line_v
+			#line1-2h.line_h
+			#step2.step
+				.line
+				%span 2
+				.square
+					%h2 Proceso simple y seguro
+					%p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+					.icon
+				.square.down
+			#line2-3v.line_v
+			#line2-3h.line_h
+			#step3.step
+				.line
+				%span 3
+				.square
+					%h2 Seguimiento Real
+					%p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+					.icon
+				.square.down
+	#types.section
+		.center
+			%h3 ¿QUÉ TIPO DE INVERSIÓN ELEGIR?
+			%p.simple Es momento de crear tu portafolio inmobiliario completamente personalizado. 
+			%p.simple En TOP FLOOR te proporcionamos la información que necesitas de cada proyecto inmobiliario: horizonte de tiempo, riesgo/rendimiento y su propuesta de valor particular, para que inviertas en el que mejor se adapte a tus objetivos y necesidades.
+			.type
+				.text
+					%h2 ENTRADA Y SALIDA
+					.icon
+					.line
+					.field
+						%p TIR promedio 
+						%span.trigger_tooltip{:rel => '0'}
+							.tooltip 
+								.icon
+								Valor mínimo a invertir en el proyecto.
+							(?)
+						%h4 40% bruto
+					.field
+						%p Horizonte de tiempo promedio
+						%span.trigger_tooltip{:rel => '0'}
+							.tooltip 
+								.icon
+								Tiempo de vida estimado del proyecto.
+							(?)
+						%h4 5 años
+					.show Ver más >
+				.cover
+					.close
+					%h2 ENTRADA Y SALIDA
+					.icon
+					%p Las inversiones que debes de buscar van de acuerdo a tu perfil, ya que cada inversión tiene un horizonte de tiempo, un riesgo/rendimiento y una propuesta de valor diferente.
+
+			.type
+				.text
+					%h2 ENTRADA Y SALIDA
+					.icon
+					.line
+					.field
+						%p TIR promedio 
+						%span.trigger_tooltip{:rel => '0'}
+							.tooltip 
+								.icon
+								Tiempo de vida estimado del proyecto.
+							(?)
+						%h4 40% bruto
+					.field
+						%p Horizonte de tiempo promedio
+						%span.trigger_tooltip{:rel => '0'}
+							.tooltip 
+								.icon
+								Tiempo de vida estimado del proyecto.
+							(?)
+						%h4 5 años
+					.show Ver más >
+				.cover
+					.close
+					%h2 ENTRADA Y SALIDA
+					.icon
+					%p Las inversiones que debes de buscar van de acuerdo a tu perfil, ya que cada inversión tiene un horizonte de tiempo, un riesgo/rendimiento y una propuesta de valor diferente.
+
+			.type
+				.text
+					%h2 ENTRADA Y SALIDA
+					.icon
+					.line
+					.field
+						%p TIR promedio 
+						%span.trigger_tooltip{:rel => '0'}
+							.tooltip 
+								.icon
+								Tiempo de vida estimado del proyecto.
+							(?)
+						%h4 40% bruto
+					.field
+						%p Horizonte de tiempo promedio
+						%span.trigger_tooltip{:rel => '0'}
+							.tooltip 
+								.icon
+								Tiempo de vida estimado del proyecto.
+							(?)
+						%h4 5 años
+					.show Ver más >
+				.cover
+					.close
+					%h2 ENTRADA Y SALIDA
+					.icon
+					%p Las inversiones que debes de buscar van de acuerdo a tu perfil, ya que cada inversión tiene un horizonte de tiempo, un riesgo/rendimiento y una propuesta de valor diferente.
+
+			.type
+				.text
+					%h2 REGENARACIÓN URBANA
+					.icon
+					.line
+					%p TOP FLOOR te ofrece toda la información que necesitas saber sobre los proyectos inmobiliarios y TU tienes la oportunidad de seleccionar el que mas te guste
+					.show Ver más >
+				.cover
+					.close
+					%h2 ENTRADA Y SALIDA
+					.icon
+					%p Las inversiones que debes de buscar van de acuerdo a tu perfil, ya que cada inversión tiene un horizonte de tiempo, un riesgo/rendimiento y una propuesta de valor diferente.
+			%a.button.black{:href => '/proyectos'}	Ver todos los proyectos
+			.up
+	= partial("footer")
+
+	%script{:type=>"text/javascript"}
+		var waypoints = $('#featured').waypoint({handler: function(direction) { if(direction=='down'){$('#menu').addClass('fill');$('#menu img').attr('src','/images/general/menu_logo_r.svg'); } else {$('#menu').removeClass('fill');$('#menu img').attr('src','/images/general/menu_logo.svg');}},offset: '50px'});
+      	

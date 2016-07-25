@@ -1,0 +1,132 @@
+$red: #ED1C24
+$black08: rgba(18, 17, 14, 0.8)
+$gray: #D4D4D4
+$white: #FFF
+$green: #14E06E
+
+.registro
+	.header_page
+		padding: 50px 0
+		background: $red
+		h1
+			text-align: center
+			font-size: 46px
+			color: #FFF
+			margin: 82px 0 97px
+	.content
+		padding-bottom: 60px
+		background-image: linear-gradient(to bottom, #fefefe, #fbfbfb), linear-gradient(#fbfbfb, #fbfbfb)
+		border-bottom: 1px solid $gray
+	form
+		width: 750px
+		margin: 80px auto
+		padding: 40px 0 0
+		border: 1px solid $gray
+		overflow: hidden
+		span
+			text-align: left
+			display: block
+			font-size: 16px
+			padding: 0 20px
+		.field
+			display: inline-block
+			margin: 30px 0 30px 20px
+			text-align: left
+			width: 320px
+			p
+				font-size: 16px
+				letter-spacing: -0.4px
+				color: $black08
+			input
+				margin-top: 10px
+				background: rgba(239, 239, 239, 0.5)
+				border: 1px solid $gray
+				width: 310px
+				padding: 6px 10px
+				font-family: "Roboto Mono"
+				font-size: 16px
+				color: $black08
+				letter-spacing: -0.5px
+				-webkit-border-radius: 8px
+				-moz-border-radius: 8px
+				border-radius: 8px
+				outline: none
+				&:focus
+					border-color: $red
+		.line
+			width: 100%
+			height: 1px
+			background: $gray
+		.contract
+			.head
+				overflow: hidden
+				padding: 30px 20px
+				h2
+					float: left
+					font-size: 16px
+				a
+					float: right
+					color: $red
+					font-size: 14px
+					*
+						display: inline-block
+						vertical-align: middle
+					.icon
+						width: 22px
+						height: 22px
+						background: url(../images/icons/print.svg)
+
+			.content
+				height: 320px
+				overflow-y: auto
+				margin-bottom: 20px
+				p
+					padding: 10px 30px 
+					font-size: 14px
+					line-height: 16px
+			.check
+				margin: 20px
+				font-size: 14px
+				*
+					display: inline-block
+					vertical-align: middle
+				.icon
+					width: 20px
+					height: 20px
+					border: 1px solid $gray
+		.button
+			width: 180px !important
+			text-align: center
+			float: right
+			margin: 20px
+
+@media all and (max-width: 767px)
+	.registro
+		h1
+			font-size: 28px
+			padding: 0 20px
+			margin: 40px 0
+	form
+		width: 100% !important
+		span
+			line-height: 18px
+		.field
+			margin: 20px 0 20px 20px
+			&:nth-child(2n)
+				margin-bottom: 0px
+		input
+			width: 256px !important
+		a
+			display: none
+		.button
+			float: none !important
+			margin: 20px auto !important
+
+				
+
+
+
+			
+
+
+

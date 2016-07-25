@@ -1,0 +1,92 @@
+.proyectos .header_page {
+  padding: 50px 0;
+  background: #ED1C24; }
+  .proyectos .header_page h1 {
+    text-align: center;
+    font-size: 46px;
+    color: #FFF;
+    margin: 82px 0 97px; }
+.proyectos .submenu {
+  border-bottom: 1px solid #D4D4D4;
+  text-align: center;
+  margin-bottom: 26px;
+  padding-top: 30px; }
+  .proyectos .submenu li {
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 20px;
+    padding-bottom: 24px;
+    border-bottom: 6px solid transparent;
+    cursor: pointer; }
+    .proyectos .submenu li.active {
+      border-color: #ED1C24; }
+    .proyectos .submenu li:hover {
+      border-color: #ED1C24; }
+.proyectos select {
+  display: none;
+  width: 200px;
+  margin: 0 auto 20px;
+  border: 1px solid #ED1C24;
+  padding: 6px 0; }
+  .proyectos select option {
+    text-align: center; }
+.proyectos .cards {
+  padding: 60px 0; }
+  .proyectos .cards .card {
+    display: inline-block;
+    width: 586px;
+    height: 250px;
+    margin-bottom: 26px; }
+    .proyectos .cards .card img {
+      width: 175px;
+      height: 250px; }
+    .proyectos .cards .card:nth-child(2n) {
+      margin-left: 14px; }
+.proyectos .warning {
+  padding-bottom: 80px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(18, 17, 14, 0.8);
+  border-bottom: 1px solid #D4D4D4;
+  background-image: linear-gradient(to bottom, #fefefe, #fbfbfb), linear-gradient(#fbfbfb, #fbfbfb); }
+  .proyectos .warning * {
+    display: inline-block; }
+  .proyectos .warning a {
+    color: #ED1C24; }
+    .proyectos .warning a:hover {
+      text-decoration: underline; }
+
+@media all and (max-width: 767px) {
+  .proyectos h1 {
+    font-size: 28px;
+    padding: 0 20px;
+    margin: 40px 0; }
+  .proyectos .submenu {
+    display: none; }
+  .proyectos select {
+    display: block; }
+  .proyectos .cards {
+    padding: 20px 0; }
+    .proyectos .cards .card {
+      display: block;
+      width: 280px;
+      height: auto;
+      margin: 0 auto 20px !important; }
+      .proyectos .cards .card img {
+        width: 280px; }
+      .proyectos .cards .card .text {
+        padding: 20px; }
+        .proyectos .cards .card .text .field {
+          margin: 20px 20px 0 0; }
+        .proyectos .cards .card .text h2 {
+          font-size: 22px; }
+        .proyectos .cards .card .text p {
+          font-size: 16px; } }
+@media all and (min-width: 768px) and (max-width: 1079px) {
+  .proyectos .submenu li {
+    margin: 0 10px; }
+  .proyectos .cards .card {
+    display: block;
+    margin: 0 auto 20px !important; } }
+
+/*# sourceMappingURL=proyectos.css.map */

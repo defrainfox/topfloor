@@ -1,0 +1,33 @@
+= partial("header")
+
+%body.simulador
+	= partial("menu")
+	.header_page
+		.center
+			%h1	SIMULA TU INVERSION
+			%a{:href => '/proyecto'} < Regresar al proyecto
+	.content
+		%h2 TORRE CAMPOS ELISEOS
+		%p Marhnos Inmobiliaria, S.A. De C.V.
+		.many
+			%p ¿CUÁNTO QUIERES INVERTIR?
+			#money 
+				%span $
+				%p 50,000
+				%span MXN
+			.bar
+				%input{:id => 'slide', :type => "text"}
+	%form
+		.center
+			%p PARA SIMULAR TU RETORNO, DINOS TU NOMBRE Y TU CORREO
+			.field
+				%span Nombre Completo
+				%input{:type => 'text', :placeholder => 'Nombre y apellidos'}
+			.field
+				%span Correo electrónico
+				%input{:type => 'text', :placeholder => 'Ingresa aquí tu correo'}
+			%a.button.black{:href => '/run_simulador'} Conoce el retorno
+	= partial("footer")
+
+
+	

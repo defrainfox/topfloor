@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="16px" viewBox="0 0 22 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>16AFE75B-2FFA-4EEE-A597-D5D92EA108C5</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="424" height="706"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0783514493 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="426" height="708">
+            <rect x="-1" y="-1" width="426" height="708" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Desktop--🖥" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TopFloor-Inout-II" transform="translate(-73.000000, -910.000000)">
+            <rect id="Rectangle-149" fill-opacity="0.25" fill="#EFEFEF" x="0" y="-19" width="500" height="1062"></rect>
+            <g id="Group-8" transform="translate(40.000000, 261.000000)">
+                <g id="Invoice">
+                    <g id="Combined-Shape">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use stroke="#D4D4D4" mask="url(#mask-3)" stroke-width="2" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <g id="Mail" transform="translate(33.000000, 647.000000)" fill="#ED1C24">
+                    <g id="email" transform="translate(0.000000, 2.000000)">
+                        <g id="Layer_1">
+                            <path d="M0,0 L0,15.4 L22,15.4 L22,0 L0,0 L0,0 Z M20.02,1.1 L11,8.03 L1.98,1.1 L20.02,1.1 L20.02,1.1 Z M1.1,14.3 L1.1,1.76 L11,9.46 L20.9,1.76 L20.9,14.3 L1.1,14.3 L1.1,14.3 Z" id="email"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

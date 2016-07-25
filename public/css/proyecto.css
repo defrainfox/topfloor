@@ -1,0 +1,378 @@
+.proyecto {
+  position: absolute;
+  width: 100%;
+  min-height: 880px;
+  height: 100%; }
+  .proyecto .center {
+    width: 96%; }
+  .proyecto #menu {
+    background: transparent; }
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  min-height: 100%;
+  background: url(../images/demos/project_full.png) center right no-repeat;
+  background-size: cover;
+  color: #FFF; }
+  .gallery .cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(62, 81, 92, 0.4), rgba(29, 40, 47, 0.7)); }
+  .gallery .text {
+    position: absolute;
+    width: 94%;
+    bottom: 0;
+    padding: 0 40px 40px;
+    overflow: hidden; }
+    .gallery .text h1 {
+      font-family: "DIN-Medium";
+      font-size: 89px;
+      line-height: 0.9;
+      letter-spacing: 2.6px;
+      text-shadow: 0 0 33px #000; }
+    .gallery .text h2 {
+      font-size: 22px;
+      letter-spacing: 0.1px;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+      margin: 8px 0; }
+    .gallery .text .line {
+      width: 448px;
+      height: 2px;
+      background: #FFF; }
+    .gallery .text p {
+      max-width: 800px;
+      margin: 20px 0;
+      font-size: 14px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+      line-height: 20px; }
+    .gallery .text .selectors {
+      text-align: left;
+      margin: 60px 0 80px; }
+      .gallery .text .selectors .selector {
+        display: inline-block;
+        width: 41px;
+        height: 41px;
+        border: 1px solid #ED1C24;
+        margin-right: 20px;
+        cursor: pointer; }
+        .gallery .text .selectors .selector:hover {
+          border-color: #FFF; }
+        .gallery .text .selectors .selector.active {
+          border-color: #FFF; }
+    .gallery .text ul {
+      float: left; }
+      .gallery .text ul li {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: -0.5px; }
+        .gallery .text ul li a {
+          color: #FFF; }
+    .gallery .text .social {
+      float: right;
+      color: #FFF; }
+      .gallery .text .social p {
+        font-size: 12px;
+        margin: 0;
+        display: inline-block; }
+      .gallery .text .social a, .gallery .text .social iframe {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 4px; }
+
+.map {
+  color: #FFF; }
+  .map .gmap {
+    width: 94%;
+    height: 561px;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    filter: #D4D4D4;
+    -webkit-filter: grayscale(99%);
+    -webkit-backface-visibility: hidden;
+    margin: 80px 0 0 40px; }
+  .map .map_text {
+    max-width: 800px;
+    margin: 30px 40px 60px; }
+    .map .map_text h1 {
+      font-size: 38px; }
+    .map .map_text h2 {
+      font-size: 16px; }
+    .map .map_text .field {
+      width: 240px;
+      display: inline-block;
+      font-size: 14px;
+      margin: 30px 20px 0 0; }
+  .map a {
+    font-size: 14px;
+    margin-left: 30px;
+    color: #ED1C24; }
+  .map .social {
+    float: right;
+    color: #FFF;
+    margin: 6px 30px 0 0; }
+    .map .social p {
+      font-size: 12px;
+      margin: 0;
+      display: inline-block; }
+    .map .social a, .map .social iframe {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 4px; }
+
+.tooltip {
+  display: none;
+  z-index: 10;
+  top: 34px;
+  left: -8px;
+  position: absolute;
+  padding: 10px;
+  width: 200px;
+  background: rgba(18, 17, 14, 0.8);
+  color: #FFF;
+  font-size: 12px;
+  line-height: 16px;
+  box-shadow: 0 -1px 3px 0 rgba(135, 135, 135, 0.5); }
+  .tooltip .icon {
+    position: absolute;
+    top: -14px;
+    left: 10px;
+    width: 20px !important;
+    height: 14px !important;
+    background: url(../images/general/tooltip.svg) !important; }
+
+.info {
+  float: right;
+  height: 100%;
+  width: 500px;
+  overflow-y: auto;
+  min-height: 100%;
+  background: #EFEFEF;
+  color: rgba(18, 17, 14, 0.8);
+  padding: 0 40px; }
+  .info h3 {
+    font-size: 34px;
+    margin-top: 50px; }
+  .info h4 {
+    font-size: 24px;
+    letter-spacing: -0.5px; }
+  .info .crowdfunding {
+    padding: 50px 0; }
+    .info .crowdfunding h2 {
+      font-size: 15px; }
+      .info .crowdfunding h2 strong {
+        font-size: 19px;
+        font-weight: bold; }
+    .info .crowdfunding .bar {
+      width: 100%;
+      height: 20px;
+      border: 1px solid #14E06E;
+      background: #FFF;
+      margin: 6px 0; }
+      .info .crowdfunding .bar .fill {
+        width: 70%;
+        height: 100%;
+        background: #14E06E; }
+    .info .crowdfunding .percent, .info .crowdfunding .time {
+      float: left;
+      width: 200px;
+      font-size: 14px; }
+      .info .crowdfunding .percent strong, .info .crowdfunding .time strong {
+        font-weight: bold; }
+    .info .crowdfunding .time {
+      float: right;
+      text-align: right; }
+  .info .total {
+    display: none;
+    padding: 0 25px;
+    margin-bottom: 30px; }
+    .info .total p {
+      font-size: 14px;
+      margin-top: 6px; }
+    .info .total h2 {
+      font-size: 20px;
+      margin-bottom: 4px; }
+    .info .total span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      color: #ED1C24; }
+    .info .total .print {
+      display: inline-block;
+      vertical-align: middle;
+      width: 22px;
+      height: 22px;
+      background: url(../images/icons/print.svg); }
+  .info .square.hide {
+    cursor: pointer;
+    position: relative; }
+    .info .square.hide .down {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      width: 30px;
+      height: 30px;
+      background: url(../images/icons/down.svg) center right no-repeat;
+      background-size: contain; }
+  .info .square {
+    margin-bottom: 30px;
+    background: #FFF;
+    border: 1px solid #D4D4D4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
+    .info .square h3 {
+      font-size: 16px;
+      padding: 0 25px 20px;
+      margin: 26px 0 10px;
+      font-family: "Roboto Mono"; }
+    .info .square .head {
+      position: relative;
+      padding: 25px;
+      border-bottom: 1px dashed #D4D4D4; }
+      .info .square .head h2 {
+        font-size: 34px;
+        letter-spacing: 1px; }
+      .info .square .head p {
+        display: inline-block;
+        margin-top: 10px; }
+      .info .square .head span {
+        position: relative;
+        display: inline-block;
+        color: #ED1C24;
+        cursor: pointer; }
+    .info .square .extras {
+      padding: 40px 25px;
+      text-align: center; }
+      .info .square .extras .extra {
+        position: relative;
+        display: inline-block; }
+        .info .square .extras .extra span {
+          position: absolute;
+          font-size: 58px;
+          font-weight: bold;
+          color: rgba(18, 17, 14, 0.05);
+          top: -24px;
+          left: -20px; }
+        .info .square .extras .extra h2 {
+          font-size: 20px; }
+        .info .square .extras .extra p {
+          font-size: 14px;
+          margin-top: 6px; }
+      .info .square .extras .icon {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin: 0 20px;
+        background: url(../images/icons/plus.svg) center no-repeat;
+        background-size: contain; }
+    .info .square .details {
+      text-align: center;
+      margin-bottom: 80px; }
+      .info .square .details .detail {
+        text-align: left;
+        display: inline-block;
+        margin: 0 10px; }
+        .info .square .details .detail p, .info .square .details .detail span {
+          display: inline-block;
+          font-size: 12px; }
+        .info .square .details .detail span {
+          position: relative;
+          color: #ED1C24;
+          cursor: pointer; }
+        .info .square .details .detail h2 {
+          font-size: 16px;
+          margin-top: 6px; }
+    .info .square .button {
+      text-align: center;
+      margin: 10px auto 20px;
+      width: 350px;
+      cursor: pointer; }
+    .info .square .black {
+      margin-bottom: 40px; }
+
+@media all and (max-width: 767px) {
+  .proyecto {
+    min-height: 300px; }
+
+  .gallery {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    overflow: hidden; }
+    .gallery .cover {
+      padding: 40px 0; }
+      .gallery .cover .text {
+        position: relative; }
+        .gallery .cover .text h1 {
+          font-size: 30px;
+          margin-top: 60px; }
+        .gallery .cover .text h2 {
+          font-size: 18px; }
+        .gallery .cover .text .line {
+          width: 200px; }
+        .gallery .cover .text .selectors {
+          display: none; }
+
+  .info {
+    height: auto;
+    padding: 0 20px 40px; }
+    .info .square .head {
+      padding: 10px; }
+      .info .square .head .icon {
+        display: none; }
+    .info .square .extras .extra {
+      display: block; }
+    .info .square .extras .icon {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .info .square .details .detail {
+      display: block;
+      margin: 0 auto 20px;
+      width: 180px; }
+    .info .square .button {
+      width: 140px;
+      font-size: 12px; } }
+@media all and (min-width: 768px) and (max-width: 1079px) {
+  .proyecto {
+    min-height: 300px; }
+
+  .gallery {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    overflow: hidden; }
+    .gallery .cover {
+      padding: 40px 0; }
+      .gallery .cover .text {
+        position: relative; }
+        .gallery .cover .text h1 {
+          font-size: 30px;
+          margin-top: 60px; }
+        .gallery .cover .text h2 {
+          font-size: 18px; }
+        .gallery .cover .text .line {
+          width: 200px; }
+        .gallery .cover .text .selectors {
+          display: none; }
+
+  .info {
+    height: auto;
+    padding: 0 20px 40px; }
+    .info .square .head {
+      padding: 10px; }
+      .info .square .head .icon {
+        display: none; }
+    .info .square .extras .extra {
+      display: block; }
+    .info .square .extras .icon {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .info .square .details .detail {
+      display: block;
+      margin: 0 auto 20px;
+      width: 180px; }
+    .info .square .button {
+      width: 140px;
+      font-size: 12px; } }
+
+/*# sourceMappingURL=proyecto.css.map */
