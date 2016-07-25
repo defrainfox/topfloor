@@ -51,7 +51,6 @@
 
         var waypoints = $('.logo').waypoint({
             handler: function(direction) {
-                console.log(direction);
                 if(direction=='down')
                     $('#featured .cover_text').removeClass('animated fadeOutDown').addClass('animated fadeInUp');
                 else

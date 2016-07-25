@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 # A sample Gemfile
-source 'https://rubygems.org'
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
-gem 'sinatra'
-gem 'sinatra-partial'
-gem 'sinatra-content-for'
-gem 'haml'
+# gem "rails"
+gem "sinatra"
+gem "sinatra-partial"
+gem "sinatra-content-for"
+gem "haml"

@@ -1,5 +1,4 @@
 # topfloor.rb
-require 'rubygems'
 require 'sinatra/partial'
 require 'sinatra/content_for'
 require 'sinatra'
