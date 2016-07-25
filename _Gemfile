@@ -1,0 +1,8 @@
+source :rubygems
+source :gemcutter
+
+gem 'rubygems'
+gem 'sinatra/partial'
+gem 'sinatra/content_for'
+gem 'sinatra'
+gem 'Haml'
