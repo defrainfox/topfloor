@@ -4,6 +4,6 @@ source "https://rubygems.org"
 
 # gem "rails"
 gem "sinatra"
-gem "sinatra-partial"
-gem "sinatra-content-for"
-gem "haml"
+gem 'sinatra-partial'
+gem 'sinatra-content-for'
+gem 'Haml'
