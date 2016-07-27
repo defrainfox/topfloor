@@ -6,4 +6,4 @@ source "https://rubygems.org"
 gem "sinatra"
 gem 'sinatra-partial'
 gem 'sinatra-content-for'
-gem 'Haml'
+gem 'haml'
