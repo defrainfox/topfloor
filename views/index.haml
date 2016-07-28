@@ -2,7 +2,14 @@
 
 %body.home
 	
-	= partial("menu")
+	#menu
+		.center
+			%a.mini_logo{:href => '/'}
+				%img{:src => '/images/general/menu_logo.svg'}
+			%a.login{:href => '/profile'}
+			%a.company{:href => '/desarrollador'} Soy desarrollador
+
+
 	#welcome
 		.center
 			%img.logo{:src => '/images/general/logo.svg'}

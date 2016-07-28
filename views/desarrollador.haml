@@ -1,0 +1,98 @@
+= partial("header")
+
+%body.desarrollador
+	= partial("menu")
+	.header_page
+		%h1	REGÍSTRATE EN TOP FLOOR
+	.content
+		.center
+			%h2.subtitle Registrarte en TOP FLOOR te da beneficios Montes lacus a nulla varius sem tempus orci duis fusce molestie sed a ut quam a massa a.Adipiscing a ullamcorper in donec netus sed suscipit nisl congue torquent ante lorem.
+			%form
+				%span Completa los campos para crear tu cuenta:
+				.field
+					%p Nombre de la Empresa
+					%input{:type => "text", :placeholder => "Nombre completo"}
+				.field
+					%p Letra de David
+					%input{:type => "text", :placeholder => "ABCDXXXXXXXXX"}
+				.field
+					%p Teléfono
+					%input{:type => "text", :placeholder => "XX-XXXXXXXX"}
+				.field
+					%p Correo
+					%input{:type => "text", :placeholder => "correo@topfloor.com"}
+				.proyect
+					.line
+					%span Registra uno o varios de tus proyectos.
+					.field
+						%p Nombre del Proyecto
+						%input{:type => "text", :placeholder => "Torre Campos Eliseos"}
+					.field
+						%p Tiempo
+						%input{:type => "text", :placeholder => "XX AÑOS"}
+					.field
+						%p ROI
+						%input{:type => "text", :placeholder => "XXX"}
+					.field
+						%p Imagenes
+						%input{:type => "file", :placeholder => "XXX", :multiple => ''}
+				.proyect#proyect2
+					.line
+					.field
+						%p Nombre del Proyecto
+						%input{:type => "text", :placeholder => "Torre Campos Eliseos"}
+					.field
+						%p Tiempo
+						%input{:type => "text", :placeholder => "XX AÑOS"}
+					.field
+						%p ROI
+						%input{:type => "text", :placeholder => "XXX"}
+					.field
+						%p Imagenes
+						%input{:type => "file", :placeholder => "XXX", :multiple => ''}
+				.proyect#proyect3
+					.line
+					.field
+						%p Nombre del Proyecto
+						%input{:type => "text", :placeholder => "Torre Campos Eliseos"}
+					.field
+						%p Tiempo
+						%input{:type => "text", :placeholder => "XX AÑOS"}
+					.field
+						%p ROI
+						%input{:type => "text", :placeholder => "XXX"}
+					.field
+						%p Imagenes
+						%input{:type => "file", :placeholder => "XXX", :multiple => ''}
+				.addproyect{:rel => '2'}
+					.icon
+					Agregar otro proyecto
+				.line
+				.contract
+					.head
+						%h2 Términos y Condiciones
+						%a{:href => "/"}
+							.icon
+							%h3 Imprimir
+					.content
+						%p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+						%p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
+						%p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+						%p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+						%p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
+						%p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+					.check
+						.icon
+						%p He leido y acepto los términos y condiciones
+				.line
+				#addnew.button.black{:href => '/profile'} Crear cuenta
+	.thanks
+		%h2 Gracias por crear tu cuenta, en breve nos pondremos en contacto contigo, mientras tanto puedes ver nuestos proyectos activos.
+		%a.button{:href => '/proyectos'} Ver todos los proyectos
+
+	= partial("footer")
+
+
+
+
+		

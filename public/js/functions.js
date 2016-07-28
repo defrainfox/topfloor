@@ -150,6 +150,20 @@
             
         }
 
+        // DESARROLLADOR
+        $('.addproyect').on('click',function(){
+            var rel = $(this).attr('rel');
+            $('#proyect'+rel).fadeIn();
+            if(rel  == 3 )
+                $('.addproyect').fadeOut(0);    
+            $('.addproyect').attr('rel',3);
+        })
+
+        $('#addnew').on('click',function(){
+            $('.desarrollador .content').fadeOut(0);
+            $('.thanks').fadeIn();
+        })
+
         // RUN SIMULATOR
         if( $('.run_simulador').length == 1){
 

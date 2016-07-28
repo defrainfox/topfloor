@@ -1,0 +1,149 @@
+.desarrollador .header_page {
+  padding: 50px 0;
+  background: #ED1C24; }
+  .desarrollador .header_page h1 {
+    text-align: center;
+    font-size: 46px;
+    color: #FFF;
+    margin: 82px 0 97px; }
+.desarrollador .content {
+  padding-bottom: 60px;
+  background-image: linear-gradient(to bottom, #fefefe, #fbfbfb), linear-gradient(#fbfbfb, #fbfbfb);
+  border-bottom: 1px solid #D4D4D4; }
+.desarrollador .subtitle {
+  text-align: center;
+  display: block;
+  margin: 80px auto 0;
+  font-size: 22px;
+  line-height: 28px;
+  max-width: 750px; }
+.desarrollador form {
+  width: 750px;
+  margin: 80px auto;
+  padding: 40px 0 0;
+  border: 1px solid #D4D4D4;
+  overflow: hidden; }
+  .desarrollador form span {
+    text-align: left;
+    display: block;
+    font-size: 16px;
+    padding: 0 20px; }
+  .desarrollador form .field {
+    display: inline-block;
+    margin: 40px 0 0 20px;
+    text-align: left;
+    width: 320px; }
+    .desarrollador form .field p {
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      color: rgba(18, 17, 14, 0.8); }
+    .desarrollador form .field input {
+      margin-top: 10px;
+      background: rgba(239, 239, 239, 0.5);
+      border: 1px solid #D4D4D4;
+      width: 310px;
+      padding: 6px 10px;
+      font-family: "Roboto Mono";
+      font-size: 16px;
+      color: rgba(18, 17, 14, 0.8);
+      letter-spacing: -0.5px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      outline: none; }
+      .desarrollador form .field input:focus {
+        border-color: #ED1C24; }
+  .desarrollador form .line {
+    width: 100%;
+    height: 1px;
+    background: #D4D4D4;
+    margin-top: 30px; }
+  .desarrollador form .proyect span {
+    padding-top: 40px; }
+  .desarrollador form #proyect2, .desarrollador form #proyect3 {
+    display: none; }
+  .desarrollador form .addproyect {
+    margin: 30px 20px;
+    font-size: 14px;
+    cursor: pointer; }
+    .desarrollador form .addproyect .icon {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background: #ED1C24;
+      vertical-align: middle; }
+  .desarrollador form .contract .head {
+    overflow: hidden;
+    padding: 30px 20px; }
+    .desarrollador form .contract .head h2 {
+      float: left;
+      font-size: 16px; }
+    .desarrollador form .contract .head a {
+      float: right;
+      color: #ED1C24;
+      font-size: 14px; }
+      .desarrollador form .contract .head a * {
+        display: inline-block;
+        vertical-align: middle; }
+      .desarrollador form .contract .head a .icon {
+        width: 22px;
+        height: 22px;
+        background: url(../images/icons/print.svg); }
+  .desarrollador form .contract .content {
+    height: 320px;
+    overflow-y: auto;
+    margin-bottom: 20px; }
+    .desarrollador form .contract .content p {
+      padding: 10px 30px;
+      font-size: 14px;
+      line-height: 16px; }
+  .desarrollador form .contract .check {
+    margin: 20px;
+    font-size: 14px; }
+    .desarrollador form .contract .check * {
+      display: inline-block;
+      vertical-align: middle; }
+    .desarrollador form .contract .check .icon {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #D4D4D4; }
+  .desarrollador form .button {
+    width: 180px !important;
+    text-align: center;
+    float: right;
+    margin: 20px;
+    cursor: pointer; }
+.desarrollador .thanks {
+  display: none;
+  padding: 80px 0; }
+  .desarrollador .thanks h2 {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 750px; }
+
+@media all and (max-width: 767px) {
+  .registro h1 {
+    font-size: 28px;
+    padding: 0 20px;
+    margin: 40px 0; }
+
+  form {
+    width: 100% !important; }
+    form span {
+      line-height: 18px; }
+    form .field {
+      margin: 20px 0 20px 20px; }
+      form .field:nth-child(2n) {
+        margin-bottom: 0px; }
+    form input {
+      width: 256px !important; }
+    form a {
+      display: none; }
+    form .button {
+      float: none !important;
+      margin: 20px auto !important; } }
+
+/*# sourceMappingURL=desarrollador.css.map */

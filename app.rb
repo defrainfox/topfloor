@@ -5,6 +5,7 @@ require 'sinatra'
 require 'Haml'
 
 class TopTloor < Sinatra::Base
+
 	helpers do
 	  def partial(page, options={})
 	    haml page.to_sym, options.merge!(:layout => false)
@@ -41,6 +42,10 @@ class TopTloor < Sinatra::Base
 
 	get '/registro' do
 		haml :registro
+	end
+
+	get '/desarrollador' do
+		haml :desarrollador
 	end
 
 	get '/profile' do

@@ -15,12 +15,14 @@ body {
   top: 0; }
   #menu .mini_logo {
     float: left; }
-  #menu .login {
+  #menu .login, #menu .company {
     display: block;
     font-size: 14px;
     float: right;
     margin-top: 18px;
     color: #FFF; }
+  #menu .company {
+    margin-right: 40px; }
   #menu .login::after {
     content: "Iniciar sesión"; }
 
@@ -29,7 +31,7 @@ body {
 
 #menu.fill {
   background: rgba(255, 255, 255, 0.9); }
-  #menu.fill .login {
+  #menu.fill .login, #menu.fill .company {
     color: rgba(18, 17, 14, 0.8); }
 
 #footer {
