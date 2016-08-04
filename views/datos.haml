@@ -1,0 +1,102 @@
+= partial("header")
+
+%body.profile
+	#menu
+		.center
+			%a.mini_logo{:href => '/'}
+				%img{:src => '/images/general/menu_logo.svg'}
+			%ul.menu_profile
+				%li Mi cuenta
+				%li
+					%a.menu_profile{:href => '/editar'} Editar cuenta
+				%li
+					%a.menu_profile{:href => '/'} Cerrar sesión
+					
+			%a.menu_profile.active{:href => '/datos'} Datos y documentos
+			%a.menu_profile{:href => '/profile'} Historial de inversiones
+	.header
+		.center
+			.content.name
+				%img{:src => '/images/demos/user.png'}
+				%h2 SAÚL GONZÁLEZ
+				%p saulsaulsaul@gmail.com | +01 (55) 7178118
+			.content.return.inversion
+				%h2 $50,000 MXN
+				%p INVERSION TOTAL
+			.content.return
+				%h2 $100,000 MXN
+				%p RETORNO TOTAL
+	.pendientes
+		.center
+			%h2.subtitle Datos y documentos
+		.proyect_data
+			.center
+				.card{:href => "/proyecto"}
+					.label Estamos esperando tus contratos
+					%img{:src => '/images/demos/project-copy.png'}
+					.text
+						%h2 TORRE CAMPOS ELISEOS
+						%p Marhnos Inmobiliaria, S.A. de C.V.
+						.field
+							%p TIR 
+							%h4 41.16%
+						.field
+							%p ROI 
+							%h4 3.12
+						.field
+							%p Horizonte de tiempo 
+							%h4 5 años
+				.instructions
+					%p Sube tus contrados firmados
+					.field
+						%input#files{:type => "file"}
+						#prevfiles CONTRATOS
+						#fakefiles Sube tus archivos
+				%a.button.black{:href => '/datos'} Subir contratos
+		.line
+		.proyect_data
+			.center
+				.card{:href => "/proyecto"}
+					.label Estamos revisando tus documentos
+					%img{:src => '/images/demos/project-copy.png'}
+					.text
+						%h2 TORRE CAMPOS ELISEOS
+						%p Marhnos Inmobiliaria, S.A. de C.V.
+						.field
+							%p TIR 
+							%h4 41.16%
+						.field
+							%p ROI 
+							%h4 3.12
+						.field
+							%p Horizonte de tiempo 
+							%h4 5 años
+		.line
+		.proyect_data
+			.center
+				.card{:href => "/proyecto"}
+					.label Contratos aprobados
+					%img{:src => '/images/demos/project-copy.png'}
+					.text
+						%h2 TORRE CAMPOS ELISEOS
+						%p Marhnos Inmobiliaria, S.A. de C.V.
+						.field.nomargin
+							%p CLABE interbancaria:
+							%h4 3200989105600366
+						.field.nomargin
+							%p Número de referencia:
+							%h4 004790022
+						.field.nomargin
+							%p Número de cuenta:
+							%h4 1234567812341234
+						.field.nomargin
+							%p Banco:
+							%h4 Bancomer
+						
+	= partial("footer")
+
+
+
+
+
+		

@@ -17,7 +17,7 @@ body {
     float: left; }
   #menu .login, #menu .company {
     display: block;
-    font-size: 14px;
+    font-size: 13px;
     float: right;
     margin-top: 18px;
     color: #FFF; }
@@ -66,25 +66,121 @@ body {
 #footer.border {
   border: 1px solid #D4D4D4; }
 
+.login {
+  overflow: hidden; }
+  .login .cover_text {
+    opacity: 1;
+    width: 200%;
+    height: 260px;
+    overflow: hidden;
+    margin: 0;
+    left: 0; }
+  .login h1 {
+    font-size: 60px;
+    color: #ED1C24;
+    width: 500px;
+    margin-top: 300px; }
+  .login p {
+    font-size: 16px;
+    margin: 30px 0; }
+  .login .field {
+    display: inline-block;
+    margin: 30px 20px 30px 0;
+    text-align: left;
+    width: 320px; }
+    .login .field p {
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      color: rgba(18, 17, 14, 0.8);
+      margin: 0; }
+    .login .field input {
+      margin-top: 10px;
+      background: rgba(239, 239, 239, 0.5);
+      border: 1px solid #D4D4D4;
+      width: 310px;
+      padding: 6px 10px;
+      font-family: "Roboto Mono";
+      font-size: 16px;
+      color: rgba(18, 17, 14, 0.8);
+      letter-spacing: -0.5px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      outline: none; }
+      .login .field input:focus {
+        border-color: #ED1C24; }
+  .login .button {
+    text-align: center;
+    margin: 0; }
+
 .home h3 {
   font-size: 46px;
   color: #ED1C24;
   font-family: "DIN-Regular"; }
 
+#supervideo {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  background: rgba(18, 17, 14, 0.8); }
+  #supervideo #closevideo {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 20px;
+    background: url(../images/icons/close.svg) center no-repeat;
+    background-size: cover;
+    cursor: pointer; }
+
 #welcome {
-  padding-top: 52px;
+  position: relative;
+  height: 640px;
   text-align: center;
-  background: #ED1C24; }
-  #welcome h1 {
-    font-size: 30px;
-    letter-spacing: 0.5px;
-    color: #FFF; }
-  #welcome .logo {
-    margin: 80px 0 26px; }
-  #welcome iframe {
-    width: 640px;
-    height: 360px;
-    margin-top: 54px; }
+  overflow: hidden;
+  background: url(../images/demos/video.jpg) center no-repeat;
+  background-size: cover; }
+  #welcome .cover_video {
+    position: absolute;
+    width: 100%; }
+    #welcome .cover_video video {
+      width: 100%; }
+  #welcome .cover_welcome {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+    #welcome .cover_welcome .logo_container {
+      width: 560px;
+      height: 102px;
+      background: #ED1C24;
+      margin: 218px auto 30px;
+      overflow: hidden; }
+      #welcome .cover_welcome .logo_container .logo {
+        margin-top: 18px; }
+    #welcome .cover_welcome h1 {
+      font-size: 30px;
+      letter-spacing: 0.5px;
+      color: #FFF; }
+    #welcome .cover_welcome .controls {
+      text-align: center;
+      margin-top: 50px; }
+      #welcome .cover_welcome .controls * {
+        cursor: pointer; }
+      #welcome .cover_welcome .controls .play {
+        display: inline-block;
+        margin-right: 20px; }
+      #welcome .cover_welcome .controls p {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        color: #FFF;
+        width: 135px;
+        text-align: left;
+        margin-top: 10px;
+        line-height: 18px; }
 
 .section {
   border-bottom: 1px solid #D4D4D4;
@@ -94,10 +190,9 @@ body {
 
 #featured {
   background: #FFF;
-  border-top: 1px solid #D4D4D4;
-  margin-top: -80px; }
+  border-top: 1px solid #D4D4D4; }
   #featured h3 {
-    margin: 100px 0 70px; }
+    margin: 60px 0 70px; }
 
 .cover_text {
   position: absolute;
@@ -214,12 +309,13 @@ body {
       #why .step .square h2 {
         font-size: 24px;
         color: #ED1C24;
-        padding: 20px 24px; }
+        padding: 16px 24px;
+        max-width: 410px; }
       #why .step .square p {
         font-size: 14px;
         color: #12110e;
         padding: 0 24px;
-        max-width: 400px;
+        max-width: 410px;
         line-height: 20px; }
     #why .step .down {
       z-index: -1;
@@ -342,9 +438,19 @@ body {
       #types .type .text .icon {
         width: 81px;
         height: 81px;
-        background: url(../images/icons/rendimientos.svg);
-        background-size: cover;
         margin: 0 auto 35px; }
+        #types .type .text .icon.entrada {
+          background: url(../images/icons/2.svg);
+          background-size: cover; }
+        #types .type .text .icon.cap {
+          background: url(../images/icons/4.svg);
+          background-size: cover; }
+        #types .type .text .icon.patrimoniales {
+          background: url(../images/icons/6.svg);
+          background-size: cover; }
+        #types .type .text .icon.regenaracion {
+          background: url(../images/icons/8.svg);
+          background-size: cover; }
       #types .type .text .line {
         width: 100%;
         height: 1px;

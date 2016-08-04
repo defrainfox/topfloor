@@ -2,6 +2,10 @@
 
 %body.proyecto
 	= partial("menu_red")
+
+	:plain
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button class="pswp__button pswp__button--share" title="Share"></button><button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button><button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div>
+
 	.info
 		%h3.din-medium $176 millones MXN
 		%h4 INVERSIÓN COLECTIVA
@@ -17,7 +21,7 @@
 			.time Quedan XX días
 		.square.hide{:rel => '0'}
 			.down
-			%h3 DETALLES DE LA INVERSIÓN
+			%h3 RESUMEN DE LA INVERSIÓN
 			.total
 				%h2 $1,474,902,469 MXN
 				%p Total financioado por TOP FLOOR
@@ -29,7 +33,7 @@
 				%p Inversión colectiva TOP FLOOR
 			%a.total{:href => '/'}
 				.print
-				%span Imprimir información
+				%span Descargar resumen financiero
 
 		.square
 			.head
@@ -80,21 +84,23 @@
 	.gallery
 		.cover
 			.text
-				%h1 TORRE CAMPOS ELISEOS
-				%h2 Marhnos Inmobiliaria, S.A. De C.V.
-				.line
-				%p Un nuevo desarrollo habitacional ubicada en una de las mejores zonas de la ciudad de México. La colonia Doctores.
-				%p Se estima la pre-venta para que la utilidad de lo proyectado. Se realiza un pago correspondiente al 33% a cuenta del terreno de inicio. Logrando una facilidad hasta de 10 pagos de $10,000.
-				.selectors
-					- 9.times do
-						.selector
 				%ul
 					%li
-						%a{:href => '/'} Información
+						%a.active{:href => '/proyecto'} Información
 					%li
 						%span /
 					%li
 						%a{:href => '/mapa'} Ubicación
+				%h1 TORRE CAMPOS ELISEOS
+				%h2 
+					%a{:href => '/constructor'} Marhnos Inmobiliaria, S.A. De C.V.
+				.line
+				%p Un nuevo desarrollo habitacional ubicada en una de las mejores zonas de la ciudad de México. La colonia Doctores.
+				%p Se estima la pre-venta para que la utilidad de lo proyectado. Se realiza un pago correspondiente al 33% a cuenta del terreno de inicio. Logrando una facilidad hasta de 10 pagos de $10,000.
+				.selectors
+					.selector#initgallery
+					- 9.times do
+						.selector
 				.social
 					%p Comparte este proyecto:
 					:plain

@@ -1,6 +1,7 @@
 .proyectos .header_page {
   padding: 50px 0;
-  background: #ED1C24; }
+  background: #ED1C24;
+  background-image: linear-gradient(176deg, #ED1C24, #DB1E2A); }
   .proyectos .header_page h1 {
     text-align: center;
     font-size: 46px;

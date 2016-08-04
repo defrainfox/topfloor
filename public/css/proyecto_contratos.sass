@@ -1,0 +1,174 @@
+$red: #ED1C24
+$black08: rgba(18, 17, 14, 0.8)
+$gray: #D4D4D4
+$white: #FFF
+$green: #14E06E
+
+.proyecto_contratos
+	#menu
+		.login::after
+			content: "Cerrar sesión" !important
+	.header_page
+		padding: 50px 0
+		background: $red
+		background-image: linear-gradient(176deg, $red, #DB1E2A)
+		h1
+			text-align: center
+			font-size: 46px
+			color: #FFF
+			margin: 82px 0 60px
+		a
+			color: #FFF
+			font-size: 14px
+	.content
+		padding: 60px auto
+		text-align: center
+		color: $black08
+		.explication
+			.subtitle
+				width: 700px
+				font-size: 20px
+				color: $red
+				text-align: left
+				margin: 60px 0
+			position: relative
+			overflow: hidden
+			background: #FFF
+			.step
+				float: right
+				position: relative
+				width: 648px
+				height: 176px
+				margin: 80px 0
+				.line
+					position: absolute
+					width: 40px
+					height: 10px
+					background: $red
+					z-index: 6
+					top: 30px
+					left: -20px
+				span
+					position: absolute
+					font-size: 274px
+					font-weight: 700
+					color: rgba(18, 17, 14, 0.05)
+					left: -56px
+					top: -110px
+					z-index: 1
+				.square
+					position: absolute
+					width: 628px
+					height: 178px
+					border: 1px solid $black08
+					background: $white
+					text-align: left
+					h2
+						font-size: 24px
+						color: $red
+						padding: 16px 24px
+						max-width: 410px
+					p 
+						font-size: 14px
+						color: #12110e
+						padding: 0 24px
+						max-width: 410px
+						line-height: 20px
+				.down
+					z-index: -1
+					right: 0
+					top: 20px
+				.icon
+					position: absolute
+					width: 100px
+					height: 100px
+					top: 40px
+					right: 34px
+			.step:nth-child(2n-1)
+				float: left
+		h2
+			font-size: 34px
+			font-weight: 500
+		p
+			font-size: 18px
+		.card
+			margin: 120px auto 0
+	.contrato
+		padding: 80px 0
+		p
+			width: 670px
+			margin: 0 auto
+			font-size: 16px
+			letter-spacing: 1px
+
+	.instructions
+		padding: 80px 0
+		display: none
+		#fakefiles
+			display: inline-block
+			font-size: 14px
+			color: $red
+			text-decoration: underline
+			margin: 20px 0
+			cursor: pointer
+		#files
+			display: none
+		#prevfiles
+			display: none
+			border-radius: 5px
+			background: rgba(239, 239, 239, 0.5)
+			color: rgba(18, 17, 14, 0.4)
+			padding: 10px 20px
+			border: 1px solid #D4D4D4
+			margin: 10px 20px 0 0
+
+		.subtitle
+			font-size: 20px
+			text-align: left
+			margin-bottom: 80px
+		.pack
+			text-align: center
+			width: 100%
+			margin-bottom: 80px
+			div
+				vertical-align: top
+				display: inline-block
+				width: 300px
+				padding: 0 20px
+				h2
+					text-align: left
+					font-size: 16px
+					height: 40px
+				p
+					text-align: left
+					width: auto
+					font-size: 14px
+		p
+			width: 668px
+			font-size: 16px
+			margin: 10px auto
+		ul
+			width: 260px
+			padding: 60px 0
+			margin: 0 auto
+			li
+				text-align: left
+				margin-bottom: 20px
+				.icon
+					display: inline-block
+					vertical-align: middle
+					width: 22px
+					height: 22px
+					background: $red
+		.url
+			color: $red
+			margin: 30px 20px 30px 0
+			display: inline-block
+			text-decoration: underline
+		.button
+			display: inline-block
+		#upload
+			color: #FFF
+			width: 350px
+		&.active
+			display: block

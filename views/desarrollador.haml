@@ -6,15 +6,16 @@
 		%h1	REGÍSTRATE EN TOP FLOOR
 	.content
 		.center
-			%h2.subtitle Registrarte en TOP FLOOR te da beneficios Montes lacus a nulla varius sem tempus orci duis fusce molestie sed a ut quam a massa a.Adipiscing a ullamcorper in donec netus sed suscipit nisl congue torquent ante lorem.
+			%h2.subtitle Registrarte en TOP FLOOR te da beneficios en este copy explicamos por que el desarrollador se debe registrar y los beneficios que obtiene.
+			.enter.button{:href => '/proyectos'} Registrarse
 			%form
 				%span Completa los campos para crear tu cuenta:
 				.field
 					%p Nombre de la Empresa
-					%input{:type => "text", :placeholder => "Nombre completo"}
+					%input{:type => "text", :placeholder => "Razón social"}
 				.field
-					%p Letra de David
-					%input{:type => "text", :placeholder => "ABCDXXXXXXXXX"}
+					%p Nombre del contacto
+					%input{:type => "text", :placeholder => "Nombre completo"}
 				.field
 					%p Teléfono
 					%input{:type => "text", :placeholder => "XX-XXXXXXXX"}
@@ -33,9 +34,6 @@
 					.field
 						%p ROI
 						%input{:type => "text", :placeholder => "XXX"}
-					.field
-						%p Imagenes
-						%input{:type => "file", :placeholder => "XXX", :multiple => ''}
 				.proyect#proyect2
 					.line
 					.field
@@ -47,9 +45,6 @@
 					.field
 						%p ROI
 						%input{:type => "text", :placeholder => "XXX"}
-					.field
-						%p Imagenes
-						%input{:type => "file", :placeholder => "XXX", :multiple => ''}
 				.proyect#proyect3
 					.line
 					.field
@@ -61,9 +56,6 @@
 					.field
 						%p ROI
 						%input{:type => "text", :placeholder => "XXX"}
-					.field
-						%p Imagenes
-						%input{:type => "file", :placeholder => "XXX", :multiple => ''}
 				.addproyect{:rel => '2'}
 					.icon
 					Agregar otro proyecto

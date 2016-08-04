@@ -1,7 +1,19 @@
 = partial("header")
 
 %body.profile
-	= partial("menu")
+	#menu
+		.center
+			%a.mini_logo{:href => '/'}
+				%img{:src => '/images/general/menu_logo.svg'}
+			%ul.menu_profile
+				%li Mi cuenta
+				%li
+					%a.menu_profile{:href => '/editar'} Editar cuenta
+				%li
+					%a.menu_profile{:href => '/'} Cerrar sesión
+					
+			%a.menu_profile{:href => '/datos'} Datos y documentos
+			%a.menu_profile.active{:href => '/profile'} Historial de inversiones
 	.header
 		.center
 			.content.name
@@ -14,14 +26,11 @@
 			.content.return
 				%h2 $100,000 MXN
 				%p RETORNO TOTAL
-	%ul.submenu
+	.submenu
 		.center
-			%li.margin Todos
-			%li.active Entrada y salida
-			%li CAP
-			%li Patrimoniales
-			%li Regeneración urbana
-				
+			.left
+			%p TORRE CAMPOS ELISEOS
+			%a.right{:href => '/profile'}
 	.proyects
 		.center
 			.big_card
@@ -54,19 +63,15 @@
 								%strong 70% 
 								Completado
 							.time Quedan XX días
-			.mini_card
-				%img{:src => '/images/demos/project.png'}
-				%h2 TORRE CAMPOS ELISEOS
-				%p Marhnos Inmobiliaria, S.A. de C.V.
-
 	.center 
 		%h2.title Línea de tiempo de tu inversion:
 		.timeline
 			.point#point1
-				.icon
+				.icon.active
 			.step#step3
 				%span Agosto/2017
 				.reach
+					.label
 					%h2 Inicia desarrollo
 					.photos
 						%img{:src => '/images/demos/project.png'}
@@ -86,6 +91,7 @@
 			.step#step5
 				%span Enero/2017
 				.reach
+					.label
 					%h2 Proyecto Ejecutivo
 					%p Hacemos due dilligence exhaustivo de cada proyecto inmobiliario y seleccionamos sólo los mejores para que inicies tu portafolio.
 					%p Asimismo, trabajamos con bancos nacionales para que tus inversiones sean más seguras.

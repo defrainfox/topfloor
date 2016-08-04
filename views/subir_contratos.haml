@@ -1,0 +1,34 @@
+= partial("header")
+
+%body.proyecto_contratos
+	= partial("menu")
+	.header_page
+		%h1	CONTRATOS Y DOCUMENTOS
+		.center
+			%a{:href => '/proyecto'} < Regresar al proyecto
+	.content
+		%a.card{:href => "/proyecto"}
+			%img{:src => '/images/demos/project.png'}
+			.text
+				%h2 TORRE CAMPOS ELISEOS
+				%p Marhnos Inmobiliaria, S.A. de C.V.
+				.field
+					%p TIR 
+					%h4 41.16%
+				.field
+					%p ROI 
+					%h4 3.12
+				.field
+					%p Horizonte de tiempo 
+					%h4 5 años
+		.instructions.active
+			%p Sube un archivo ZIP con los contrados firmados
+			.field
+				%input#files{:type => "file"}
+				#prevfiles CONTRATOS.ZIP
+				#fakefiles Sube tu archivo
+			%a#upload.button.black{:href => "/notifications"} 
+				.icon
+				Subir documentos
+
+	

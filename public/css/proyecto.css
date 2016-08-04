@@ -7,6 +7,8 @@
     width: 96%; }
   .proyecto #menu {
     background: transparent; }
+  .proyecto .login::after {
+    content: "" !important; }
 
 .gallery {
   position: relative;
@@ -22,28 +24,31 @@
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(62, 81, 92, 0.4), rgba(29, 40, 47, 0.7)); }
   .gallery .text {
-    position: absolute;
     width: 94%;
-    bottom: 0;
     padding: 0 40px 40px;
     overflow: hidden; }
     .gallery .text h1 {
+      max-width: 680px;
       font-family: "DIN-Medium";
       font-size: 89px;
       line-height: 0.9;
       letter-spacing: 2.6px;
-      text-shadow: 0 0 33px #000; }
+      text-shadow: 0 0 33px #000;
+      margin-top: 140px; }
     .gallery .text h2 {
+      max-width: 680px;
       font-size: 22px;
       letter-spacing: 0.1px;
       text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
       margin: 8px 0; }
+      .gallery .text h2 a {
+        color: #FFF; }
     .gallery .text .line {
       width: 448px;
       height: 2px;
       background: #FFF; }
     .gallery .text p {
-      max-width: 800px;
+      max-width: 680px;
       margin: 20px 0;
       font-size: 14px;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
@@ -57,21 +62,27 @@
         height: 41px;
         border: 1px solid #ED1C24;
         margin-right: 20px;
-        cursor: pointer; }
+        cursor: pointer;
+        background: url(http://vistazo.com/sites/default/files/field/image/2015/04/28/spiderman_edificio-1.jpg) center no-repeat;
+        background-size: cover; }
         .gallery .text .selectors .selector:hover {
           border-color: #FFF; }
         .gallery .text .selectors .selector.active {
           border-color: #FFF; }
     .gallery .text ul {
-      float: left; }
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 101; }
       .gallery .text ul li {
         display: inline-block;
         font-size: 12px;
         letter-spacing: -0.5px; }
         .gallery .text ul li a {
           color: #FFF; }
+          .gallery .text ul li a.active {
+            text-decoration: underline; }
     .gallery .text .social {
-      float: right;
       color: #FFF; }
       .gallery .text .social p {
         font-size: 12px;
@@ -105,13 +116,18 @@
       font-size: 14px;
       margin: 30px 20px 0 0; }
   .map a {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     font-size: 14px;
     margin-left: 30px;
-    color: #ED1C24; }
+    color: #ED1C24;
+    z-index: 101; }
   .map .social {
-    float: right;
-    color: #FFF;
-    margin: 6px 30px 0 0; }
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #FFF; }
     .map .social p {
       font-size: 12px;
       margin: 0;
@@ -129,7 +145,7 @@
   position: absolute;
   padding: 10px;
   width: 200px;
-  background: rgba(18, 17, 14, 0.8);
+  background: #000;
   color: #FFF;
   font-size: 12px;
   line-height: 16px;
@@ -296,7 +312,7 @@
 
   .gallery {
     width: 100%;
-    height: 600px !important;
+    height: auto !important;
     min-height: auto;
     overflow: hidden; }
     .gallery .cover {
@@ -320,6 +336,9 @@
           text-align: center; }
           .gallery .cover .text .social > p {
             display: none; }
+    .gallery .gmap {
+      width: 80%;
+      height: 300px; }
 
   .crowdfunding {
     margin: 0 20px; }
@@ -361,7 +380,7 @@
 
   .gallery {
     width: 100%;
-    height: 500px;
+    height: auto;
     min-height: auto;
     overflow: hidden; }
     .gallery .cover {

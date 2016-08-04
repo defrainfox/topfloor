@@ -1,144 +1,192 @@
-.run_simulador .center {
-  width: 96%; }
-.run_simulador #menu {
-  background: transparent; }
-.run_simulador .data {
-  float: left;
-  width: 500px;
-  padding: 50px 0;
-  background: rgba(239, 239, 239, 0.25);
-  border-right: 1px solid #D4D4D4;
-  height: 1400px; }
-  .run_simulador .data .text {
-    margin: 40px 40px 40px;
-    color: rgba(18, 17, 14, 0.8); }
-    .run_simulador .data .text h1 {
-      font-size: 34px; }
-    .run_simulador .data .text h2 {
-      margin-top: 8px; }
-    .run_simulador .data .text a {
-      display: inline-block;
-      margin: 20px 0;
-      color: rgba(18, 17, 14, 0.8); }
-      .run_simulador .data .text a:hover {
-        text-decoration: underline; }
-  .run_simulador .data .square {
-    width: 360px;
-    background: #FFF;
-    margin: 0 auto;
-    padding: 40px 32px;
-    border: 1px solid #D4D4D4;
-    color: rgba(18, 17, 14, 0.8); }
-    .run_simulador .data .square h2 {
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 10px; }
-    .run_simulador .data .square a {
-      color: #FFF; }
-    .run_simulador .data .square .button {
-      text-align: center;
-      margin-bottom: 56px; }
-    .run_simulador .data .square .money {
-      position: relative;
-      margin-top: 48px; }
-      .run_simulador .data .square .money span {
-        position: absolute;
-        font-size: 58px;
-        font-weight: bold;
-        color: rgba(18, 17, 14, 0.05);
-        top: -24px;
-        left: -20px; }
-      .run_simulador .data .square .money h3 {
-        font-size: 34px; }
-      .run_simulador .data .square .money p {
-        font-size: 16px;
-        margin-top: 6px;
-        color: #ED1C24; }
-      .run_simulador .data .square .money .currency {
-        display: inline-block;
-        margin: 0 -4px 0 -18px; }
-    .run_simulador .data .square .social {
-      border-top: 1px dashed #D4D4D4; }
-      .run_simulador .data .square .social p {
-        font-size: 16px;
-        color: rgba(18, 17, 14, 0.8);
-        margin: 25px 0; }
-      .run_simulador .data .square .social span {
-        color: #ED1C24;
-        margin-right: 30px;
-        font-size: 14px;
-        cursor: pointer; }
-        .run_simulador .data .square .social span .icon {
-          display: inline-block;
-          vertical-align: middle;
-          width: 22px;
-          height: 22px; }
-        .run_simulador .data .square .social span .print {
-          background: url(../images/icons/print.svg) center no-repeat; }
-        .run_simulador .data .square .social span .email {
-          background: url(../images/icons/email.svg) center no-repeat; }
-        .run_simulador .data .square .social span .url {
-          background: url(../images/icons/link.svg) center no-repeat; }
-.run_simulador .timeline {
-  position: relative;
-  overflow-y: auto !important;
-  padding: 95px 0 0 136px;
-  height: 1400px; }
-  .run_simulador .timeline .cover_text {
+.run_simulador {
+  position: absolute;
+  height: 100%; }
+  .run_simulador .cover_text {
     opacity: 1;
-    margin-top: 260px; }
-  .run_simulador .timeline .name {
-    display: inline-block; }
-    .run_simulador .timeline .name .icon {
-      float: left;
-      width: 24px;
-      height: 24px;
-      border: 2px solid #ED1C24;
-      background: url(../images/icons/clock.svg) center no-repeat; }
-    .run_simulador .timeline .name p {
-      float: left;
-      height: 18px;
-      font-size: 12px;
-      font-weight: 500;
-      color: rgba(18, 17, 14, 0.8);
-      border-top: 2px solid rgba(18, 17, 14, 0.8);
-      border-right: 2px solid rgba(18, 17, 14, 0.8);
-      border-bottom: 2px solid rgba(18, 17, 14, 0.8);
-      padding: 6px 10px 0; }
-  .run_simulador .timeline .line {
-    margin: -2px 0 0 26px;
-    width: 2px;
-    height: 120px;
-    background: #D4D4D4; }
-    .run_simulador .timeline .line.top {
-      margin-top: -24px; }
-  .run_simulador .timeline .point {
-    display: inline-block;
-    vertical-align: top;
-    width: 70px;
-    height: 70px;
-    margin: -28px 0 0 -8px; }
-    .run_simulador .timeline .point .icon {
-      margin: 28px auto 0;
-      width: 18px;
-      height: 18px;
-      border-radius: 100px;
+    margin-top: 260px;
+    margin-left: -400px;
+    width: 1328px; }
+  .run_simulador .center {
+    width: 96%; }
+  .run_simulador #menu {
+    background: transparent; }
+  .run_simulador .data {
+    float: left;
+    width: 500px;
+    padding: 50px 0;
+    background: rgba(239, 239, 239, 0.25);
+    border-right: 1px solid #D4D4D4;
+    min-height: 100%;
+    height: 100%; }
+    .run_simulador .data .text {
+      margin: 40px 40px 40px;
+      color: rgba(18, 17, 14, 0.8); }
+      .run_simulador .data .text h1 {
+        font-size: 34px; }
+      .run_simulador .data .text h2 {
+        margin-top: 8px; }
+      .run_simulador .data .text a {
+        display: inline-block;
+        margin: 20px 0;
+        color: rgba(18, 17, 14, 0.8);
+        font-size: 14px; }
+        .run_simulador .data .text a:hover {
+          text-decoration: underline; }
+    .run_simulador .data .square {
+      width: 360px;
+      background: #FFF;
+      margin: 0 auto;
+      padding: 40px 32px;
+      border: 1px solid #D4D4D4;
+      color: rgba(18, 17, 14, 0.8); }
+      .run_simulador .data .square h2 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px; }
+      .run_simulador .data .square a {
+        color: #FFF; }
+      .run_simulador .data .square .button {
+        text-align: center;
+        margin-bottom: 56px; }
+      .run_simulador .data .square .money {
+        position: relative;
+        margin-top: 48px; }
+        .run_simulador .data .square .money span {
+          position: absolute;
+          font-size: 58px;
+          font-weight: bold;
+          color: rgba(18, 17, 14, 0.05);
+          top: -24px;
+          left: -20px; }
+        .run_simulador .data .square .money h3 {
+          font-size: 34px; }
+        .run_simulador .data .square .money p {
+          font-size: 16px;
+          margin-top: 6px;
+          color: #ED1C24; }
+        .run_simulador .data .square .money .currency {
+          display: inline-block;
+          margin: 0 -4px 0 -18px; }
+      .run_simulador .data .square .social {
+        border-top: 1px dashed #D4D4D4; }
+        .run_simulador .data .square .social p {
+          font-size: 16px;
+          color: rgba(18, 17, 14, 0.8);
+          margin: 25px 0; }
+        .run_simulador .data .square .social span {
+          color: #ED1C24;
+          margin-right: 30px;
+          font-size: 14px;
+          cursor: pointer; }
+          .run_simulador .data .square .social span .icon {
+            display: inline-block;
+            vertical-align: middle;
+            width: 22px;
+            height: 22px; }
+          .run_simulador .data .square .social span .print {
+            background: url(../images/icons/print.svg) center no-repeat; }
+          .run_simulador .data .square .social span .email {
+            background: url(../images/icons/email.svg) center no-repeat; }
+          .run_simulador .data .square .social span .url {
+            background: url(../images/icons/link.svg) center no-repeat; }
+  .run_simulador .timeline {
+    position: relative;
+    overflow-y: auto !important;
+    height: 100%;
+    min-height: 100%;
+    padding: 100px 100px 0; }
+    .run_simulador .timeline .name {
+      display: inline-block; }
+      .run_simulador .timeline .name .icon {
+        float: left;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #ED1C24;
+        background: url(../images/icons/clock.svg) center no-repeat; }
+      .run_simulador .timeline .name p {
+        float: left;
+        height: 18px;
+        font-size: 12px;
+        font-weight: 500;
+        color: rgba(18, 17, 14, 0.8);
+        border-top: 2px solid rgba(18, 17, 14, 0.8);
+        border-right: 2px solid rgba(18, 17, 14, 0.8);
+        border-bottom: 2px solid rgba(18, 17, 14, 0.8);
+        padding: 6px 10px 0; }
+    .run_simulador .timeline .line {
+      margin: -2px 0 0 26px;
+      width: 2px;
+      height: 120px;
       background: #D4D4D4; }
-  .run_simulador .timeline .step {
-    margin-top: -40px;
-    display: inline-block; }
-    .run_simulador .timeline .step * {
+      .run_simulador .timeline .line.top {
+        margin-top: -24px; }
+    .run_simulador .timeline .point {
       display: inline-block;
-      font-size: 16px;
-      padding: 22px 20px;
-      color: #D4D4D4; }
-    .run_simulador .timeline .step span {
-      margin: 0 20px; }
-    .run_simulador .timeline .step p {
+      vertical-align: top;
+      width: 70px;
+      height: 70px;
+      margin: -28px 0 0 -8px; }
+      .run_simulador .timeline .point .icon {
+        margin: 28px auto 0;
+        width: 18px;
+        height: 18px;
+        border-radius: 100px;
+        background: #D4D4D4; }
+        .run_simulador .timeline .point .icon.active {
+          -webkit-animation: pulsate 1s ease-out;
+          -webkit-animation-iteration-count: infinite;
+          opacity: 0; }
+    .run_simulador .timeline .step {
+      margin-top: -40px;
+      display: inline-block; }
+      .run_simulador .timeline .step * {
+        display: inline-block;
+        font-size: 16px;
+        padding: 22px 20px;
+        color: #D4D4D4; }
+      .run_simulador .timeline .step span {
+        margin: 0 20px; }
+      .run_simulador .timeline .step p {
+        border: 1px solid #D4D4D4;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
+    .run_simulador .timeline .reach {
+      position: relative;
+      display: inline-block;
+      width: 586px;
       border: 1px solid #D4D4D4;
       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
-  .run_simulador .timeline .green p {
-    background: #14E06E;
-    border: solid 1px #14E06E; }
+      .run_simulador .timeline .reach .label {
+        position: absolute;
+        width: 40px;
+        height: 10px;
+        background: #ED1C24;
+        padding: 0;
+        left: -20px;
+        top: 74px; }
+      .run_simulador .timeline .reach h2 {
+        font-size: 16px;
+        color: rgba(18, 17, 14, 0.8); }
+      .run_simulador .timeline .reach .photos {
+        margin: 0 auto; }
+        .run_simulador .timeline .reach .photos img {
+          padding: 0;
+          float: left;
+          width: 115px;
+          height: 83px;
+          margin-right: 20px; }
+      .run_simulador .timeline .reach p {
+        border: none;
+        box-shadow: none; }
+      .run_simulador .timeline .reach .icon {
+        float: right;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        background: url(../images/icons/rendimientos.svg) center no-repeat;
+        background-size: cover;
+        margin-right: 44px; }
+    .run_simulador .timeline .green p {
+      background: #14E06E;
+      border: solid 1px #14E06E; }
 
 /*# sourceMappingURL=run_simulador.css.map */

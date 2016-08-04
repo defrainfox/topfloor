@@ -5,6 +5,13 @@ $white: #FFF
 $green: #14E06E
 
 .run_simulador
+	position: absolute
+	height: 100%
+	.cover_text
+		opacity: 1
+		margin-top: 260px
+		margin-left: -400px
+		width: 1328px
 	.center
 		width: 96%
 	#menu
@@ -15,7 +22,8 @@ $green: #14E06E
 		padding: 50px 0
 		background: rgba(239, 239, 239, 0.25)
 		border-right: 1px solid $gray
-		height: 1400px
+		min-height: 100%
+		height: 100%
 		.text
 			margin: 40px 40px 40px
 			color: $black08
@@ -27,6 +35,7 @@ $green: #14E06E
 				display: inline-block
 				margin: 20px 0
 				color: $black08
+				font-size: 14px
 				&:hover
 					text-decoration: underline
 		.square
@@ -89,11 +98,10 @@ $green: #14E06E
 	.timeline
 		position: relative
 		overflow-y: auto !important
-		padding: 95px 0 0 136px
-		height: 1400px
-		.cover_text
-			opacity: 1
-			margin-top: 260px
+		height: 100%
+		min-height: 100%
+		padding: 100px 100px 0
+
 		.name
 			display: inline-block
 			.icon
@@ -131,6 +139,10 @@ $green: #14E06E
 				height: 18px
 				border-radius: 100px
 				background: $gray
+				&.active
+					-webkit-animation: pulsate 1s ease-out
+					-webkit-animation-iteration-count: infinite
+					opacity: 0.0
 		.step
 			margin-top: -40px
 			display: inline-block
@@ -144,6 +156,42 @@ $green: #14E06E
 			p
 				border: 1px solid $gray
 				box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
+		.reach
+			position: relative
+			display: inline-block
+			width: 586px
+			border: 1px solid $gray
+			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
+			.label
+				position: absolute
+				width: 40px
+				height: 10px
+				background: $red
+				padding: 0
+				left: -20px
+				top: 74px
+			h2
+				font-size: 16px
+				color: $black08
+			.photos
+				margin: 0 auto
+				img
+					padding: 0
+					float: left
+					width: 115px
+					height: 83px
+					margin-right: 20px
+			p
+				border: none
+				box-shadow: none
+			.icon
+				float: right
+				width: 20px
+				height: 20px
+				padding: 0
+				background: url(../images/icons/rendimientos.svg) center no-repeat
+				background-size: cover
+				margin-right: 44px
 		.green
 			p
 				background: #14E06E

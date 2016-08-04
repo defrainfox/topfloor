@@ -1,11 +1,55 @@
-@charset "UTF-8";
 .profile h3 {
   font-size: 20px;
   color: #ED1C24; }
-.profile #menu .login::after {
-  content: "Cerrar sesión"; }
+.profile #notification {
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(19, 224, 110, 0.1);
+  font-size: 14px;
+  text-align: center; }
+  .profile #notification .center {
+    position: relative; }
+  .profile #notification a {
+    color: #ED1C24; }
+  .profile #notification .icon {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(18, 17, 14, 0.8);
+    top: 3px;
+    right: 0;
+    cursor: pointer; }
+.profile #menu {
+  position: absolute; }
+  .profile #menu .menu_profile {
+    float: right;
+    content: "" !important;
+    color: #FFF;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    padding: 20px; }
+    .profile #menu .menu_profile:hover {
+      background: #D90D19; }
+  .profile #menu .active {
+    background: #D90D19; }
+  .profile #menu.notification {
+    top: 54px; }
+  .profile #menu ul {
+    width: 146px;
+    padding: 0 !important; }
+    .profile #menu ul li:first-child {
+      padding: 20px 0;
+      cursor: default; }
+    .profile #menu ul:hover a {
+      display: block; }
+    .profile #menu ul * {
+      float: none;
+      text-align: center; }
+    .profile #menu ul a {
+      display: none; }
 .profile .header {
-  background: #ED1C24; }
+  background: #ED1C24;
+  background-image: linear-gradient(176deg, #ED1C24, #DB1E2A); }
   .profile .header .center {
     position: relative;
     height: 228px; }
@@ -13,9 +57,11 @@
     position: absolute;
     bottom: 0;
     width: 540px; }
+    .profile .header .content h3 {
+      padding-bottom: 60px; }
     .profile .header .content img {
       position: absolute;
-      bottom: -30px;
+      bottom: -18px;
       width: 134px;
       height: 134px;
       z-index: 12;
@@ -32,6 +78,13 @@
       margin: 0 10px;
       font-size: 14px;
       color: #FFF; }
+    .profile .header .content a {
+      display: block;
+      padding: 0 0 20px 174px;
+      font-size: 13px;
+      color: #FFF; }
+      .profile .header .content a:hover {
+        text-decoration: underline; }
   .profile .header .name {
     left: 0; }
   .profile .header .return {
@@ -49,96 +102,89 @@
 .profile .submenu {
   border-top: 1px solid #D4D4D4;
   border-bottom: 1px solid #D4D4D4;
-  padding-top: 28px; }
-  .profile .submenu .margin {
-    margin-left: 176px; }
-  .profile .submenu li {
-    font-size: 14px;
-    display: inline-block;
-    margin: 0 30px 0 0;
-    padding-bottom: 22px;
-    border-bottom: 6px solid transparent;
-    cursor: pointer; }
-    .profile .submenu li.active {
-      border-color: #ED1C24; }
-    .profile .submenu li:hover {
-      border-color: #ED1C24; }
-  .profile .submenu a {
-    float: right;
-    font-size: 14px;
-    color: #ED1C24; }
-    .profile .submenu a .icon {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 20px;
-      background: #ED1C24; }
-    .profile .submenu a p {
-      display: inline-block;
-      vertical-align: middle; }
+  padding-top: 28px;
+  text-align: center;
+  padding-bottom: 20px; }
+  .profile .submenu .center {
+    position: relative; }
+  .profile .submenu .left {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/prev.png) center no-repeat;
+    background-size: cover; }
+  .profile .submenu .right {
+    cursor: pointer;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/next.png) center no-repeat;
+    background-size: cover; }
 .profile .proyects {
   overflow: hidden;
   margin: 70px 0 70px; }
-.profile .big_card {
-  float: left; }
-  .profile .big_card .card {
-    width: 790px;
+.profile .big_card .card {
+  width: 790px;
+  height: 364px; }
+  .profile .big_card .card img {
+    width: 300px;
     height: 364px; }
-    .profile .big_card .card img {
-      width: 300px;
-      height: 364px; }
-    .profile .big_card .card .money {
-      padding: 40px 0 0;
-      overflow: hidden; }
-      .profile .big_card .card .money div {
-        float: left;
-        width: 180px;
-        margin-left: 20px; }
-        .profile .big_card .card .money div h3 {
-          font-size: 23px;
-          font-weight: 500;
-          color: rgba(18, 17, 14, 0.8); }
-        .profile .big_card .card .money div p {
-          color: #ED1C24;
-          margin-top: 8px;
-          font-size: 12px; }
-    .profile .big_card .card .next_step {
-      padding: 10px 0; }
-      .profile .big_card .card .next_step span {
-        display: block;
-        font-size: 14px;
-        color: rgba(18, 17, 14, 0.8);
-        margin-bottom: 10px; }
-      .profile .big_card .card .next_step p {
-        font-size: 18px;
-        font-weight: 500; }
-    .profile .big_card .card .fields {
+  .profile .big_card .card .money {
+    padding: 40px 0 0;
+    overflow: hidden; }
+    .profile .big_card .card .money div {
       float: left;
-      margin-left: 20px; }
-    .profile .big_card .card .crowdfunding {
-      float: left;
-      margin: 36px 0 0 20px; }
-      .profile .big_card .card .crowdfunding .bar {
-        width: 400px;
-        height: 20px;
-        border: 1px solid #ED1C24;
-        background: #FFF;
-        margin: 6px 0; }
-        .profile .big_card .card .crowdfunding .bar .fill {
-          width: 70%;
-          height: 100%;
-          background: #ED1C24; }
-      .profile .big_card .card .crowdfunding .percent, .profile .big_card .card .crowdfunding .time {
-        float: left;
-        width: 200px;
+      width: 180px; }
+      .profile .big_card .card .money div h3 {
+        font-size: 23px;
+        font-weight: 500;
+        color: rgba(18, 17, 14, 0.8); }
+      .profile .big_card .card .money div p {
+        color: #ED1C24;
+        margin-top: 8px;
         font-size: 12px; }
-        .profile .big_card .card .crowdfunding .percent strong, .profile .big_card .card .crowdfunding .time strong {
-          font-weight: bold; }
-      .profile .big_card .card .crowdfunding .time {
-        float: right;
-        text-align: right; }
-  .profile .big_card:nth-child(2n) .fill {
-    width: 100% !important; }
+  .profile .big_card .card .next_step {
+    padding: 10px 0; }
+    .profile .big_card .card .next_step span {
+      display: block;
+      font-size: 14px;
+      color: rgba(18, 17, 14, 0.8);
+      margin-bottom: 10px; }
+    .profile .big_card .card .next_step p {
+      font-size: 18px;
+      font-weight: 500; }
+  .profile .big_card .card .fields {
+    float: left; }
+  .profile .big_card .card .crowdfunding {
+    float: left;
+    margin: 36px 0 0 0; }
+    .profile .big_card .card .crowdfunding .bar {
+      width: 400px;
+      height: 20px;
+      border: 1px solid #ED1C24;
+      background: #FFF;
+      margin: 6px 0; }
+      .profile .big_card .card .crowdfunding .bar .fill {
+        width: 70%;
+        height: 100%;
+        background: #ED1C24; }
+    .profile .big_card .card .crowdfunding .percent, .profile .big_card .card .crowdfunding .time {
+      float: left;
+      width: 200px;
+      font-size: 12px; }
+      .profile .big_card .card .crowdfunding .percent strong, .profile .big_card .card .crowdfunding .time strong {
+        font-weight: bold; }
+    .profile .big_card .card .crowdfunding .time {
+      float: right;
+      text-align: right; }
+.profile .big_card:nth-child(2n) .fill {
+  width: 100% !important; }
 .profile .mini_card {
   cursor: pointer;
   float: right;
@@ -214,6 +260,10 @@
       height: 18px;
       border-radius: 100px;
       background: #ED1C24; }
+      .profile .timeline .point .icon.active {
+        -webkit-animation: pulsate 1s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        opacity: 0; }
   .profile .timeline .step {
     margin-top: -40px;
     display: inline-block; }
@@ -230,10 +280,19 @@
       border: 1px solid #D4D4D4;
       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
   .profile .timeline .reach {
+    position: relative;
     display: inline-block;
     width: 586px;
     border: 1px solid #D4D4D4;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
+    .profile .timeline .reach .label {
+      position: absolute;
+      width: 40px;
+      height: 10px;
+      background: #ED1C24;
+      padding: 0;
+      left: -20px;
+      top: 74px; }
     .profile .timeline .reach h2 {
       font-size: 16px;
       color: rgba(18, 17, 14, 0.8); }
@@ -248,6 +307,14 @@
     .profile .timeline .reach p {
       border: none;
       box-shadow: none; }
+    .profile .timeline .reach .icon {
+      float: right;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      background: url(../images/icons/rendimientos.svg) center no-repeat;
+      background-size: cover;
+      margin-right: 44px; }
   .profile .timeline #line4 {
     margin-top: -240px;
     height: 400px; }
@@ -257,12 +324,143 @@
     height: 380px;
     margin-top: -240px; }
   .profile .timeline #point1 {
-    margin-top: -44px; }
+    margin-top: -62px; }
   .profile .timeline #point5 {
     margin-top: -46px; }
   .profile .timeline .green p {
     background: #14E06E;
     border: solid 1px #14E06E; }
+.profile .edit {
+  text-align: left;
+  padding: 100px 0; }
+  .profile .edit .line {
+    margin: 40px 0; }
+  .profile .edit span {
+    display: block; }
+  .profile .edit h2 {
+    font-size: 20px;
+    color: #ED1C24;
+    margin-bottom: 20px; }
+  .profile .edit .center {
+    overflow: hidden; }
+  .profile .edit .field {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    text-align: left;
+    width: 320px; }
+    .profile .edit .field a {
+      display: inline-block;
+      font-size: 14px;
+      color: #ED1C24;
+      text-decoration: underline;
+      margin: 20px 0;
+      cursor: pointer; }
+    .profile .edit .field #file {
+      display: none; }
+    .profile .edit .field #prevfile {
+      display: inline-block;
+      border-radius: 5px;
+      background: rgba(239, 239, 239, 0.5);
+      color: rgba(18, 17, 14, 0.4);
+      padding: 10px 20px;
+      border: 1px solid #D4D4D4;
+      margin: 10px 20px 0 0; }
+    .profile .edit .field p {
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      color: rgba(18, 17, 14, 0.8); }
+    .profile .edit .field input {
+      margin-top: 10px;
+      background: rgba(239, 239, 239, 0.5);
+      border: 1px solid #D4D4D4;
+      width: 310px;
+      padding: 10px;
+      font-family: "Roboto Mono";
+      font-size: 16px;
+      color: rgba(18, 17, 14, 0.8);
+      letter-spacing: -0.5px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      outline: none; }
+      .profile .edit .field input:focus {
+        border-color: #ED1C24; }
+  .profile .edit .right {
+    margin-right: 104px; }
+  .profile .edit .button {
+    width: 220px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-top: 22px; }
+.profile .pendientes {
+  background: rgba(239, 239, 239, 0.25);
+  padding: 44px 0; }
+  .profile .pendientes .subtitle {
+    font-size: 20px;
+    color: #ED1C24;
+    margin-top: 44px; }
+.profile .line {
+  width: 100%;
+  height: 1px;
+  background: #D4D4D4; }
+.profile .proyect_data {
+  padding: 60px 0;
+  color: rgba(18, 17, 14, 0.8);
+  text-align: center; }
+  .profile .proyect_data .instructions {
+    padding: 80px 0 40px; }
+    .profile .proyect_data .instructions #fakefiles {
+      display: inline-block;
+      font-size: 14px;
+      color: #ED1C24;
+      text-decoration: underline;
+      margin: 20px 0;
+      cursor: pointer; }
+    .profile .proyect_data .instructions #files {
+      display: none; }
+    .profile .proyect_data .instructions #prevfiles {
+      display: none;
+      border-radius: 5px;
+      background: rgba(239, 239, 239, 0.5);
+      color: rgba(18, 17, 14, 0.4);
+      padding: 10px 20px;
+      border: 1px solid #D4D4D4;
+      margin: 10px 20px 0 0; }
+  .profile .proyect_data .subtitle {
+    font-size: 16px;
+    color: rgba(18, 17, 14, 0.8);
+    padding: 40px 0; }
+  .profile .proyect_data .card {
+    position: relative;
+    display: inline-block;
+    color: #ED1C24;
+    margin: 40px 0 0 20px;
+    height: 250px; }
+    .profile .proyect_data .card img {
+      width: 300px;
+      height: 250px; }
+    .profile .proyect_data .card .label {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      font-size: 12px;
+      background: #ED1C24;
+      color: #FFF;
+      padding: 6px 20px; }
+    .profile .proyect_data .card span {
+      display: inline-block;
+      vertical-align: middle; }
+    .profile .proyect_data .card .icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 22px;
+      height: 22px;
+      background: #ED1C24; }
+    .profile .proyect_data .card .field.nomargin {
+      margin-top: 30px; }
+  .profile .proyect_data .button {
+    margin: 0 auto; }
 
 @media all and (max-width: 767px) {
   .profile .header div {

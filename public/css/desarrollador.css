@@ -1,6 +1,7 @@
 .desarrollador .header_page {
   padding: 50px 0;
-  background: #ED1C24; }
+  background: #ED1C24;
+  background-image: linear-gradient(176deg, #ED1C24, #DB1E2A); }
   .desarrollador .header_page h1 {
     text-align: center;
     font-size: 46px;
@@ -17,7 +18,11 @@
   font-size: 22px;
   line-height: 28px;
   max-width: 750px; }
+.desarrollador .button {
+  cursor: pointer;
+  text-align: center; }
 .desarrollador form {
+  display: none;
   width: 750px;
   margin: 80px auto;
   padding: 40px 0 0;

@@ -13,6 +13,8 @@ $green: #14E06E
 		width: 96%
 	#menu
 		background: transparent
+	.login::after
+		content: "" !important
 .gallery
 	position: relative
 	overflow: hidden
@@ -27,28 +29,31 @@ $green: #14E06E
 		height: 100%
 		background-image: linear-gradient(to bottom, rgba(62, 81, 92, 0.4), rgba(29, 40, 47, 0.7))
 	.text
-		position: absolute
 		width: 94%
-		bottom: 0
 		padding: 0 40px 40px
 		overflow: hidden
 		h1
+			max-width: 680px
 			font-family: "DIN-Medium"
 			font-size: 89px
 			line-height: 0.9
 			letter-spacing: 2.6px
 			text-shadow: 0 0 33px #000
+			margin-top: 140px
 		h2
+			max-width: 680px
 			font-size: 22px
 			letter-spacing: 0.1px
 			text-shadow: 0 0 15px rgba(0, 0, 0, 0.8)
 			margin: 8px 0
+			a
+				color: #FFF
 		.line
 			width: 448px
 			height: 2px
 			background: #FFF
 		p
-			max-width: 800px
+			max-width: 680px
 			margin: 20px 0
 			font-size: 14px
 			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7)
@@ -63,20 +68,26 @@ $green: #14E06E
 				border: 1px solid $red
 				margin-right: 20px
 				cursor: pointer
+				background: url(http://vistazo.com/sites/default/files/field/image/2015/04/28/spiderman_edificio-1.jpg) center no-repeat
+				background-size: cover
 				&:hover
 					border-color: #FFF
 				&.active
 					border-color: #FFF
 		ul
-			float: left
+			position: absolute
+			right: 20px
+			top: 20px
+			z-index: 101
 			li
 				display: inline-block
 				font-size: 12px
 				letter-spacing: -0.5px
 				a
 					color: #FFF
+					&.active
+						text-decoration: underline
 		.social
-			float: right
 			color: #FFF
 			p
 				font-size: 12px
@@ -110,13 +121,18 @@ $green: #14E06E
 			font-size: 14px
 			margin: 30px 20px 0 0
 	a
+		position: absolute
+		top: 20px
+		right: 20px
 		font-size: 14px
 		margin-left: 30px
 		color: $red
+		z-index: 101
 	.social
-		float: right
+		position: absolute
+		left: 10px
+		bottom: 10px
 		color: #FFF
-		margin: 6px 30px 0 0
 		p
 			font-size: 12px
 			margin: 0
@@ -134,7 +150,7 @@ $green: #14E06E
 	position: absolute
 	padding: 10px
 	width: 200px
-	background: $black08
+	background: #000
 	color: #FFF
 	font-size: 12px
 	line-height: 16px
@@ -300,7 +316,7 @@ $green: #14E06E
 		min-height: 300px
 	.gallery
 		width: 100%
-		height: 600px !important
+		height: auto !important
 		min-height: auto
 		overflow: hidden
 		.cover
@@ -324,6 +340,9 @@ $green: #14E06E
 					text-align: center
 					> p
 						display: none
+		.gmap
+			width: 80%
+			height: 300px
 	.crowdfunding
 		margin: 0 20px
 		.time, .percent
@@ -366,7 +385,7 @@ $green: #14E06E
 		min-height: 300px
 	.gallery
 		width: 100%
-		height: 500px
+		height: auto
 		min-height: auto
 		overflow: hidden
 		.cover

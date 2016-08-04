@@ -1,0 +1,20 @@
+= partial("header")
+
+%body.login
+	.cover_text INICIAR SESIÓN
+	#menu.red.fill
+		.center
+			%a.mini_logo{:href => '/'}
+				%img{:src => '/images/general/menu_logo_r.svg'}
+
+	.center
+		%h1.din-medium QUE BUENO VERTE DE NUEVO
+		%p Inicia sesión para estar al tanto de tus inversiones
+		.field
+			%p Correo
+			%input{:type => 'text', :placeholder => 'usuario@correo.com'}
+		.field
+			%p Contraseña
+			%input{:type => 'password', :placeholder => 'Tu contraseña'}
+		%a.button.black{:href => '/profile'} Iniciar sesión
+

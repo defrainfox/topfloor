@@ -79,6 +79,14 @@
 			%a.button.black{:href => "/simulador"} Simula la Inversión
 	.gallery
 		.cover
+			.text
+				%ul
+					%li
+						%a{:href => '/proyecto'} Información
+					%li
+						%span /
+					%li
+						%a.active{:href => '/mapa'} Ubicación
 			.map
 				%iframe.gmap{:src =>"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJcSeU3j7_0YURCy_oCmBAb7M&key=AIzaSyCfpcwDah6xZBzZS4p9HQ16maJJnuMWUfY"}
 				.map_text
@@ -99,7 +107,6 @@
 					.field
 						%p ESTADO
 						%span Ciudad de México
-				%a{:href => '/proyecto'} < Regresar al proyecto
 				.social
 					%p Comparte este proyecto:
 					:plain

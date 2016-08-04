@@ -74,3 +74,8 @@ src:url("fonts/DINNextRoundedLTPro-Light.otf");
 .din-light{font-family:'DIN-Light', serif}
 
 
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.5, 0.5); opacity: 0.5;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(2, 2); opacity: 0.5;}
+}

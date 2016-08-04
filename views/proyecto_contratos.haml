@@ -1,0 +1,45 @@
+= partial("header")
+
+%body.proyecto_contratos
+	= partial("menu")
+	.header_page
+		%h1	DESCARGA DE CONTRATOS
+		.center
+			%a{:href => '/proyecto'} < Regresar al proyecto
+	.content
+		%a.card{:href => "/proyecto"}
+			%img{:src => '/images/demos/project.png'}
+			.text
+				%h2 TORRE CAMPOS ELISEOS
+				%p Marhnos Inmobiliaria, S.A. de C.V.
+				.field
+					%p TIR 
+					%h4 41.16%
+				.field
+					%p ROI 
+					%h4 3.12
+				.field
+					%p Horizonte de tiempo 
+					%h4 5 años
+		.contrato
+			%p Saúl, descarga los contratos de este proyecto, deberás firmalos y enviarlos a TOP FLOOR para continuar con tu inversión.
+			.center
+				%a#download.button{:href => "http://www.werkspoorkathedraal.nl/user-files/uploads/2015/02/dummy_pdf.pdf", :download => ''} Descargar
+		.instructions
+			.center
+				%h2.subtitle Tu descarga contiene
+				.pack
+					%div
+						%h2 Fideicomiso
+						%p En este contrato quedan plasmados sus derechos sobre los flujos futuros del proyecto y cede la operación a Top Floor. Así como un KYC para el banco.
+					%div
+						%h2 Administración de Inversión
+						%p En este contrato quedan plasmados sus derechos sobre los flujos futuros del proyecto y cede la operación a Top Floor. Así como un KYC para el banco.
+					%div
+						%h2 Contrato de garantía de pago
+						%p En este contrato quedan plasmados sus derechos sobre los flujos futuros del proyecto y cede la operación a Top Floor. Así como un KYC para el banco.
+				%p Firma y escanea los contratos que descargaste.
+				%p En tu perfil encontrarás el acceso directo para subir tus archivos.
+				%a.button{:href => '/datos'} Visitar tu perfil
+	= partial("footer")
+	

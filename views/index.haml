@@ -1,20 +1,30 @@
 = partial("header")
 
 %body.home
-	
+	#supervideo
+		#closevideo
+		#video
+
 	#menu
 		.center
 			%a.mini_logo{:href => '/'}
 				%img{:src => '/images/general/menu_logo.svg'}
-			%a.login{:href => '/profile'}
+			%a.login{:href => '/login'}
 			%a.company{:href => '/desarrollador'} Soy desarrollador
 
 
 	#welcome
-		.center
-			%img.logo{:src => '/images/general/logo.svg'}
-			%h1 We build this city
-			%iframe{:src => 'https://player.vimeo.com/video/134629585', :frameborder => '0'}
+		.cover_video
+			%video{:autoplay => 'autoplay', :loop => 'loop', :type => 'video/mp4', :src => '/videos/cover.mp4'}
+		.cover_welcome
+			.center
+				.logo_container
+					%img.logo{:src => '/images/general/logo.svg'}
+				%h1 We build this city
+				.controls
+					%img.play{:src => '/images/icons/play.svg'}
+					%p Mira el video para saber mas >
+
 	#featured.section
 		.cover_text PROYECTOS
 		.center
@@ -41,8 +51,8 @@
 				.line
 				%span 1
 				.square
-					%h2 Mayores Rendimientos
-					%p Damos la oportunidad a cualquier persona con visión de hacer crecer su patrimonio permitiendoles acceder a inversiones inmobiliarias con rendimientos de hasta 30% anual
+					%h2 Mayores rendimientos
+					%p Damos la oportunidad a las personas con visión de hacer crecer su patrimonio permitiéndoles acceder a inversiones inmobiliarias con rendimientos promedio en el mercado, los cuales varían entre 9% y 25%
 					.icon
 				.square.down
 			#line1-2v.line_v
@@ -52,7 +62,7 @@
 				%span 2
 				.square
 					%h2 Proceso simple y seguro
-					%p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+					%p TOP FLOOR hace un due dilligence exhaustivo de cada proyecto que te recomendamos. Por medio de TOP FLOOR podrás invertir en los proyectos que más te gusten y generar tu portafolio de inversión inmobiliaria.
 					.icon
 				.square.down
 			#line2-3v.line_v
@@ -62,18 +72,18 @@
 				%span 3
 				.square
 					%h2 Seguimiento Real
-					%p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+					%p Gracias a nuestro sistema, recibirás noticias en tiempo real y actualizaciones sobre los avances de tus inversiones, estés donde estés.
 					.icon
 				.square.down
 	#types.section
 		.center
 			%h3 ¿QUÉ TIPO DE INVERSIÓN ELEGIR?
-			%p.simple Es momento de crear tu portafolio inmobiliario completamente personalizado. 
-			%p.simple En TOP FLOOR te proporcionamos la información que necesitas de cada proyecto inmobiliario: horizonte de tiempo, riesgo/rendimiento y su propuesta de valor particular, para que inviertas en el que mejor se adapte a tus objetivos y necesidades.
+			%p.simple Las inversiones que debes de buscar van de acuerdo a tu perfil, ya que cada inversión tiene un horizonte de tiempo, un riesgo/rendimiento y una propuesta de valor diferente. TOP FLOOR te ofrece toda la información que necesites saber sobre los proyectos inmobiliarios y TU tienes la oportunidad de seleccionar el que más se acople a tus necesidades y gustos. Es hora de crear tu portafolio inmobiliario.
+			%p.simple Es momento de iniciar tu portafolio inmobiliario.
 			.type
 				.text
 					%h2 ENTRADA Y SALIDA
-					.icon
+					.icon.entrada
 					.line
 					.field
 						%p TIR promedio 
@@ -90,18 +100,17 @@
 								.icon
 								Tiempo de vida estimado del proyecto.
 							(?)
-						%h4 5 años
+						%h4 2 - 4 años
 					.show Ver más >
 				.cover
-					.close
 					%h2 ENTRADA Y SALIDA
 					.icon
-					%p Las inversiones que debes de buscar van de acuerdo a tu perfil, ya que cada inversión tiene un horizonte de tiempo, un riesgo/rendimiento y una propuesta de valor diferente.
+					%p Principalmente son desarrollos de vivienda en donde inviertes en el desarrollo, y tus rendimientos van relacionados a la comercialización del mismo. Los rendimientos que se ofrecen en este tipo de proyectos son muy atractivos, y de poca duración, por lo tanto, siempre es lógico reinvertir tu dinero en un nuevo proyecto una vez que haya finalizado tu inversión pasada.
 
 			.type
 				.text
-					%h2 ENTRADA Y SALIDA
-					.icon
+					%h2 CAP
+					.icon.cap
 					.line
 					.field
 						%p TIR promedio 
@@ -118,18 +127,17 @@
 								.icon
 								Tiempo de vida estimado del proyecto.
 							(?)
-						%h4 5 años
+						%h4 3 - 4 años
 					.show Ver más >
 				.cover
-					.close
-					%h2 ENTRADA Y SALIDA
+					%h2 CAP
 					.icon
-					%p Las inversiones que debes de buscar van de acuerdo a tu perfil, ya que cada inversión tiene un horizonte de tiempo, un riesgo/rendimiento y una propuesta de valor diferente.
+					%p Propiedades que se encuentren rentadas en el momento de la compra, y que desde el primer mes reciben retornos los inversionistas.  Son propiedades con una renta por debajo del mercado, con el propósito de remodelar y aumentar los precios de renta, mejorando el cap. del inmueble al momento de venderlo. Este tipo de proyectos son los de menor riesgo, por lo tanto, de menor rendimiento variando entre 8% y 12% mensual.
 
 			.type
 				.text
-					%h2 ENTRADA Y SALIDA
-					.icon
+					%h2 PATRIMONIALES
+					.icon.patrimoniales
 					.line
 					.field
 						%p TIR promedio 
@@ -146,26 +154,24 @@
 								.icon
 								Tiempo de vida estimado del proyecto.
 							(?)
-						%h4 5 años
+						%h4 6 años
 					.show Ver más >
 				.cover
-					.close
-					%h2 ENTRADA Y SALIDA
+					%h2 PATRIMONIALES
 					.icon
-					%p Las inversiones que debes de buscar van de acuerdo a tu perfil, ya que cada inversión tiene un horizonte de tiempo, un riesgo/rendimiento y una propuesta de valor diferente.
+					%p Son proyectos dedicados principalmente al desarrollo de oficinas y de complejos comerciales que se rentan mes con mes para obtener un retorno anual de ¨x¨ porcentaje sobre la inversión y durante la vida útil del edificio. Este tipo de proyectos le permiten al inversionista recibir un flujo mes a mes por el resto de sus vidas o hasta que el inversionista decida vender su posición en el proyecto.
 
 			.type
 				.text
 					%h2 REGENARACIÓN URBANA
-					.icon
+					.icon.regenaracion
 					.line
-					%p TOP FLOOR te ofrece toda la información que necesitas saber sobre los proyectos inmobiliarios y TU tienes la oportunidad de seleccionar el que mas te guste
+					%p Estos proyectos no generan ningún flujo sobre tu inversión, pero eso no significa que no sea una inversión, es decir, el dinero que desees donar para la regeneración urbana.
 					.show Ver más >
 				.cover
-					.close
-					%h2 ENTRADA Y SALIDA
+					%h2 REGENARACIÓN URBANA
 					.icon
-					%p Las inversiones que debes de buscar van de acuerdo a tu perfil, ya que cada inversión tiene un horizonte de tiempo, un riesgo/rendimiento y una propuesta de valor diferente.
+					%p ¿No te gustaría ver tus banquetas limpias, agradables para caminar y bien acabadas? ¿o tus calles bien pavimentadas y bien señaladas y pintadas? ¿o tus parques limpios, bien cuidados e iluminados, en donde puedas pasear con tus hijos o tu mascota? Si estos puntos son importantes para ti, una inversión en regeneración urbana puede ayudarnos mucho para mejorar la calidad de vida de nuestra ciudad.
 			%a.button.black{:href => '/proyectos'}	Ver todos los proyectos
 			.up
 	= partial("footer")

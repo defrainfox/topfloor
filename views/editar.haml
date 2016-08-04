@@ -1,0 +1,64 @@
+= partial("header")
+
+%body.profile
+	#menu
+		.center
+			%a.mini_logo{:href => '/'}
+				%img{:src => '/images/general/menu_logo.svg'}
+			%ul.menu_profile.active
+				%li Mi cuenta
+				%li
+					%a.menu_profile{:href => '/editar'} Editar cuenta
+				%li
+					%a.menu_profile{:href => '/'} Cerrar sesión
+					
+			%a.menu_profile{:href => '/datos'} Datos y documentos
+			%a.menu_profile{:href => '/profile'} Historial de inversiones
+	.header
+		.center
+			.content.name
+				%img{:src => '/images/demos/user.png'}
+				%h2 SAÚL GONZÁLEZ
+				%p saulsaulsaul@gmail.com | +01 (55) 7178118
+			.content.return.inversion
+				%h2 $50,000 MXN
+				%p INVERSION TOTAL
+			.content.return
+				%h2 $100,000 MXN
+				%p RETORNO TOTAL
+	.edit
+		.center
+			.field.right
+				%p Nombre completo
+				%input{:type => 'text', :value => 'SAÚL GONZÁLEZ'}
+			.field.right
+				%p Teléfono
+				%input{:type => 'text', :value => '55-72727374'}
+			.field
+				%p Correo
+				%input{:type => 'text', :value => 'saulhernandez@gmail.com'}
+			.line
+			%span Cambiar contraseña
+			.field.right
+				%p Actual contraseña
+				%input{:type => 'password'}
+			.field.right
+				%p Nueva contraseña
+				%input{:type => 'password'}
+			.field
+				%p Repetir nueva contraseña
+				%input{:type => 'password'}
+			.field
+				%p Identificación oficial
+				%input#file{:type => 'file'}
+				#prevfile IFE
+				%a#fakefile Cambiar imagen
+			%br
+			%a.button.black{:href => '/profile'} Guardar
+	= partial("footer")
+
+
+
+
+
+		

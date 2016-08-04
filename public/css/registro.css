@@ -1,6 +1,7 @@
 .registro .header_page {
   padding: 50px 0;
-  background: #ED1C24; }
+  background: #ED1C24;
+  background-image: linear-gradient(176deg, #ED1C24, #DB1E2A); }
   .registro .header_page h1 {
     text-align: center;
     font-size: 46px;
@@ -26,7 +27,11 @@
     margin: 30px 0 30px 20px;
     text-align: left;
     width: 320px; }
+    .registro form .field a {
+      font-size: 12px;
+      color: #ED1C24; }
     .registro form .field p {
+      display: inline-block;
       font-size: 16px;
       letter-spacing: -0.4px;
       color: rgba(18, 17, 14, 0.8); }
@@ -46,10 +51,28 @@
       outline: none; }
       .registro form .field input:focus {
         border-color: #ED1C24; }
+    .registro form .field #fakefile {
+      display: inline-block;
+      font-size: 14px;
+      color: #ED1C24;
+      text-decoration: underline;
+      margin: 20px 0;
+      cursor: pointer; }
+    .registro form .field #file {
+      display: none; }
+    .registro form .field #prevfile {
+      display: none;
+      border-radius: 5px;
+      background: rgba(239, 239, 239, 0.5);
+      color: rgba(18, 17, 14, 0.4);
+      padding: 10px 20px;
+      border: 1px solid #D4D4D4;
+      margin: 10px 20px 0 0; }
   .registro form .line {
     width: 100%;
     height: 1px;
-    background: #D4D4D4; }
+    background: #D4D4D4;
+    margin-bottom: 30px; }
   .registro form .contract .head {
     overflow: hidden;
     padding: 30px 20px; }
