@@ -15,6 +15,7 @@
 
 	#welcome
 		.cover_video
+			#cover
 			%video{:autoplay => 'autoplay', :loop => 'loop', :type => 'video/mp4', :src => '/videos/cover.mp4'}
 		.cover_welcome
 			.center
@@ -173,9 +174,61 @@
 					.icon
 					%p ¿No te gustaría ver tus banquetas limpias, agradables para caminar y bien acabadas? ¿o tus calles bien pavimentadas y bien señaladas y pintadas? ¿o tus parques limpios, bien cuidados e iluminados, en donde puedas pasear con tus hijos o tu mascota? Si estos puntos son importantes para ti, una inversión en regeneración urbana puede ayudarnos mucho para mejorar la calidad de vida de nuestra ciudad.
 			%a.button.black{:href => '/proyectos'}	Ver todos los proyectos
+			%img#chat{:src => '/images/demos/chat.png'}
+	#complete.section
+		.center
+			%h3 PROYECTOS FINALIZADOS
+			#super_slider_cards
+				#bg_left
+				#bg_right
+				#slider_cards
+					.card
+						%img{:src => '/images/demos/project.png'}
+						.text
+							%h2 TORRE ELISEOS
+							%p Marhnos Inmobiliaria, S.A. de C.V.
+							.field
+								%p TIR 
+								%h4 41.16%
+							.field
+								%p ROI 
+								%h4 3.12
+							.field
+								%p Horizonte de tiempo 
+								%h4 5 años
+					.card
+						%img{:src => '/images/demos/project.png'}
+						.text
+							%h2 TORRE CAMPOS
+							%p Marhnos Inmobiliaria, S.A. de C.V.
+							.field
+								%p TIR 
+								%h4 41.16%
+							.field
+								%p ROI 
+								%h4 3.12
+							.field
+								%p Horizonte de tiempo 
+								%h4 5 años
+					.card
+						%img{:src => '/images/demos/project.png'}
+						.text
+							%h2 TORRE CAMPOS ELISEOS
+							%p Marhnos Inmobiliaria, S.A. de C.V.
+							.field
+								%p TIR 
+								%h4 41.16%
+							.field
+								%p ROI 
+								%h4 3.12
+							.field
+								%p Horizonte de tiempo 
+								%h4 5 años
 			.up
 	= partial("footer")
 
 	%script{:type=>"text/javascript"}
 		var waypoints = $('#featured').waypoint({handler: function(direction) { if(direction=='down'){$('#menu').addClass('fill');$('#menu img').attr('src','/images/general/menu_logo_r.svg'); } else {$('#menu').removeClass('fill');$('#menu img').attr('src','/images/general/menu_logo.svg');}},offset: '50px'});
+	%script{:type=>"text/javascript"}
+		$('#slider_cards').slick({centerMode: true, centerPadding: '100px',variableWidth: true,infinite: true,slidesToShow: 1});
       	

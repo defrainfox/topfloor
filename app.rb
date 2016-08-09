@@ -78,4 +78,12 @@ class TopTloor < Sinatra::Base
 	get '/notifications' do
 		haml :notifications
 	end
+
+	get '/faq' do
+		haml :faq
+	end
+
+	get '/terminos' do
+		haml :terminos
+	end
 end

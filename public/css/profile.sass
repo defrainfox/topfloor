@@ -32,14 +32,16 @@ $gray_low: rgba(239, 239, 239, 0.25)
 		.menu_profile
 			float: right
 			content: "" !important
-			color: #FFF
+			color: rgba(255,255,255,0.8)
 			font-size: 13px
 			letter-spacing: -0.4px
 			padding: 20px
 			&:hover
-				background: #D90D19
+				background: #CB171E
+				color: #FFF
 		.active
-			background: #D90D19
+			font-weight: 500
+			color: #FFF
 		&.notification
 			top: 54px
 		ul
@@ -48,6 +50,8 @@ $gray_low: rgba(239, 239, 239, 0.25)
 			li:first-child
 				padding: 20px 0
 				cursor: default
+			&:hover
+				box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2)
 			&:hover a
 				display: block
 			*
@@ -55,6 +59,11 @@ $gray_low: rgba(239, 239, 239, 0.25)
 				text-align: center
 			a
 				display: none
+				width: 146px
+				padding: 20px 0 !important
+				border-top: 1px solid $red
+				&:hover
+					background: #B01319 !important
 	.header
 		background: $red
 		background-image: linear-gradient(176deg, $red, #DB1E2A)
@@ -96,13 +105,15 @@ $gray_low: rgba(239, 239, 239, 0.25)
 					text-decoration: underline
 		.name
 			left: 0
+			p
+				color: rgba(255,255,255,0.8)
 		.return
 			right: 0
 			text-align: right
 			*
 				float: right
 			p
-				color: #FFF
+				color: rgba(255,255,255,0.8)
 			h2
 				font-size: 30px
 				font-weight: 300
@@ -225,12 +236,18 @@ $gray_low: rgba(239, 239, 239, 0.25)
 				height: 200px
 			&:nth-child(2n)
 				margin-right: 14px
+	#timeline
+		position: relative
+		background: $gray_low
+		padding: 100px 0
+		.cover_text
+			opacity: 1
 	.title
 		font-size: 20px
 		color: $red
 	.timeline
 		position: relative
-		padding: 120px 0 120px 136px
+		padding: 120px 0 120px 0
 		.cover_text
 			opacity: 1
 			margin-top: 260px
@@ -265,6 +282,7 @@ $gray_low: rgba(239, 239, 239, 0.25)
 			width: 70px
 			height: 70px
 			margin: -28px 0 0 -8px
+			position: relative
 			.icon
 				margin: 28px auto 0
 				width: 18px
@@ -275,66 +293,142 @@ $gray_low: rgba(239, 239, 239, 0.25)
 					-webkit-animation: pulsate 1s ease-out
 					-webkit-animation-iteration-count: infinite
 					opacity: 0.0
+			.pointer
+				position: absolute
+				width: 10px
+				height: 10px
+				background: $red
+				left: 50%
+				top: 32px
+				margin-left: -5px
+				border-radius: 100px
 		.step
 			margin-top: -40px
+			margin-left: -10px
 			display: inline-block
 			*
 				display: inline-block
 				font-size: 16px
-				padding: 22px 20px
+				padding: 10px 10px
 				color: $black08
 			span
 				vertical-align: top
-				margin: 0 20px
+				margin: 12px 0 0 0
 				width: 130px
 			p
 				border: 1px solid $gray
 				box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
+			.simple
+				padding: 24px
+			.red
+				color: $red
+		#step3
+			margin-top: -54px
 		.reach
+			&.large
+				width: 540px
+			&.video
+				width: 262px
 			position: relative
 			display: inline-block
-			width: 586px
 			border: 1px solid $gray
-			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26)
+			width: 496px
+			padding: 10px 10px 20px
 			.label
 				position: absolute
 				width: 40px
-				height: 10px
+				height: 5px
 				background: $red
 				padding: 0
 				left: -20px
-				top: 74px
+				top: 50px
 			h2
 				font-size: 16px
 				color: $black08
 			.photos
-				margin: 0 auto
+				width: 100%
+				margin: 20px auto
 				img
 					padding: 0
 					float: left
 					width: 115px
 					height: 83px
 					margin-right: 20px
+			.minivideo
+				margin: 10px 0 10px 62px
+				text-align: center
 			p
 				border: none
 				box-shadow: none
+				line-height: 20px
+				margin-top: 14px
+				font-size: 13px
+			strong
+				font-size: 13px
+				padding: 0
+				font-weight: 500
 			.icon
-				float: right
+				position: absolute
 				width: 20px
 				height: 20px
 				padding: 0
-				background: url(../images/icons/rendimientos.svg) center no-repeat
-				background-size: cover
-				margin-right: 44px
+				right: 20px
+				bottom: 10px
+				&.images
+					background: url(../images/icons/photo.svg) center no-repeat
+					background-size: cover
+				&.time
+					background: url(../images/icons/time.svg) center no-repeat
+					background-size: cover
+				&.play
+					background: url(../images/icons/video.svg) center no-repeat
+					background-size: cover
+			.timer
+				padding: 40px 0
+				*
+					display: inline-block
+					vertical-align: bottom
+				.counter
+					width: 122px
+					padding-bottom: 10px
+					border-bottom: 1px solid $red
+					margin: 0 20px
+					text-align: center
+					*
+						display: inline-block
+						padding: 0
+						margin: 0
+						width: auto
+						color: $red
+						font-size: 16px
+						vertical-align: middle
+					#hour
+						margin-right: -10px
+					#arrows
+						width: 13px
+						height: 26px
+						background: url(../images/icons/arrows.svg) center no-repeat
+						margin: 0 10px
+						cursor: pointer
+				.button
+					width: 140px
+					color: #FFF
+					text-align: center
+					margin: 0
+					cursor: pointer
 		// SPECIAL
 		#line4
-			margin-top: -240px
+			margin-top: -178px
 			height: 400px
 		#line5
 			height: 180px
 		#line6
 			height: 380px
 			margin-top: -240px
+		#line8
+			height: 300px
+			margin-top: -192px
 		#point1
 			margin-top: -62px
 		#point5
@@ -342,8 +436,39 @@ $gray_low: rgba(239, 239, 239, 0.25)
 
 		.green
 			p
+				border-radius: 4px
+				padding: 24px
 				background: #14E06E
 				border: solid 1px #14E06E
+				color: #FFF
+	.extrafooter
+		padding-bottom: 40px
+		* 
+			margin: 0
+		.share
+			float: left
+			margin-top: 12px
+			*
+				display: inline-block
+				vertical-align: middle
+			p
+				font-size: 14px
+				color: $red
+			.icon
+				width: 22px
+				height: 16px
+				background: url(../images/icons/email.svg) center no-repeat
+		.call
+			float: right
+			*
+				display: inline-block
+				vertical-align: middle
+			p
+				font-size: 14px
+				margin-right: 10px
+			.button
+				text-align: center
+
 	.edit
 		text-align: left
 		padding: 100px 0
@@ -423,25 +548,30 @@ $gray_low: rgba(239, 239, 239, 0.25)
 		padding: 60px 0
 		color: $black08
 		text-align: center
+		&:nth-child(2n-1)
+			background: $gray_low
 		.instructions
-			padding: 80px 0 40px
-			#fakefiles
+			padding: 50px 0 30px
+		#fakefiles
+			cursor: pointer
+			text-align: center
+			.icon
 				display: inline-block
-				font-size: 14px
-				color: $red
-				text-decoration: underline
-				margin: 20px 0
-				cursor: pointer
-			#files
-				display: none
-			#prevfiles
-				display: none
-				border-radius: 5px
-				background: rgba(239, 239, 239, 0.5)
-				color: rgba(18, 17, 14, 0.4)
-				padding: 10px 20px
-				border: 1px solid #D4D4D4
-				margin: 10px 20px 0 0
+				vertical-align: bottom
+				width: 15px
+				height: 17px
+				margin-right: 10px
+				background: url(../images/icons/upload.svg) center no-repeat
+		#files
+			display: none
+		#prevfiles
+			display: none
+			border-radius: 5px
+			background: rgba(239, 239, 239, 0.5)
+			color: rgba(18, 17, 14, 0.4)
+			padding: 10px 20px
+			border: 1px solid #D4D4D4
+			margin: 10px 20px 0 0
 		.subtitle
 			font-size: 16px
 			color: $black08
@@ -452,17 +582,18 @@ $gray_low: rgba(239, 239, 239, 0.25)
 			color: $red
 			margin: 40px 0 0 20px
 			height: 250px
+			text-align: left
 			img
 				width: 300px
 				height: 250px
 			.label
-				position: absolute
-				top: 20px
-				left: 0
+				text-align: left
+				display: inline-block
 				font-size: 12px
 				background: $red
 				color: #FFF
-				padding: 6px 20px
+				padding: 6px 10px
+				margin-left: 20px
 			span
 				display: inline-block
 				vertical-align: middle
@@ -474,8 +605,65 @@ $gray_low: rgba(239, 239, 239, 0.25)
 				background: $red
 			.field.nomargin
 				margin-top: 30px
+		.large
+			height: 330px
+			img
+				height: 330px
 		.button
 			margin: 0 auto
+
+.constructor
+	.content
+		width: 100% !important
+		h2
+			width: 100% !important
+		a
+			padding: 10px 0 20px 164px
+			margin: 0 10px
+			font-size: 14px
+			color: #FFF
+	.proyects
+		.title
+			margin-bottom: 50px
+	.online
+		background: $gray_low
+		padding-bottom: 100px
+		h2
+			padding: 60px 0
+		.card
+			width: 570px
+			display: inline-block
+			&:nth-child(1n)
+				margin-right: 22px
+			img
+				width: 179px
+				height: 200px
+			h2
+				padding: 0
+				font-size: 30px
+			.crowdfunding
+				float: left
+				margin: 60px 0 0 0
+				.bar
+					width: 330px
+					height: 20px
+					border: 1px solid $red
+					background: #FFF
+					margin: 6px 0
+					.fill
+						width: 70%
+						height: 100%
+						background: $red
+				.percent, .time
+					float: left
+					width: 110px
+					font-size: 12px
+					color: $black08
+					strong
+						font-weight: bold
+				.time
+					float: right
+					text-align: right
 
 @media all and (max-width: 767px)
 	.profile

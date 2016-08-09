@@ -24,14 +24,16 @@
   .profile #menu .menu_profile {
     float: right;
     content: "" !important;
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 13px;
     letter-spacing: -0.4px;
     padding: 20px; }
     .profile #menu .menu_profile:hover {
-      background: #D90D19; }
+      background: #CB171E;
+      color: #FFF; }
   .profile #menu .active {
-    background: #D90D19; }
+    font-weight: 500;
+    color: #FFF; }
   .profile #menu.notification {
     top: 54px; }
   .profile #menu ul {
@@ -40,13 +42,20 @@
     .profile #menu ul li:first-child {
       padding: 20px 0;
       cursor: default; }
+    .profile #menu ul:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2); }
     .profile #menu ul:hover a {
       display: block; }
     .profile #menu ul * {
       float: none;
       text-align: center; }
     .profile #menu ul a {
-      display: none; }
+      display: none;
+      width: 146px;
+      padding: 20px 0 !important;
+      border-top: 1px solid #ED1C24; }
+      .profile #menu ul a:hover {
+        background: #B01319 !important; }
 .profile .header {
   background: #ED1C24;
   background-image: linear-gradient(176deg, #ED1C24, #DB1E2A); }
@@ -87,13 +96,15 @@
         text-decoration: underline; }
   .profile .header .name {
     left: 0; }
+    .profile .header .name p {
+      color: rgba(255, 255, 255, 0.8); }
   .profile .header .return {
     right: 0;
     text-align: right; }
     .profile .header .return * {
       float: right; }
     .profile .header .return p {
-      color: #FFF; }
+      color: rgba(255, 255, 255, 0.8); }
     .profile .header .return h2 {
       font-size: 30px;
       font-weight: 300; }
@@ -214,12 +225,18 @@
       height: 200px; }
     .profile .other_cards .card:nth-child(2n) {
       margin-right: 14px; }
+.profile #timeline {
+  position: relative;
+  background: rgba(239, 239, 239, 0.25);
+  padding: 100px 0; }
+  .profile #timeline .cover_text {
+    opacity: 1; }
 .profile .title {
   font-size: 20px;
   color: #ED1C24; }
 .profile .timeline {
   position: relative;
-  padding: 120px 0 120px 136px; }
+  padding: 120px 0 120px 0; }
   .profile .timeline .cover_text {
     opacity: 1;
     margin-top: 260px; }
@@ -253,7 +270,8 @@
     vertical-align: top;
     width: 70px;
     height: 70px;
-    margin: -28px 0 0 -8px; }
+    margin: -28px 0 0 -8px;
+    position: relative; }
     .profile .timeline .point .icon {
       margin: 28px auto 0;
       width: 18px;
@@ -264,72 +282,178 @@
         -webkit-animation: pulsate 1s ease-out;
         -webkit-animation-iteration-count: infinite;
         opacity: 0; }
+    .profile .timeline .point .pointer {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #ED1C24;
+      left: 50%;
+      top: 32px;
+      margin-left: -5px;
+      border-radius: 100px; }
   .profile .timeline .step {
     margin-top: -40px;
+    margin-left: -10px;
     display: inline-block; }
     .profile .timeline .step * {
       display: inline-block;
       font-size: 16px;
-      padding: 22px 20px;
+      padding: 10px 10px;
       color: rgba(18, 17, 14, 0.8); }
     .profile .timeline .step span {
       vertical-align: top;
-      margin: 0 20px;
+      margin: 12px 0 0 0;
       width: 130px; }
     .profile .timeline .step p {
       border: 1px solid #D4D4D4;
       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
+    .profile .timeline .step .simple {
+      padding: 24px; }
+    .profile .timeline .step .red {
+      color: #ED1C24; }
+  .profile .timeline #step3 {
+    margin-top: -54px; }
   .profile .timeline .reach {
     position: relative;
     display: inline-block;
-    width: 586px;
     border: 1px solid #D4D4D4;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+    width: 496px;
+    padding: 10px 10px 20px; }
+    .profile .timeline .reach.large {
+      width: 540px; }
+    .profile .timeline .reach.video {
+      width: 262px; }
     .profile .timeline .reach .label {
       position: absolute;
       width: 40px;
-      height: 10px;
+      height: 5px;
       background: #ED1C24;
       padding: 0;
       left: -20px;
-      top: 74px; }
+      top: 50px; }
     .profile .timeline .reach h2 {
       font-size: 16px;
       color: rgba(18, 17, 14, 0.8); }
     .profile .timeline .reach .photos {
-      margin: 0 auto; }
+      width: 100%;
+      margin: 20px auto; }
       .profile .timeline .reach .photos img {
         padding: 0;
         float: left;
         width: 115px;
         height: 83px;
         margin-right: 20px; }
+    .profile .timeline .reach .minivideo {
+      margin: 10px 0 10px 62px;
+      text-align: center; }
     .profile .timeline .reach p {
       border: none;
-      box-shadow: none; }
+      box-shadow: none;
+      line-height: 20px;
+      margin-top: 14px;
+      font-size: 13px; }
+    .profile .timeline .reach strong {
+      font-size: 13px;
+      padding: 0;
+      font-weight: 500; }
     .profile .timeline .reach .icon {
-      float: right;
+      position: absolute;
       width: 20px;
       height: 20px;
       padding: 0;
-      background: url(../images/icons/rendimientos.svg) center no-repeat;
-      background-size: cover;
-      margin-right: 44px; }
+      right: 20px;
+      bottom: 10px; }
+      .profile .timeline .reach .icon.images {
+        background: url(../images/icons/photo.svg) center no-repeat;
+        background-size: cover; }
+      .profile .timeline .reach .icon.time {
+        background: url(../images/icons/time.svg) center no-repeat;
+        background-size: cover; }
+      .profile .timeline .reach .icon.play {
+        background: url(../images/icons/video.svg) center no-repeat;
+        background-size: cover; }
+    .profile .timeline .reach .timer {
+      padding: 40px 0; }
+      .profile .timeline .reach .timer * {
+        display: inline-block;
+        vertical-align: bottom; }
+      .profile .timeline .reach .timer .counter {
+        width: 122px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ED1C24;
+        margin: 0 20px;
+        text-align: center; }
+        .profile .timeline .reach .timer .counter * {
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+          width: auto;
+          color: #ED1C24;
+          font-size: 16px;
+          vertical-align: middle; }
+        .profile .timeline .reach .timer .counter #hour {
+          margin-right: -10px; }
+        .profile .timeline .reach .timer .counter #arrows {
+          width: 13px;
+          height: 26px;
+          background: url(../images/icons/arrows.svg) center no-repeat;
+          margin: 0 10px;
+          cursor: pointer; }
+      .profile .timeline .reach .timer .button {
+        width: 140px;
+        color: #FFF;
+        text-align: center;
+        margin: 0;
+        cursor: pointer; }
   .profile .timeline #line4 {
-    margin-top: -240px;
+    margin-top: -178px;
     height: 400px; }
   .profile .timeline #line5 {
     height: 180px; }
   .profile .timeline #line6 {
     height: 380px;
     margin-top: -240px; }
+  .profile .timeline #line8 {
+    height: 300px;
+    margin-top: -192px; }
   .profile .timeline #point1 {
     margin-top: -62px; }
   .profile .timeline #point5 {
     margin-top: -46px; }
   .profile .timeline .green p {
+    border-radius: 4px;
+    padding: 24px;
     background: #14E06E;
-    border: solid 1px #14E06E; }
+    border: solid 1px #14E06E;
+    color: #FFF; }
+.profile .extrafooter {
+  padding-bottom: 40px; }
+  .profile .extrafooter * {
+    margin: 0; }
+  .profile .extrafooter .share {
+    float: left;
+    margin-top: 12px; }
+    .profile .extrafooter .share * {
+      display: inline-block;
+      vertical-align: middle; }
+    .profile .extrafooter .share p {
+      font-size: 14px;
+      color: #ED1C24; }
+    .profile .extrafooter .share .icon {
+      width: 22px;
+      height: 16px;
+      background: url(../images/icons/email.svg) center no-repeat; }
+  .profile .extrafooter .call {
+    float: right; }
+    .profile .extrafooter .call * {
+      display: inline-block;
+      vertical-align: middle; }
+    .profile .extrafooter .call p {
+      font-size: 14px;
+      margin-right: 10px; }
+    .profile .extrafooter .call .button {
+      text-align: center; }
 .profile .edit {
   text-align: left;
   padding: 100px 0; }
@@ -408,25 +532,30 @@
   padding: 60px 0;
   color: rgba(18, 17, 14, 0.8);
   text-align: center; }
+  .profile .proyect_data:nth-child(2n-1) {
+    background: rgba(239, 239, 239, 0.25); }
   .profile .proyect_data .instructions {
-    padding: 80px 0 40px; }
-    .profile .proyect_data .instructions #fakefiles {
+    padding: 50px 0 30px; }
+  .profile .proyect_data #fakefiles {
+    cursor: pointer;
+    text-align: center; }
+    .profile .proyect_data #fakefiles .icon {
       display: inline-block;
-      font-size: 14px;
-      color: #ED1C24;
-      text-decoration: underline;
-      margin: 20px 0;
-      cursor: pointer; }
-    .profile .proyect_data .instructions #files {
-      display: none; }
-    .profile .proyect_data .instructions #prevfiles {
-      display: none;
-      border-radius: 5px;
-      background: rgba(239, 239, 239, 0.5);
-      color: rgba(18, 17, 14, 0.4);
-      padding: 10px 20px;
-      border: 1px solid #D4D4D4;
-      margin: 10px 20px 0 0; }
+      vertical-align: bottom;
+      width: 15px;
+      height: 17px;
+      margin-right: 10px;
+      background: url(../images/icons/upload.svg) center no-repeat; }
+  .profile .proyect_data #files {
+    display: none; }
+  .profile .proyect_data #prevfiles {
+    display: none;
+    border-radius: 5px;
+    background: rgba(239, 239, 239, 0.5);
+    color: rgba(18, 17, 14, 0.4);
+    padding: 10px 20px;
+    border: 1px solid #D4D4D4;
+    margin: 10px 20px 0 0; }
   .profile .proyect_data .subtitle {
     font-size: 16px;
     color: rgba(18, 17, 14, 0.8);
@@ -436,18 +565,19 @@
     display: inline-block;
     color: #ED1C24;
     margin: 40px 0 0 20px;
-    height: 250px; }
+    height: 250px;
+    text-align: left; }
     .profile .proyect_data .card img {
       width: 300px;
       height: 250px; }
     .profile .proyect_data .card .label {
-      position: absolute;
-      top: 20px;
-      left: 0;
+      text-align: left;
+      display: inline-block;
       font-size: 12px;
       background: #ED1C24;
       color: #FFF;
-      padding: 6px 20px; }
+      padding: 6px 10px;
+      margin-left: 20px; }
     .profile .proyect_data .card span {
       display: inline-block;
       vertical-align: middle; }
@@ -459,8 +589,63 @@
       background: #ED1C24; }
     .profile .proyect_data .card .field.nomargin {
       margin-top: 30px; }
+  .profile .proyect_data .large {
+    height: 330px; }
+    .profile .proyect_data .large img {
+      height: 330px; }
   .profile .proyect_data .button {
     margin: 0 auto; }
+
+.constructor .content {
+  width: 100% !important; }
+  .constructor .content h2 {
+    width: 100% !important; }
+  .constructor .content a {
+    padding: 10px 0 20px 164px;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #FFF; }
+.constructor .proyects .title {
+  margin-bottom: 50px; }
+.constructor .online {
+  background: rgba(239, 239, 239, 0.25);
+  padding-bottom: 100px; }
+  .constructor .online h2 {
+    padding: 60px 0; }
+  .constructor .online .card {
+    width: 570px;
+    display: inline-block; }
+    .constructor .online .card:nth-child(1n) {
+      margin-right: 22px; }
+    .constructor .online .card img {
+      width: 179px;
+      height: 200px; }
+    .constructor .online .card h2 {
+      padding: 0;
+      font-size: 30px; }
+    .constructor .online .card .crowdfunding {
+      float: left;
+      margin: 60px 0 0 0; }
+      .constructor .online .card .crowdfunding .bar {
+        width: 330px;
+        height: 20px;
+        border: 1px solid #ED1C24;
+        background: #FFF;
+        margin: 6px 0; }
+        .constructor .online .card .crowdfunding .bar .fill {
+          width: 70%;
+          height: 100%;
+          background: #ED1C24; }
+      .constructor .online .card .crowdfunding .percent, .constructor .online .card .crowdfunding .time {
+        float: left;
+        width: 110px;
+        font-size: 12px;
+        color: rgba(18, 17, 14, 0.8); }
+        .constructor .online .card .crowdfunding .percent strong, .constructor .online .card .crowdfunding .time strong {
+          font-weight: bold; }
+      .constructor .online .card .crowdfunding .time {
+        float: right;
+        text-align: right; }
 
 @media all and (max-width: 767px) {
   .profile .header div {

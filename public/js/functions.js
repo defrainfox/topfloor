@@ -65,11 +65,13 @@
                 if(direction=='down')
                     $('#types .type').addClass('animated slideInUp').css('display','inline-block').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                         $('#types .button').css('display','inline-block');
+                        $('#chat').fadeIn();
                     });
 
                 else{
                     $('#types .type').removeClass('animated slideInUp').css('display','none');
                     $('#types .button').css('display','none');
+                    $('#chat').fadeOut(0);
                 }
             },
             offset: '50%'
@@ -197,7 +199,7 @@
 
         $('#file').on('change',function(){
             $('#prevfile').css('display','inline-block');
-            $('#fakefile').html('Elejir otra imagen')
+            $('#fakefile').html('Cambiar imagen')
         })
 
         // SUBIR CONTRATOS
@@ -207,7 +209,7 @@
 
         $('#files').on('change',function(){
             $('#prevfiles').css('display','inline-block');
-            $('#fakefiles').html('Elejir otros archivos')
+            $('#fakefiles').html('<div class="icon"></div>Cambiar archivos')
         })
 
 
@@ -298,6 +300,11 @@
         }
 
         // RUN SIMULATOR
+
+        $('#inputinversion').on('keyup',function(){
+            $('#reload').addClass('black').html('Volver a simular').attr('href','/run_simulador');
+        })
+
         if( $('.run_simulador').length == 1){
 
             $('#line1').animate({'backgroundColor':'#ED1C24'},1000,function(){

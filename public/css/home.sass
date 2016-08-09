@@ -34,7 +34,12 @@ body
 	.mini_logo
 		margin-left: 40px
 #menu.fill
+	height: 50px
 	background: rgba(255,255,255,0.9)
+	border-bottom: 1px solid $grayBG
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.05)
+	-moz-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.05)
+	box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.05)
 	.login, .company
 		color: $black08
 
@@ -107,12 +112,18 @@ body
 			font-size: 16px
 			color: $black08
 			letter-spacing: -0.5px
-			-webkit-border-radius: 8px
-			-moz-border-radius: 8px
-			border-radius: 8px
+			-webkit-border-radius: 4px
+			-moz-border-radius: 4px
+			border-radius: 4px
 			outline: none
 			&:focus
 				border-color: $red
+		.error
+			border-color: $red
+			background: rgba(237, 28, 36, 0.2)
+			&::-webkit-input-placeholder
+				color: $red
+
 	.button
 		text-align: center
 		margin: 0
@@ -149,6 +160,12 @@ body
 	.cover_video
 		position: absolute
 		width: 100%
+		#cover
+			position: absolute
+			width: 100%
+			height: 100%
+			background: rgba(0,0,0,0.6)
+			z-index: 10
 		video
 			width: 100%
 	.cover_welcome
@@ -261,9 +278,9 @@ body
 	background: $red
 	padding: 14px 28px
 	margin: 66px auto 0
-	-webkit-border-radius: 8px
-	-moz-border-radius: 8px
-	border-radius: 8px
+	-webkit-border-radius: 4px
+	-moz-border-radius: 4px
+	border-radius: 4px
 	&.black
 		background: $black08
 		&:hover
@@ -297,7 +314,7 @@ body
 			position: absolute
 			font-size: 274px
 			font-weight: 700
-			color: rgba(18, 17, 14, 0.05)
+			color: rgba(18, 17, 14, 0.02)
 			left: -56px
 			top: -110px
 			z-index: 1
@@ -372,6 +389,9 @@ body
 
 #types
 	padding-bottom: 0
+	border: none
+	.center
+		position: relative
 	h3
 		padding-bottom: 60px
 	.simple
@@ -484,12 +504,53 @@ body
 	.button 
 		display: none
 		margin: 100px 0 130px
+	#chat
+		position: absolute
+		right: 0
+		bottom: 40px
+		display: none
+		cursor: pointer
+#complete
+	border: none
+	background: $grayBG
+	padding: 100px 0 0
+	.center
+		position: relative
+		padding-bottom: 100px
+	h3
+		padding-bottom: 80px
+	#super_slider_cards
+		position: relative
+		width: 100%
+		height: 275px
+		#bg_left
+			position: absolute
+			width: 279px
+			height: 275px
+			top: 0
+			left: 0
+			z-index: 10
+			background-image: linear-gradient(to right, #fbfbfb, rgba(251, 251, 251, 0.69), rgba(251, 251, 251, 0.0))
+		#bg_right
+			position: absolute
+			width: 279px
+			height: 275px
+			top: 0
+			right: 0
+			z-index: 10
+			background-image: linear-gradient(to left, #fbfbfb, rgba(251, 251, 251, 0.69), rgba(251, 251, 251, 0.0))
+	#slider_cards
+		.card
+			width: 790px !important 
+			margin: 0 10px
 .up
-	float: right
-	margin: 100px 0 40px
-	width: 23px
-	height: 40px
+	position: absolute
+	bottom: 0
+	right: 0
+	width: 40px
+	height: 45px
 	background: url(../images/icons/up.svg)
+
 	cursor: pointer
 
 @media all and (max-width: 767px)

@@ -16,6 +16,8 @@ $green: #14E06E
 		width: 96%
 	#menu
 		background: transparent
+		box-shadow: none !important
+		border: none !important
 	.data
 		float: left
 		width: 500px
@@ -66,6 +68,12 @@ $green: #14E06E
 					left: -20px
 				h3
 					font-size: 34px
+				input
+					font-size: 34px
+					font-family: "Roboto Mono"
+					width: 346px
+					border: none
+					border-bottom: 1px solid $red
 				p
 					font-size: 16px
 					margin-top: 6px
@@ -128,6 +136,7 @@ $green: #14E06E
 			&.top
 				margin-top: -24px
 		.point
+			position: relative
 			display: inline-block
 			vertical-align: top
 			width: 70px
@@ -143,6 +152,15 @@ $green: #14E06E
 					-webkit-animation: pulsate 1s ease-out
 					-webkit-animation-iteration-count: infinite
 					opacity: 0.0
+			.pointer
+				position: absolute
+				width: 10px
+				height: 10px
+				background: $red
+				left: 50%
+				top: 32px
+				margin-left: -5px
+				border-radius: 100px
 		.step
 			margin-top: -40px
 			display: inline-block

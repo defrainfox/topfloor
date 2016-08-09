@@ -32,7 +32,6 @@
 		.proyect_data
 			.center
 				.card{:href => "/proyecto"}
-					.label Estamos esperando tus contratos
 					%img{:src => '/images/demos/project-copy.png'}
 					.text
 						%h2 TORRE CAMPOS ELISEOS
@@ -46,18 +45,18 @@
 						.field
 							%p Horizonte de tiempo 
 							%h4 5 años
+					.label Estamos esperando tus contratos
 				.instructions
-					%p Sube tus contrados firmados
 					.field
+						%p Sube tus contrados firmados
 						%input#files{:type => "file"}
 						#prevfiles CONTRATOS
-						#fakefiles Sube tus archivos
-				%a.button.black{:href => '/datos'} Subir contratos
-		.line
+				#fakefiles.button.black 
+					.icon
+					Subir documentos
 		.proyect_data
 			.center
 				.card{:href => "/proyecto"}
-					.label Estamos revisando tus documentos
 					%img{:src => '/images/demos/project-copy.png'}
 					.text
 						%h2 TORRE CAMPOS ELISEOS
@@ -71,11 +70,10 @@
 						.field
 							%p Horizonte de tiempo 
 							%h4 5 años
-		.line
+					.label Estamos revisando tus documentos
 		.proyect_data
 			.center
-				.card{:href => "/proyecto"}
-					.label Contratos aprobados
+				.card.large{:href => "/proyecto"}
 					%img{:src => '/images/demos/project-copy.png'}
 					.text
 						%h2 TORRE CAMPOS ELISEOS
@@ -92,6 +90,7 @@
 						.field.nomargin
 							%p Banco:
 							%h4 Bancomer
+					.label Contratos aprobados
 						
 	= partial("footer")
 

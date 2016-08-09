@@ -1,11 +1,59 @@
 = partial("header")
 
-%body.proyectos
-	= partial("menu")
-	.header_page
-		%h1	Marhnos Inmobiliaria, S.A. De C.V.
-	.center
-		%p Fringilla hendrerit placerat tincidunt suspendisse tristique vestibulum fusce a cum ut lobortis facilisis a conubia nam a suscipit nullam cras ornare interdum lacinia.Class neque donec ante integer suscipit scelerisque parturient maecenas neque sociosqu habitasse a etiam duis mi a orci adipiscing mattis suspendisse.Cum adipiscing id consectetur in vehicula ullamcorper tristique adipiscing feugiat vulputate lobortis dui lorem a nam.
+%body.profile.constructor
+	#menu
+		.center
+			%a.mini_logo{:href => '/'}
+				%img{:src => '/images/general/menu_logo.svg'}
+			%a.login{:href => '/login'}
+	.header
+		.center
+			.content.name
+				%img{:src => '/images/demos/constructor.png'}
+				%h2 Marhnos Inmobiliaria
+				%p marhnos@inmobiliaria.com | www.marhnosinmobiliaria.com
+	.proyects
+		.center
+			%h2.title Proyectos finalizados
+			.card
+				%img{:src => '/images/demos/project.png'}
+				.text
+					%h2 TORRE CAMPOS ELISEOS
+					.field
+						%p TIR 
+						%h4 41.16%
+					.field
+						%p ROI 
+						%h4 3.12
+					.field
+						%p Horizonte de tiempo 
+						%h4 5 años
+	
+	.online
+		.center
+			%h2.title Proyectos activos
+			%a.card{:href => '/proyect'}
+				%img{:src => '/images/demos/project.png'}
+				.text
+					%h2 TORRE CAMPOS ELISEOS
+					.crowdfunding
+						.bar
+							.fill
+						.percent 
+							%strong 70% 
+							Completado
+						.time Quedan XX días
+			%a.card{:href => '/proyect'}
+				%img{:src => '/images/demos/project.png'}
+				.text
+					%h2 TORRE CAMPOS ELISEOS
+					.crowdfunding
+						.bar
+							.fill
+						.percent 
+							%strong 70% 
+							Completado
+						.time Quedan XX días
 	= partial("footer")
 
 

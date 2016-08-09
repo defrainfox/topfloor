@@ -9,7 +9,9 @@
   .run_simulador .center {
     width: 96%; }
   .run_simulador #menu {
-    background: transparent; }
+    background: transparent;
+    box-shadow: none !important;
+    border: none !important; }
   .run_simulador .data {
     float: left;
     width: 500px;
@@ -60,6 +62,12 @@
           left: -20px; }
         .run_simulador .data .square .money h3 {
           font-size: 34px; }
+        .run_simulador .data .square .money input {
+          font-size: 34px;
+          font-family: "Roboto Mono";
+          width: 346px;
+          border: none;
+          border-bottom: 1px solid #ED1C24; }
         .run_simulador .data .square .money p {
           font-size: 16px;
           margin-top: 6px;
@@ -121,6 +129,7 @@
       .run_simulador .timeline .line.top {
         margin-top: -24px; }
     .run_simulador .timeline .point {
+      position: relative;
       display: inline-block;
       vertical-align: top;
       width: 70px;
@@ -136,6 +145,15 @@
           -webkit-animation: pulsate 1s ease-out;
           -webkit-animation-iteration-count: infinite;
           opacity: 0; }
+      .run_simulador .timeline .point .pointer {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #ED1C24;
+        left: 50%;
+        top: 32px;
+        margin-left: -5px;
+        border-radius: 100px; }
     .run_simulador .timeline .step {
       margin-top: -40px;
       display: inline-block; }

@@ -13,7 +13,7 @@
 			%p Este es el resumen de inversión para el proyecto Torre Campos Eliseos:
 			.money
 				%span A
-				%h3 $50,000 MXN
+				%input#inputinversion{:type => 'text',:value => '$50,000 MXN'}
 				%p INVERSIÓN
 			.money#moneyb
 				%span B
@@ -22,7 +22,7 @@
 					.currency 0
 					MXN
 				%p RETORNO
-			%a.button{:href => "/registro"}Empieza a Invertir
+			%a.button#reload{:href => "/registro"}Empieza a Invertir
 			.social
 				%p Comparte el resumen de esta inversión:
 				%span
@@ -41,36 +41,50 @@
 		.line#line1
 		.point#point1
 			.icon
+			.pointer
 		.step#step1
 			%span Enero/2016
 			%p Proyecto ejecutivo
 		.line.top#line2
 		.point#point2
 			.icon
+			.pointer
 		.step#step2
 			%span Abril/2016
-			%p Inversión, bancos e inversionistas
+			.reach.large
+				.label
+				%h2 Inicia desarrollo
+				.photos
+					%img{:src => '/images/demos/project.png'}
+					%img{:src => '/images/demos/project.png'}
+					%img{:src => '/images/demos/project.png'}
+					%img{:src => '/images/demos/project.png'}
+				.icon.images
 		.line.top#line3
 		.point#point3
 			.icon
+			.pointer
 		.step#step3
 			%span Julio/2016
 			%p FONDEO COLECTIVO
 		.line.top#line4
 		.point#point4
 			.icon
+			.pointer
 		.step#step4
 			%span Agosto/2016
 			%p Inicia desarrollo
 		.line.top#line5
 		.point#point5
 			.icon
+			.pointer
 		.step#step5
 			%span Agosto/2017
 			%p Preventa
 		.line.top#line6
 		.point#point6
 			.icon
+			.pointer
 		.step#step6
 			%span Agosto/2017
 			%p Termina desarrollo
