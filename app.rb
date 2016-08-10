@@ -39,6 +39,10 @@ class TopTloor < Sinatra::Base
 		haml :run_simulador
 	end
 
+	get '/next_simulador' do
+		haml :next_simulador
+	end
+
 	get '/proyectos' do
 		haml :proyectos
 	end

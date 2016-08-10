@@ -47,4 +47,9 @@
   .single .extrafooter .button {
     margin: 0; }
 
+@media all and (max-width: 767px) {
+  .table li {
+    width: 100% !important;
+    padding: 0 20px; } }
+
 /*# sourceMappingURL=single.css.map */

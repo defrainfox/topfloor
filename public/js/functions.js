@@ -3,53 +3,59 @@
 
         // HOME
 
-		var waypoints = $('#why h3').waypoint({
-  			handler: function(direction) {
-    			if(direction=='down')
-    				$('#step1 span').stop().fadeIn(500,function(){
-                        $('#step1 .line').stop().fadeIn(500);
-                        $('#step1 .square').stop().fadeIn(1000, function(){
-                            $('#line1-2v').stop().animate({'height':200},200,function(){
-                                $('#line1-2h').animate({'width':451},200,function(){
-                                    $('#step2 span').stop().fadeIn(500,function(){
-                                        $('#step2 .line').stop().fadeIn(500);
-                                        $('#step2 .square').stop().fadeIn(1000, function(){
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            // =)
+        }
+        else {
 
-                                            $('#line2-3v').stop().animate({'height':200},200,function(){
-                                                $('#line2-3h').animate({'width':451},200,function(){
-                                                    $('#step3 span').stop().fadeIn(500,function(){
-                                                        $('#step3 .line').stop().fadeIn(500);
-                                                        $('#step3 .square').stop().fadeIn(1000);
-                                                    }); 
+    		var waypoints = $('#why h3').waypoint({
+      			handler: function(direction) {
+        			if(direction=='down')
+        				$('#step1 span').stop().fadeIn(500,function(){
+                            $('#step1 .line').stop().fadeIn(500);
+                            $('#step1 .square').stop().fadeIn(1000, function(){
+                                $('#line1-2v').stop().animate({'height':200},200,function(){
+                                    $('#line1-2h').animate({'width':451},200,function(){
+                                        $('#step2 span').stop().fadeIn(500,function(){
+                                            $('#step2 .line').stop().fadeIn(500);
+                                            $('#step2 .square').stop().fadeIn(1000, function(){
+
+                                                $('#line2-3v').stop().animate({'height':200},200,function(){
+                                                    $('#line2-3h').animate({'width':451},200,function(){
+                                                        $('#step3 span').stop().fadeIn(500,function(){
+                                                            $('#step3 .line').stop().fadeIn(500);
+                                                            $('#step3 .square').stop().fadeIn(1000);
+                                                        }); 
+                                                    });
                                                 });
-                                            });
 
-                                        });
-                                    }); 
+                                            });
+                                        }); 
+                                    });
                                 });
                             });
                         });
-                    });
-                else {
-			        $('#step1 span').stop().fadeOut(0);
-                    $('#step1 .line').stop().fadeOut(0);
-                    $('#step1 .square').stop().fadeOut(0);
-                    $('#line1-2h').stop().animate({'width':0},1000);
-                    $('#line1-2v').animate({'height':0},1000);
-                    $('#step2 span').stop().fadeOut(0);
-                    $('#step2 .line').stop().fadeOut(0);
-                    $('#step2 .square').stop().fadeOut(0);
-                    
-                    $('#step3 span').stop().fadeOut(0);
-                    $('#step3 .line').stop().fadeOut(0);
-                    $('#step3 .square').stop().fadeOut(0);
+                    else {
+    			        $('#step1 span').stop().fadeOut(0);
+                        $('#step1 .line').stop().fadeOut(0);
+                        $('#step1 .square').stop().fadeOut(0);
+                        $('#line1-2h').stop().animate({'width':0},1000);
+                        $('#line1-2v').animate({'height':0},1000);
+                        $('#step2 span').stop().fadeOut(0);
+                        $('#step2 .line').stop().fadeOut(0);
+                        $('#step2 .square').stop().fadeOut(0);
+                        
+                        $('#step3 span').stop().fadeOut(0);
+                        $('#step3 .line').stop().fadeOut(0);
+                        $('#step3 .square').stop().fadeOut(0);
 
-                    $('#line2-3h').stop().animate({'width':0},0);
-                    $('#line2-3v').animate({'height':0},0);
-                }
-  			},
-  			offset: '80%'
-		})
+                        $('#line2-3h').stop().animate({'width':0},0);
+                        $('#line2-3v').animate({'height':0},0);
+                    }
+      			},
+      			offset: '80%'
+    		})
+        }
 
         var waypoints = $('.logo').waypoint({
             handler: function(direction) {
@@ -123,10 +129,12 @@
             if(rel==0){
                 $(this).attr('rel',1);
                 $('.total',this).css('display','block');
+                $('.down', this).css({transform: 'rotate( 180deg )'})
             }
             else{
                 $(this).attr('rel',0);
                 $('.total',this).css('display','none');
+                $('.down', this).css({transform: 'rotate( 0deg )'})
             }
         })
 
@@ -305,73 +313,67 @@
             $('#reload').addClass('black').html('Volver a simular').attr('href','/run_simulador');
         })
 
-        if( $('.run_simulador').length == 1){
+        function animate_point(h,obj,callback){
+            $('.content').animate({
+                height: h,
+                marginTop : [(h/2) * -1]
+            },3000,function(){
+                $('#'+obj).fadeIn().css('display','inline-block');
+                callback();
+            });
+        }
 
-            $('#line1').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                $('#point1 .icon').addClass('active').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                    $('#step1 span').animate({'color':'#ED1C24'},500,function(){
-                        $('#step1 p').animate({'color':'rgba(29, 40, 47, 0.8)'},500,function(){
-                            $('#point1 .icon').removeClass('active');
-                            $('#line2').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                                $('#point2 .icon').addClass('active').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                                    $('#step2 span').animate({'color':'#ED1C24'},500,function(){
-                                        $('#step2 p').animate({'color':'rgba(29, 40, 47, 0.8)'},500,function(){
-                                            $('#point2 .icon').removeClass('active');
-                                            $('#line3').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                                                $('#point3 .icon').addClass('active').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                                                    $('#step3 span').animate({'color':'#ED1C24'},500,function(){
-                                                        $('#step3 p').animate({'backgroundColor':'#14E06E'},500);
-                                                        $('#step3 p').animate({'color':'rgba(29, 40, 47, 0.8)'},500,function(){
-                                                            $('#point3 .icon').removeClass('active');
-                                                            $('#line4').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                                                                $('#point4 .icon').addClass('active').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                                                                    $('#step4 span').animate({'color':'#ED1C24'},500,function(){
-                                                                        $('#step4 p').animate({'color':'rgba(29, 40, 47, 0.8)'},500, function(){
-                                                                            $('#point4 .icon').removeClass('active');
-                                                                            $('#line5').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                                                                                $('#point5 .icon').addClass('active').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                                                                                    $('#step5 span').animate({'color':'#ED1C24'},500,function(){
-                                                                                        $('#step5 p').animate({'color':'rgba(29, 40, 47, 0.8)'},500,function(){
+        if( $('.next_simulador').length == 1) {
+            var w_height = $( window ).height();
+            $('#ficha').css('height',w_height+'px');
+            $('#canvas').css('height',w_height+'px');
+            
+            animate_point(192,'step1',function(){
+                $('#line2').animate({height: 220},3000,function(){
+                    $('#point2').css('display','inline-block');
+                });
+                $('#point1 .icon').removeClass('active');
+                animate_point(590,'step2',function(){
+                    $('#line3').animate({height: 300},3000,function(){
+                        $('#point2 .icon').removeClass('active');
+                        $('#point3').css('display','inline-block');
+                    });
+                    animate_point(1200,'step3',function(){
+                        $('#line4').animate({height: 140},3000,function(){
+                            $('#point3 .icon').removeClass('active');
+                            $('#point4').css('display','inline-block');
+                        });
+                        animate_point(1600,'step4',function(){
+                            $('#line5').animate({height: 140},3000,function(){
+                                $('#point4 .icon').removeClass('active');
+                                $('#point5').css('display','inline-block');
+                            });
+                            animate_point(1800,'step5',function(){
 
-                                                                                            var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-                                                                                            $('#moneyb .currency').animateNumber({
-                                                                                                number: 75000,
-                                                                                                numberStep: comma_separator_number_step
-                                                                                            },2000);
-                                                                                            $('#point5 .icon').removeClass('active');
-                                                                                            $('#line6').animate({'backgroundColor':'#ED1C24'},3000,function(){
-                                                                                                $('#point6 .icon').addClass('active').animate({'backgroundColor':'#ED1C24'},1000,function(){
-                                                                                                    $('#step6 span').animate({'color':'#ED1C24'},500,function(){
-                                                                                                        $('#step6 p').animate({'color':'rgba(29, 40, 47, 0.8)'},500,function(){
+                                var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+                                $('#moneyb .currency').animateNumber({
+                                    number: 75000,
+                                    numberStep: comma_separator_number_step
+                                },2000,function(){
 
-                                                                                                            var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-                                                                                                            $('#moneyb .currency').animateNumber({
-                                                                                                                number: 150000,
-                                                                                                                numberStep: comma_separator_number_step
-                                                                                                            },2000);
-                                                                                                            $('#point6 .icon').removeClass('active');
-                                                                                                        });
-                                                                                                    });
-                                                                                                });
-                                                                                            });
-
-                                                                                        });
-                                                                                    });
-                                                                                });
-                                                                            });
-
-                                                                        });
-                                                                    });
-                                                                });
-                                                            });
-
-                                                        });
-                                                    });
-                                                });
-                                            });
-
-                                        });
+                                    $('#line6').animate({height: 140},3000,function(){
+                                        $('#point5 .icon').removeClass('active');
+                                        $('#point6').css('display','inline-block');
                                     });
+
+                                    animate_point(2000,'step6',function(){
+
+                                        var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+                                        $('#moneyb .currency').animateNumber({
+                                            number: 100000,
+                                            numberStep: comma_separator_number_step
+                                        },2000,function(){
+                                            //$('#point6 .icon').removeClass('active');
+                                        });
+
+
+                                    });
+
                                 });
                             });
 
@@ -379,7 +381,17 @@
                         });
                     });
                 });
+                /*
+                animate_point(400,'step2',function(){
+                    $('#point2 .icon').removeClass('active');
+                    animate_point(800,'step3',function(){
+                        $('#point3 .icon').removeClass('active');
+                        animate_point(1000,'step4');
+                    });
+                });
+                */
             });
+
         }
 
 

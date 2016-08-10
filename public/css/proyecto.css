@@ -6,7 +6,9 @@
   .proyecto .center {
     width: 96%; }
   .proyecto #menu {
-    background: transparent; }
+    background: transparent;
+    border: none !important;
+    box-shadow: none !important; }
   .proyecto .login::after {
     content: "" !important; }
 

@@ -1,0 +1,95 @@
+= partial("header")
+
+%body.next_simulador
+	.cover_text SIMULADOR
+	= partial("menu_red")
+	#ficha
+		.data
+			.text
+				%h1 TORRE CAMPOS ELISEOS
+				%h2 Marhnos Inmobiliaria, S.A. De C.V.
+				%a{:href => "/proyecto"} < Regresar al proyecto
+			.square
+				%h2 Hola, Saúl González:
+				%p Este es el resumen de inversión para el proyecto Torre Campos Eliseos:
+				.money
+					%span A
+					%h3#inputinversion $50,000 MXN
+					#controls
+						.controlup
+						.controldown
+					%p INVERSIÓN
+				.money#moneyb
+					%span B
+					%h3 
+						$
+						.currency 0
+						MXN
+					%p RETORNO
+				%a.button#reload{:href => "/registro"}Empieza a Invertir
+				.social
+					%p Comparte el resumen de esta inversión:
+					%span
+						.icon.email
+						Correo
+					%span
+						.icon.print
+						Imprimir
+					%span
+						.icon.url
+						URL
+	#canvas
+		.content
+			#name
+				.icon
+				%p TORRE CAMPOS ELISIOS
+			.line.top#line1
+			.point#point1
+				.icon.active
+				.pointer
+			.step#step1
+				%span Enero/2016
+				%p Proyecto ejecutivo
+			.line.top#line2
+			.point#point2
+				.icon.active
+				.pointer
+			.step#step2
+				%span Abril/2016
+				.reach.large
+					.label
+					%h2 Inicia desarrollo
+					.photos
+						%img{:src => '/images/demos/project.png'}
+						%img{:src => '/images/demos/project.png'}
+						%img{:src => '/images/demos/project.png'}
+						%img{:src => '/images/demos/project.png'}
+					.icon.images
+			.line#line3
+			.point#point3
+				.icon.active
+				.pointer
+			.step#step3
+				%span Julio/2016
+				%p FONDEO COLECTIVO
+			.line#line4
+			.point#point4
+				.icon.active
+				.pointer
+			.step#step4
+				%span Agosto/2016
+				%p Inicia desarrollo
+			.line#line5
+			.point#point5
+				.icon.active
+				.pointer
+			.step#step5
+				%span Agosto/2017
+				%p Preventa
+			.line#line6
+			.point#point6
+				.icon.active
+				.pointer
+			.step#step6
+				%span Agosto/2017
+				%p Termina desarrollo

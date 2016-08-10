@@ -13,7 +13,10 @@
 			%p Este es el resumen de inversión para el proyecto Torre Campos Eliseos:
 			.money
 				%span A
-				%input#inputinversion{:type => 'text',:value => '$50,000 MXN'}
+				%h3#inputinversion $50,000 MXN
+				#controls
+					.controlup
+					.controldown
 				%p INVERSIÓN
 			.money#moneyb
 				%span B
@@ -35,9 +38,12 @@
 					.icon.url
 					URL
 	.timeline
-		.name
-			.icon
-			%p TORRE CAMPOS ELISIOS
+		.content
+			.canvas
+				.name
+					.icon
+					%p TORRE CAMPOS ELISIOS
+	/	
 		.line#line1
 		.point#point1
 			.icon

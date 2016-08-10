@@ -26,7 +26,7 @@
 .proyectos select {
   display: none;
   width: 200px;
-  margin: 0 auto 20px;
+  margin: 40px auto 20px;
   border: 1px solid #ED1C24;
   padding: 6px 0; }
   .proyectos select option {

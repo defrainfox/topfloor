@@ -545,15 +545,37 @@ body {
   .center {
     width: 100%; }
 
-  #welcome .logo {
-    margin-top: 40px;
-    width: 240px; }
-  #welcome h1 {
-    font-size: 18px;
+  #welcome {
+    height: 400px !important; }
+    #welcome .cover_video {
+      display: none; }
+    #welcome .logo {
+      margin-top: 40px;
+      width: 240px; }
+    #welcome .login, #welcome .company {
+      display: none; }
+    #welcome h1 {
+      font-size: 18px !important;
+      padding: 0 20px; }
+    #welcome iframe {
+      width: 280px;
+      height: 180px; }
+    #welcome .logo_container {
+      width: 290px !important;
+      margin-top: 90px !important;
+      height: 74px !important; }
+
+  .login h1 {
+    width: 100%;
+    margin-top: 100px;
+    font-size: 34px;
     padding: 0 20px; }
-  #welcome iframe {
-    width: 280px;
-    height: 180px; }
+  .login p {
+    padding: 0 20px; }
+  .login .field input {
+    margin-left: 20px; }
+  .login .button {
+    margin-left: 20px; }
 
   .section {
     padding: 40px 0; }
