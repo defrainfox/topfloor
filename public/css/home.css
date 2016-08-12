@@ -25,6 +25,13 @@ body {
     margin-right: 40px; }
   #menu .login::after {
     content: "Iniciar sesión"; }
+  #menu #trigger_menu {
+    display: none;
+    float: right;
+    width: 52px;
+    height: 52px;
+    background: url(../images/icons/menu_w.svg) center no-repeat;
+    cursor: pointer; }
 
 #menu.red .mini_logo {
   margin-left: 40px; }
@@ -38,6 +45,8 @@ body {
   box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.05); }
   #menu.fill .login, #menu.fill .company {
     color: rgba(18, 17, 14, 0.8); }
+  #menu.fill #trigger_menu {
+    background: url(../images/icons/menu.svg) center no-repeat; }
 
 #footer {
   padding: 70px 0 100px; }
@@ -47,6 +56,7 @@ body {
   #footer ul {
     float: right; }
     #footer ul li {
+      margin-bottom: 4px;
       font-size: 12px;
       display: inline-block;
       color: rgba(18, 17, 14, 0.8); }
@@ -65,7 +75,7 @@ body {
         vertical-align: middle;
         width: 35px;
         height: 35px;
-        margin-left: 4px; }
+        margin-left: 6px; }
       #footer ul li .tw {
         background: url(../images/social/tw.svg); }
       #footer ul li .fb {
@@ -568,6 +578,8 @@ body {
 
   #menu .login, #menu .company {
     display: none !important; }
+  #menu #trigger_menu {
+    display: block !important; }
 
   #complete {
     display: none; }

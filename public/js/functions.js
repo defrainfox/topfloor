@@ -246,6 +246,10 @@
             $('#fakefiles').html('<div class="icon"></div>Cambiar archivos')
         })
 
+        $('#prevfiles, #prevfile').on('click',function(){
+            $(this).fadeOut(0);
+        })
+
 
         // DESARROLLADOR
         $('.desarrollador .enter').on('click',function(){

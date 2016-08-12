@@ -30,6 +30,13 @@ body
 		margin-right: 40px
 	.login::after
 		content: "Iniciar sesión"
+	#trigger_menu
+		display: none
+		float: right
+		width: 52px
+		height: 52px
+		background: url(../images/icons/menu_w.svg) center no-repeat
+		cursor: pointer
 #menu.red
 	.mini_logo
 		margin-left: 40px
@@ -42,6 +49,8 @@ body
 	box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.05)
 	.login, .company
 		color: $black08
+	#trigger_menu
+		background: url(../images/icons/menu.svg) center no-repeat
 
 
 #footer
@@ -52,6 +61,7 @@ body
 	ul
 		float: right
 		li
+			margin-bottom: 4px
 			br
 				display: none
 			font-size: 12px
@@ -70,7 +80,7 @@ body
 				vertical-align: middle
 				width: 35px
 				height: 35px
-				margin-left: 4px
+				margin-left: 6px
 			.tw
 				background: url(../images/social/tw.svg)
 			.fb
@@ -580,6 +590,8 @@ body
 	#menu
 		.login, .company
 			display: none !important
+		#trigger_menu
+			display: block !important
 	#complete
 		display: none
 	.cover_text

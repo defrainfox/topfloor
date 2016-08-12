@@ -14,6 +14,7 @@
 					
 			%a.menu_profile.active{:href => '/datos'} Datos y documentos
 			%a.menu_profile{:href => '/profile'} Historial de inversiones
+			#trigger_menu
 	.header
 		.center
 			.content.name
@@ -50,7 +51,10 @@
 					.field
 						%p Sube tus contrados firmados
 						%input#files{:type => "file"}
-						#prevfiles CONTRATOS
+						#prevfiles 
+							.close
+							CONTRATOS
+							
 				#fakefiles.button.black 
 					.icon
 					Subir documentos

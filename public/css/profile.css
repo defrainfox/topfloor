@@ -500,13 +500,22 @@
     .profile .edit .field #file {
       display: none; }
     .profile .edit .field #prevfile {
+      position: relative;
       display: inline-block;
       border-radius: 5px;
       background: rgba(239, 239, 239, 0.5);
       color: rgba(18, 17, 14, 0.4);
-      padding: 10px 20px;
+      padding: 10px 30px 10px 10px;
       border: 1px solid #D4D4D4;
-      margin: 10px 20px 0 0; }
+      margin: 10px 20px 0 0;
+      cursor: pointer; }
+      .profile .edit .field #prevfile .close {
+        position: absolute;
+        top: 8px;
+        right: 4px;
+        width: 20px;
+        height: 20px;
+        background: url(../images/icons/close_.svg) center no-repeat; }
     .profile .edit .field p {
       font-size: 16px;
       letter-spacing: -0.4px;
@@ -567,13 +576,22 @@
   .profile .proyect_data #files {
     display: none; }
   .profile .proyect_data #prevfiles {
+    cursor: pointer;
+    position: relative;
     display: none;
     border-radius: 5px;
     background: rgba(239, 239, 239, 0.5);
     color: rgba(18, 17, 14, 0.4);
-    padding: 10px 20px;
+    padding: 10px 30px 10px 10px;
     border: 1px solid #D4D4D4;
     margin: 30px 20px 0 0; }
+    .profile .proyect_data #prevfiles .close {
+      position: absolute;
+      top: 8px;
+      right: 4px;
+      width: 20px;
+      height: 20px;
+      background: url(../images/icons/close_.svg) center no-repeat; }
   .profile .proyect_data .subtitle {
     font-size: 16px;
     color: rgba(18, 17, 14, 0.8);
@@ -670,7 +688,8 @@
     display: none; }
 
   .profile .title {
-    padding-left: 20px !important; }
+    padding-left: 20px !important;
+    margin-bottom: 20px !important; }
   .profile .pendientes .subtitle {
     padding-left: 20px; }
   .profile .header {

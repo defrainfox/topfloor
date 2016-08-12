@@ -14,6 +14,7 @@
 					
 			%a.menu_profile{:href => '/datos'} Datos y documentos
 			%a.menu_profile{:href => '/profile'} Historial de inversiones
+		#trigger_menu
 	.header
 		.center
 			.content.name
@@ -51,7 +52,9 @@
 			.field
 				%p Identificación oficial
 				%input#file{:type => 'file'}
-				#prevfile IFE
+				#prevfile 
+					.close
+					IFE
 				%a#fakefile Cambiar imagen
 			%br
 			%a.button.black{:href => '/profile'} Guardar
