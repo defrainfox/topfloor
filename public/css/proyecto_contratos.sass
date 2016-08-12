@@ -5,6 +5,9 @@ $white: #FFF
 $green: #14E06E
 
 .proyecto_contratos
+	.cover_text
+		opacity: 1
+		left: 46%
 	#menu
 		.login::after
 			content: "Cerrar sesión" !important
@@ -21,9 +24,16 @@ $green: #14E06E
 			color: #FFF
 			font-size: 14px
 	.content
+		position: relative
+		overflow: hidden
 		padding: 60px auto
 		text-align: center
 		color: $black08
+		.text_red
+			font-size: 20px
+			color: $red
+			line-height: 24px
+			margin-top: 100px
 		.explication
 			.subtitle
 				width: 700px
@@ -92,15 +102,29 @@ $green: #14E06E
 		p
 			font-size: 18px
 		.card
-			margin: 120px auto 0
+			margin: 80px auto 0
 	.contrato
-		padding: 80px 0
+		padding: 0 0 80px
 		p
 			width: 670px
 			margin: 0 auto
 			font-size: 16px
 			letter-spacing: 1px
-
+		.warning
+			padding: 80px 0
+			text-align: center
+			font-size: 14px
+			color: $black08
+			border-bottom: 1px solid $gray
+			background-image: linear-gradient(to bottom, #fefefe, #fbfbfb), linear-gradient(#fbfbfb, #fbfbfb)
+			* 
+				width: auto
+				display: inline-block
+			a
+				cursor: pointer
+				color: $red
+				&:hover
+					text-decoration: underline
 	.instructions
 		padding: 80px 0
 		display: none
@@ -172,3 +196,10 @@ $green: #14E06E
 			width: 350px
 		&.active
 			display: block
+@media all and (max-width: 767px)
+	.proyecto_contratos
+		.contrato, .instructions
+			p
+				width: 90%
+			.subtitle
+				padding-left: 20px

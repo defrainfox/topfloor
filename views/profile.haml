@@ -34,16 +34,18 @@
 	.proyects
 		.center
 			.big_card
-				.card.active
+				.card
 					%img{:src => '/images/demos/project.png'}
 					.text
 						%h2 TORRE CAMPOS ELISEOS
 						%p Marhnos Inmobiliaria, S.A. de C.V.
 						.money
-							%div
+							%div.first
+								%span A
 								%h3 $50,000 MXN
 								%p INVERSIÓN
 							%div
+								%span B
 								%h3 $75,000 MXN
 								%p RETORNO
 						.fields
@@ -119,7 +121,7 @@
 							.counter
 								#hour 10
 								%span :00 
-								#time AM
+								#time HRS
 								#arrows
 									.arrowup
 									.arrowdown

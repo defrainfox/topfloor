@@ -1,225 +1,3 @@
-.run_simulador {
-  position: relative;
-  height: 100%; }
-  .run_simulador .cover_text {
-    display: none;
-    opacity: 1;
-    margin-top: 260px;
-    margin-left: -400px;
-    width: 1328px; }
-  .run_simulador .center {
-    width: 96%; }
-  .run_simulador #menu {
-    background: transparent;
-    box-shadow: none !important;
-    border: none !important; }
-  .run_simulador .data {
-    background: rgba(239, 239, 239, 0.25);
-    border-right: 1px solid #D4D4D4;
-    min-height: 100%;
-    height: 100%;
-    overflow: hidden; }
-    .run_simulador .data .text {
-      margin: 90px 40px 40px;
-      color: rgba(18, 17, 14, 0.8); }
-      .run_simulador .data .text h1 {
-        font-size: 34px; }
-      .run_simulador .data .text h2 {
-        margin-top: 8px; }
-      .run_simulador .data .text a {
-        display: inline-block;
-        margin: 20px 0;
-        color: rgba(18, 17, 14, 0.8);
-        font-size: 14px; }
-        .run_simulador .data .text a:hover {
-          text-decoration: underline; }
-    .run_simulador .data .square {
-      width: 360px;
-      background: #FFF;
-      margin: 0 auto;
-      padding: 40px 32px;
-      border: 1px solid #D4D4D4;
-      color: rgba(18, 17, 14, 0.8); }
-      .run_simulador .data .square h2 {
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 10px; }
-      .run_simulador .data .square a {
-        color: #FFF; }
-      .run_simulador .data .square .button {
-        text-align: center;
-        margin-bottom: 56px; }
-      .run_simulador .data .square .money {
-        position: relative;
-        margin-top: 48px; }
-        .run_simulador .data .square .money span {
-          position: absolute;
-          font-size: 58px;
-          font-weight: bold;
-          color: rgba(18, 17, 14, 0.05);
-          top: -24px;
-          left: -20px; }
-        .run_simulador .data .square .money h3 {
-          display: inline-block;
-          font-size: 34px; }
-        .run_simulador .data .square .money input {
-          font-size: 34px;
-          font-family: "Roboto Mono";
-          width: 346px;
-          border: none; }
-        .run_simulador .data .square .money #inputinversion {
-          border-bottom: 1px solid #ED1C24;
-          padding-bottom: 10px; }
-        .run_simulador .data .square .money p {
-          font-size: 16px;
-          margin-top: 6px;
-          color: #ED1C24; }
-        .run_simulador .data .square .money .currency {
-          display: inline-block;
-          margin: 0 -4px 0 -18px; }
-        .run_simulador .data .square .money #controls {
-          display: inline-block;
-          width: 13px;
-          height: 26px;
-          background: #ED1C24;
-          margin-left: 20px;
-          cursor: pointer; }
-      .run_simulador .data .square .social {
-        border-top: 1px dashed #D4D4D4; }
-        .run_simulador .data .square .social p {
-          font-size: 16px;
-          color: rgba(18, 17, 14, 0.8);
-          margin: 25px 0; }
-        .run_simulador .data .square .social span {
-          color: #ED1C24;
-          margin-right: 30px;
-          font-size: 14px;
-          cursor: pointer; }
-          .run_simulador .data .square .social span .icon {
-            display: inline-block;
-            vertical-align: middle;
-            width: 22px;
-            height: 22px; }
-          .run_simulador .data .square .social span .print {
-            background: url(../images/icons/print.svg) center no-repeat; }
-          .run_simulador .data .square .social span .email {
-            background: url(../images/icons/email.svg) center no-repeat; }
-          .run_simulador .data .square .social span .url {
-            background: url(../images/icons/link.svg) center no-repeat; }
-  .run_simulador .timeline {
-    overflow: hidden;
-    height: 100%; }
-    .run_simulador .timeline .content {
-      position: relative;
-      width: 100%;
-      height: 500px; }
-    .run_simulador .timeline .canvas {
-      position: absolute;
-      width: 600px; }
-    .run_simulador .timeline .name {
-      display: inline-block; }
-      .run_simulador .timeline .name .icon {
-        float: left;
-        width: 24px;
-        height: 24px;
-        border: 2px solid #ED1C24;
-        background: url(../images/icons/clock.svg) center no-repeat; }
-      .run_simulador .timeline .name p {
-        float: left;
-        height: 18px;
-        font-size: 12px;
-        font-weight: 500;
-        color: rgba(18, 17, 14, 0.8);
-        border-top: 2px solid rgba(18, 17, 14, 0.8);
-        border-right: 2px solid rgba(18, 17, 14, 0.8);
-        border-bottom: 2px solid rgba(18, 17, 14, 0.8);
-        padding: 6px 10px 0; }
-    .run_simulador .timeline .line {
-      margin: -2px 0 0 26px;
-      width: 2px;
-      height: 120px;
-      background: #D4D4D4; }
-      .run_simulador .timeline .line.top {
-        margin-top: -24px; }
-    .run_simulador .timeline .point {
-      position: relative;
-      display: inline-block;
-      vertical-align: top;
-      width: 70px;
-      height: 70px;
-      margin: -28px 0 0 -8px; }
-      .run_simulador .timeline .point .icon {
-        margin: 28px auto 0;
-        width: 18px;
-        height: 18px;
-        border-radius: 100px;
-        background: #D4D4D4; }
-        .run_simulador .timeline .point .icon.active {
-          -webkit-animation: pulsate 1s ease-out;
-          -webkit-animation-iteration-count: infinite;
-          opacity: 0; }
-      .run_simulador .timeline .point .pointer {
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background: #ED1C24;
-        left: 50%;
-        top: 32px;
-        margin-left: -5px;
-        border-radius: 100px; }
-    .run_simulador .timeline .step {
-      margin-top: -40px;
-      display: inline-block; }
-      .run_simulador .timeline .step * {
-        display: inline-block;
-        font-size: 16px;
-        padding: 22px 20px;
-        color: #D4D4D4; }
-      .run_simulador .timeline .step span {
-        margin: 0 20px; }
-      .run_simulador .timeline .step p {
-        border: 1px solid #D4D4D4;
-        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
-    .run_simulador .timeline .reach {
-      position: relative;
-      display: inline-block;
-      width: 586px;
-      border: 1px solid #D4D4D4;
-      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
-      .run_simulador .timeline .reach .label {
-        position: absolute;
-        width: 40px;
-        height: 10px;
-        background: #ED1C24;
-        padding: 0;
-        left: -20px;
-        top: 74px; }
-      .run_simulador .timeline .reach h2 {
-        font-size: 16px;
-        color: rgba(18, 17, 14, 0.8); }
-      .run_simulador .timeline .reach .photos {
-        margin: 0 auto; }
-        .run_simulador .timeline .reach .photos img {
-          padding: 0;
-          float: left;
-          width: 115px;
-          height: 83px;
-          margin-right: 20px; }
-      .run_simulador .timeline .reach p {
-        border: none;
-        box-shadow: none; }
-      .run_simulador .timeline .reach .icon {
-        float: right;
-        width: 20px;
-        height: 20px;
-        padding: 0;
-        background: url(../images/icons/rendimientos.svg) center no-repeat;
-        background-size: cover;
-        margin-right: 44px; }
-    .run_simulador .timeline .green p {
-      background: #14E06E;
-      border: solid 1px #14E06E; }
-
 .next_simulador .center {
   width: 96%; }
 .next_simulador #menu {
@@ -297,9 +75,17 @@
           display: inline-block;
           width: 13px;
           height: 26px;
-          background: #ED1C24;
-          margin-left: 20px;
+          margin-left: -28px;
           cursor: pointer; }
+          .next_simulador #ficha .data .square .money #controls .controlup {
+            width: 13px;
+            height: 9px;
+            background: url(../images/icons/arrow_up.svg) center no-repeat;
+            margin-bottom: 10px; }
+          .next_simulador #ficha .data .square .money #controls .controldown {
+            width: 13px;
+            height: 9px;
+            background: url(../images/icons/arrow_down.svg) center no-repeat; }
       .next_simulador #ficha .data .square .social {
         border-top: 1px dashed #D4D4D4; }
         .next_simulador #ficha .data .square .social p {
@@ -325,6 +111,9 @@
 .next_simulador #canvas {
   position: relative;
   overflow: hidden; }
+  .next_simulador #canvas .cover_text {
+    opacity: 1;
+    top: 20%; }
   .next_simulador #canvas .content {
     position: absolute;
     width: 1000px;
@@ -386,9 +175,15 @@
         margin-left: -7px;
         border-radius: 100px; }
     .next_simulador #canvas .content #line1 {
-      height: 122px; }
+      height: 160px; }
+    .next_simulador #canvas .content #line2 {
+      margin-top: -186px; }
     .next_simulador #canvas .content #line3 {
       margin-top: -220px; }
+    .next_simulador #canvas .content #line5 {
+      margin-top: -132px; }
+    .next_simulador #canvas .content #line6 {
+      margin-top: -60px; }
     .next_simulador #canvas .content #point1 {
       display: inline-block; }
     .next_simulador #canvas .content .step {
@@ -397,52 +192,126 @@
       .next_simulador #canvas .content .step * {
         display: inline-block;
         font-size: 16px;
-        padding: 22px 20px;
+        padding: 10px 10px;
         color: rgba(18, 17, 14, 0.8); }
       .next_simulador #canvas .content .step span {
-        margin: 0 20px; }
+        margin: 0 20px;
+        vertical-align: top;
+        margin-top: 30px; }
+      .next_simulador #canvas .content .step .notop {
+        margin-top: 16px; }
       .next_simulador #canvas .content .step p {
         border: 1px solid #D4D4D4;
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
+      .next_simulador #canvas .content .step .simple {
+        border-radius: 6px;
+        padding: 24px; }
     .next_simulador #canvas .content .reach {
+      border-radius: 4px;
       position: relative;
       display: inline-block;
-      vertical-align: top;
-      width: 586px;
       border: 1px solid #D4D4D4;
-      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+      width: 496px;
+      padding: 10px 10px 20px; }
+      .next_simulador #canvas .content .reach.large {
+        width: 540px; }
+      .next_simulador #canvas .content .reach.video {
+        width: 262px; }
       .next_simulador #canvas .content .reach .label {
         position: absolute;
         width: 40px;
-        height: 10px;
+        height: 5px;
         background: #ED1C24;
         padding: 0;
         left: -20px;
-        top: 74px; }
+        top: 50px; }
       .next_simulador #canvas .content .reach h2 {
         font-size: 16px;
         color: rgba(18, 17, 14, 0.8); }
       .next_simulador #canvas .content .reach .photos {
-        margin: 0 auto; }
+        width: 100%;
+        margin: 20px auto; }
         .next_simulador #canvas .content .reach .photos img {
           padding: 0;
           float: left;
           width: 115px;
           height: 83px;
           margin-right: 20px; }
+      .next_simulador #canvas .content .reach .minivideo {
+        margin: 10px 0 10px 62px;
+        text-align: center; }
       .next_simulador #canvas .content .reach p {
         border: none;
-        box-shadow: none; }
+        box-shadow: none;
+        line-height: 20px;
+        margin-top: 14px;
+        font-size: 13px; }
+      .next_simulador #canvas .content .reach strong {
+        font-size: 13px;
+        padding: 0;
+        font-weight: 500; }
       .next_simulador #canvas .content .reach .icon {
-        float: right;
+        position: absolute;
         width: 20px;
         height: 20px;
         padding: 0;
-        background: url(../images/icons/rendimientos.svg) center no-repeat;
-        background-size: cover;
-        margin-right: 44px; }
+        right: 10px;
+        bottom: 10px; }
+        .next_simulador #canvas .content .reach .icon.images {
+          background: url(../images/icons/photo.svg) center no-repeat;
+          background-size: cover; }
+        .next_simulador #canvas .content .reach .icon.time {
+          background: url(../images/icons/time.svg) center no-repeat;
+          background-size: cover; }
+        .next_simulador #canvas .content .reach .icon.play {
+          background: url(../images/icons/video.svg) center no-repeat;
+          background-size: cover; }
+      .next_simulador #canvas .content .reach .timer {
+        padding: 40px 0; }
+        .next_simulador #canvas .content .reach .timer * {
+          display: inline-block;
+          vertical-align: bottom; }
+        .next_simulador #canvas .content .reach .timer .counter {
+          width: 132px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #ED1C24;
+          margin: 0 20px;
+          text-align: center; }
+          .next_simulador #canvas .content .reach .timer .counter * {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            width: auto;
+            color: #ED1C24;
+            font-size: 16px;
+            vertical-align: middle; }
+          .next_simulador #canvas .content .reach .timer .counter #hour {
+            margin-right: -10px; }
+          .next_simulador #canvas .content .reach .timer .counter #arrows {
+            width: 13px;
+            height: 26px;
+            background: url(../images/icons/arrows.svg) center no-repeat;
+            margin: 0 10px;
+            cursor: pointer; }
+        .next_simulador #canvas .content .reach .timer .button {
+          width: 140px;
+          color: #FFF;
+          text-align: center;
+          margin: 0;
+          cursor: pointer; }
     .next_simulador #canvas .content .green p {
+      border-radius: 4px;
       background: #14E06E;
-      border: solid 1px #14E06E; }
+      border: solid 1px #14E06E;
+      color: #FFF !important; }
+
+@media all and (max-width: 767px) {
+  .next_simulador #ficha {
+    width: 100%; }
+  .next_simulador #canvas {
+    float: left;
+    height: 800px !important;
+    width: 100%; } }
 
 /*# sourceMappingURL=run_simulador.css.map */

@@ -7,14 +7,16 @@
 			%a.mini_logo{:href => '/'}
 				%img{:src => '/images/general/menu_logo_r.svg'}
 
-	.center
-		%h1.din-medium QUE BUENO VERTE DE NUEVO
-		%p Inicia sesión para estar al tanto de tus inversiones
-		.field
-			%p Correo
-			%input.error{:type => 'text', :placeholder => 'Debes completar este campo'}
-		.field
-			%p Contraseña
-			%input{:type => 'password', :placeholder => 'Tu contraseña'}
-		%a.button.black{:href => '/profile'} Iniciar sesión
-
+	.content
+		.center
+			%h1.din-medium QUE BUENO VERTE DE NUEVO
+			%p Inicia sesión para estar al tanto de tus inversiones
+			.field
+				%p Correo
+				%input.error{:type => 'text', :placeholder => 'Debes completar este campo'}
+				.erroricon
+			.field
+				%p Contraseña
+				%input{:type => 'password', :placeholder => 'Tu contraseña'}
+			%a.button.black{:href => '/profile'} Iniciar sesión
+	= partial("footer")

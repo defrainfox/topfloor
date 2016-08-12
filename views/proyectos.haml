@@ -1,15 +1,20 @@
 = partial("header")
 
 %body.proyectos
+	#supervideo
+		#closevideo
+		#video
+
 	= partial("menu")
 	.header_page
 		%h1	INVERSIONES DISPONIBLES
 	%ul.submenu
-		%li.active Todos
-		%li Entrada y Salida
-		%li CAP
-		%li Patrimoniales
-		%li Regeneración Urbana
+		.center
+			%li.active Todos
+			%li Entrada y Salida
+			%li CAP
+			%li Patrimoniales
+			%li.urban Regeneración Urbana
 	%select.subselect
 		%option Todos
 		%option Entrada y Salida
@@ -36,9 +41,9 @@
 	.warning
 		.center
 			%p ¿Tienes preguntas de cómo funciona Top Floor? 
-			%a{:href => '/'}Ve nuestro video explicativo 
+			%a#triggervideo Ve nuestro video explicativo 
 			%p o lee las 
-			%a{:href => '/'}preguntas frecuentes.
+			%a{:href => '/faq'}preguntas frecuentes.
 	= partial("footer")
 
 

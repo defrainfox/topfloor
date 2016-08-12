@@ -137,6 +137,9 @@
     height: 20px;
     background: url(../images/icons/next.png) center no-repeat;
     background-size: cover; }
+    .profile .submenu .right:hover {
+      background: url(../images/icons/next_red.png) center no-repeat;
+      background-size: cover; }
 .profile .proyects {
   overflow: hidden;
   margin: 70px 0 70px; }
@@ -149,7 +152,13 @@
   .profile .big_card .card .money {
     padding: 40px 0 0;
     overflow: hidden; }
+    .profile .big_card .card .money .first {
+      padding-left: 18px;
+      margin-right: 40px; }
+      .profile .big_card .card .money .first span {
+        left: 0; }
     .profile .big_card .card .money div {
+      position: relative;
       float: left;
       width: 180px; }
       .profile .big_card .card .money div h3 {
@@ -160,6 +169,13 @@
         color: #ED1C24;
         margin-top: 8px;
         font-size: 12px; }
+      .profile .big_card .card .money div span {
+        position: absolute;
+        font-size: 58px;
+        font-weight: bold;
+        color: rgba(18, 17, 14, 0.05);
+        top: -24px;
+        left: -20px; }
   .profile .big_card .card .next_step {
     padding: 10px 0; }
     .profile .big_card .card .next_step span {
@@ -308,12 +324,14 @@
       border: 1px solid #D4D4D4;
       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15); }
     .profile .timeline .step .simple {
+      border-radius: 4px;
       padding: 24px; }
     .profile .timeline .step .red {
       color: #ED1C24; }
   .profile .timeline #step3 {
     margin-top: -54px; }
   .profile .timeline .reach {
+    border-radius: 4px;
     position: relative;
     display: inline-block;
     border: 1px solid #D4D4D4;
@@ -362,7 +380,7 @@
       width: 20px;
       height: 20px;
       padding: 0;
-      right: 20px;
+      right: 10px;
       bottom: 10px; }
       .profile .timeline .reach .icon.images {
         background: url(../images/icons/photo.svg) center no-repeat;
@@ -379,7 +397,7 @@
         display: inline-block;
         vertical-align: bottom; }
       .profile .timeline .reach .timer .counter {
-        width: 122px;
+        width: 132px;
         padding-bottom: 10px;
         border-bottom: 1px solid #ED1C24;
         margin: 0 20px;
@@ -426,7 +444,7 @@
     padding: 24px;
     background: #14E06E;
     border: solid 1px #14E06E;
-    color: #FFF; }
+    color: #FFF !important; }
 .profile .extrafooter {
   padding-bottom: 40px; }
   .profile .extrafooter * {
@@ -648,30 +666,54 @@
         text-align: right; }
 
 @media all and (max-width: 767px) {
-  .profile .header div {
-    float: none;
-    width: 100%;
-    overflow: hidden; }
-    .profile .header div img {
-      width: 40px;
-      height: 40px;
-      margin-left: 20px; }
-    .profile .header div h2 {
-      width: 240px;
-      font-size: 20px;
-      padding: 0 0 4px 10px; }
-    .profile .header div p {
-      font-size: 14px; }
-    .profile .header div:nth-child(2n) {
+  #menu .menu_profile {
+    display: none; }
+
+  .profile .title {
+    padding-left: 20px !important; }
+  .profile .pendientes .subtitle {
+    padding-left: 20px; }
+  .profile .header {
+    padding-bottom: 40px; }
+    .profile .header div {
       float: none;
-      margin-top: 10px; }
-      .profile .header div:nth-child(2n) * {
-        float: none;
-        text-align: left; }
-      .profile .header div:nth-child(2n) h2 {
-        margin-left: 60px; }
-      .profile .header div:nth-child(2n) p {
-        margin-left: 70px; }
+      width: 100%;
+      overflow: hidden; }
+      .profile .header div img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px; }
+      .profile .header div h2 {
+        width: 240px;
+        font-size: 20px;
+        padding: 0 0 4px 10px; }
+      .profile .header div p {
+        float: none !important;
+        font-size: 14px; }
+    .profile .header .center {
+      height: auto; }
+      .profile .header .center .content {
+        position: relative;
+        text-align: center; }
+        .profile .header .center .content h2 {
+          font-size: 34px;
+          width: 100%;
+          padding: 0; }
+        .profile .header .center .content p {
+          padding: 0;
+          margin: 20px 0; }
+      .profile .header .center .name img {
+        position: relative;
+        display: block;
+        margin: 60px auto 30px;
+        width: 90px;
+        height: 90px;
+        border: 5px solid #FFF; }
+      .profile .header .center .inversion {
+        position: relative !important;
+        right: 0; }
+      .profile .header .center .return {
+        margin: 40px 0; }
   .profile .submenu {
     text-align: center; }
     .profile .submenu li {
@@ -693,6 +735,40 @@
           margin-bottom: 20px; }
           .profile .big_card .card .money div h3 {
             font-size: 20px; }
+  .profile .step {
+    margin-left: 56px !important; }
+    .profile .step span {
+      display: block !important;
+      width: 40px !important;
+      margin: 0 !important; }
+    .profile .step .simple {
+      width: 200px;
+      padding: 24px 10px !important; }
+  .profile .reach {
+    width: 220px !important; }
+    .profile .reach .label, .profile .reach .timer, .profile .reach .photos, .profile .reach .icon, .profile .reach .minivideo {
+      display: none !important; }
+  .profile .line {
+    height: 240px !important; }
+  .profile #line4 {
+    margin-top: -94px !important; }
+  .profile #line5 {
+    margin-top: -88px !important; }
+  .profile #line6 {
+    margin-top: -358px !important;
+    height: 460px !important; }
+  .profile #line7 {
+    margin-top: -104px !important; }
+  .profile .share {
+    display: none !important; }
+  .profile .call {
+    text-align: center !important; }
+    .profile .call p {
+      margin-bottom: 20px !important; }
+  .profile #timeline {
+    padding-top: 40px !important; }
+    .profile #timeline .timeline {
+      padding: 60px 0 !important; }
   .profile .bar {
     width: 100% !important; }
   .profile .other_cards h3 {
@@ -707,7 +783,17 @@
   .profile .time {
     width: 130px !important; }
   .profile .percent {
-    width: 118px !important; } }
+    width: 118px !important; }
+
+  .constructor .online .card {
+    display: block;
+    width: 90%;
+    margin: 20px auto; }
+    .constructor .online .card img {
+      width: 100%; }
+
+  .edit {
+    padding-left: 20px !important; } }
 @media all and (min-width: 768px) and (max-width: 1079px) {
   .card {
     height: auto !important; }

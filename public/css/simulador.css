@@ -9,6 +9,8 @@
   .simulador .header_page a {
     color: #FFF;
     font-size: 14px; }
+.simulador .cover_text {
+  opacity: 1; }
 .simulador .content {
   width: 700px;
   margin: 60px auto;

@@ -14,7 +14,7 @@
 				%p Este es el resumen de inversión para el proyecto Torre Campos Eliseos:
 				.money
 					%span A
-					%h3#inputinversion $50,000 MXN
+					%input#inputinversion{:type => 'text', :value => '$50,000 MXN', :tag => '50000'}
 					#controls
 						.controlup
 						.controldown
@@ -39,6 +39,7 @@
 						.icon.url
 						URL
 	#canvas
+		.cover_text SIMULADOR
 		.content
 			#name
 				.icon
@@ -49,7 +50,11 @@
 				.pointer
 			.step#step1
 				%span Enero/2016
-				%p Proyecto ejecutivo
+				.reach
+					.label
+					%h2 Proyecto Ejecutivo
+					%p Hacemos due dilligence exhaustivo de cada proyecto inmobiliario y seleccionamos sólo los mejores para que inicies tu portafolio.
+					%p Asimismo, trabajamos con bancos nacionales para que tus inversiones sean más seguras.
 			.line.top#line2
 			.point#point2
 				.icon.active
@@ -70,26 +75,31 @@
 				.icon.active
 				.pointer
 			.step#step3
-				%span Julio/2016
-				%p FONDEO COLECTIVO
+				%span.notop Julio/2016
+				%p.simple FONDEO COLECTIVO
 			.line#line4
 			.point#point4
 				.icon.active
 				.pointer
 			.step#step4
 				%span Agosto/2016
-				%p Inicia desarrollo
+				.reach.video
+					.label
+					%h2 Inicia desarollo
+					.minivideo
+						%img.play{:src => '/images/icons/play.svg'}
+					.icon.play
 			.line#line5
 			.point#point5
 				.icon.active
 				.pointer
-			.step#step5
-				%span Agosto/2017
-				%p Preventa
+			.step.green#step5
+				%span.notop Agosto/2017
+				%p.simple Preventa
 			.line#line6
 			.point#point6
 				.icon.active
 				.pointer
 			.step#step6
 				%span Agosto/2017
-				%p Termina desarrollo
+				%p.simple Termina desarrollo

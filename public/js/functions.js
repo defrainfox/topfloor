@@ -182,6 +182,13 @@
             $('#supervideo').fadeIn();
         })
 
+        $('#triggervideo').on('click',function(){
+            $('html,body').animate({ scrollTop: 0 },0);
+            $('body').css('overflow','hidden');
+            player.seekTo(10).playVideo();
+            $('#supervideo').fadeIn();
+        })
+
         $('#closevideo').on('click',function(){
             player.stopVideo();
             $('#supervideo').fadeOut();
@@ -193,6 +200,20 @@
                 $('#supervideo').fadeOut();
             }
         }
+
+        // MENU
+        var waypoints = $('.header_page').waypoint({
+            handler: function(direction) {
+                if(direction=='down'){
+                    $('#menu').addClass('fill');
+                    $('#menu img').attr('src','/images/general/menu_logo_r.svg');
+                } else {
+                    $('#menu').removeClass('fill');
+                    $('#menu img').attr('src','/images/general/menu_logo.svg');
+                }
+            },offset: '-325px'
+        });
+
 
         // NOTIFICATION
             $('#notification .icon').on('click',function(){
@@ -210,6 +231,11 @@
             $('#fakefile').html('Cambiar imagen')
         })
 
+        $('#arrows').on('click',function(){
+            var time = parseInt($('#hour').html());
+            $('#hour').html(time+=1);
+        })
+
         // SUBIR CONTRATOS
         $('#fakefiles').on('click',function(){
             $('#files').click();
@@ -225,6 +251,7 @@
         $('.desarrollador .enter').on('click',function(){
             $(this).fadeOut(0);
             $('.desarrollador form').fadeIn();
+            $('.cover_text').fadeIn().css('z-index','-1');
         })
 
         $('.addproyect').on('click',function(){
@@ -244,6 +271,7 @@
         $('#download').on('click',function(){
             $('.card').fadeOut(0);
             $('.contrato').fadeOut(0);
+            $('.text_red').fadeOut(0);
             $('.instructions').fadeIn();
         })
 
@@ -310,7 +338,8 @@
         // RUN SIMULATOR
 
         $('#inputinversion').on('keyup',function(){
-            $('#reload').addClass('black').html('Volver a simular').attr('href','/run_simulador');
+            $('.content').stop();
+            $('#reload').addClass('black').html('Volver a simular').attr('href','/next_simulador');
         })
 
         function animate_point(h,obj,callback){
@@ -323,17 +352,36 @@
             });
         }
 
+        $('.controlup').on('click',function(){
+            var input = parseInt($('#inputinversion').attr('tag'));
+            input += 10000;
+            input_value = input.toLocaleString();
+            $('#inputinversion').val('$'+input_value+' MXN').attr('tag',input);
+            $('#reload').addClass('black').html('Volver a simular').attr('href','/next_simulador');
+            $('.content').stop();
+        })
+
+        $('.controldown').on('click',function(){
+            var input = parseInt($('#inputinversion').attr('tag'));
+            input -= 10000;
+            input_value = input.toLocaleString();
+            $('#inputinversion').val('$'+input_value+' MXN').attr('tag',input);
+            $('#reload').addClass('black').html('Volver a simular').attr('href','/next_simulador');
+            $('.content').stop();
+        })
+
+        
         if( $('.next_simulador').length == 1) {
             var w_height = $( window ).height();
             $('#ficha').css('height',w_height+'px');
             $('#canvas').css('height',w_height+'px');
             
-            animate_point(192,'step1',function(){
-                $('#line2').animate({height: 220},3000,function(){
+            animate_point(360,'step1',function(){
+                $('#line2').animate({height: 280},3000,function(){
                     $('#point2').css('display','inline-block');
                 });
                 $('#point1 .icon').removeClass('active');
-                animate_point(590,'step2',function(){
+                animate_point(620,'step2',function(){
                     $('#line3').animate({height: 300},3000,function(){
                         $('#point2 .icon').removeClass('active');
                         $('#point3').css('display','inline-block');
@@ -344,7 +392,7 @@
                             $('#point4').css('display','inline-block');
                         });
                         animate_point(1600,'step4',function(){
-                            $('#line5').animate({height: 140},3000,function(){
+                            $('#line5').animate({height: 240},3000,function(){
                                 $('#point4 .icon').removeClass('active');
                                 $('#point5').css('display','inline-block');
                             });

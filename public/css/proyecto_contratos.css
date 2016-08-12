@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.proyecto_contratos .cover_text {
+  opacity: 1;
+  left: 46%; }
 .proyecto_contratos #menu .login::after {
   content: "Cerrar sesión" !important; }
 .proyecto_contratos .header_page {
@@ -14,9 +17,16 @@
     color: #FFF;
     font-size: 14px; }
 .proyecto_contratos .content {
+  position: relative;
+  overflow: hidden;
   padding: 60px auto;
   text-align: center;
   color: rgba(18, 17, 14, 0.8); }
+  .proyecto_contratos .content .text_red {
+    font-size: 20px;
+    color: #ED1C24;
+    line-height: 24px;
+    margin-top: 100px; }
   .proyecto_contratos .content .explication {
     position: relative;
     overflow: hidden;
@@ -85,14 +95,29 @@
   .proyecto_contratos .content p {
     font-size: 18px; }
   .proyecto_contratos .content .card {
-    margin: 120px auto 0; }
+    margin: 80px auto 0; }
 .proyecto_contratos .contrato {
-  padding: 80px 0; }
+  padding: 0 0 80px; }
   .proyecto_contratos .contrato p {
     width: 670px;
     margin: 0 auto;
     font-size: 16px;
     letter-spacing: 1px; }
+  .proyecto_contratos .contrato .warning {
+    padding: 80px 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(18, 17, 14, 0.8);
+    border-bottom: 1px solid #D4D4D4;
+    background-image: linear-gradient(to bottom, #fefefe, #fbfbfb), linear-gradient(#fbfbfb, #fbfbfb); }
+    .proyecto_contratos .contrato .warning * {
+      width: auto;
+      display: inline-block; }
+    .proyecto_contratos .contrato .warning a {
+      cursor: pointer;
+      color: #ED1C24; }
+      .proyecto_contratos .contrato .warning a:hover {
+        text-decoration: underline; }
 .proyecto_contratos .instructions {
   padding: 80px 0;
   display: none; }
@@ -163,5 +188,11 @@
     width: 350px; }
   .proyecto_contratos .instructions.active {
     display: block; }
+
+@media all and (max-width: 767px) {
+  .proyecto_contratos .contrato p, .proyecto_contratos .instructions p {
+    width: 90%; }
+  .proyecto_contratos .contrato .subtitle, .proyecto_contratos .instructions .subtitle {
+    padding-left: 20px; } }
 
 /*# sourceMappingURL=proyecto_contratos.css.map */

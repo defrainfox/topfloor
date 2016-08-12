@@ -7,9 +7,14 @@
     font-size: 46px;
     color: #FFF;
     margin: 82px 0 97px; }
+.desarrollador .cover_text {
+  opacity: 1;
+  display: none;
+  z-index: 0;
+  left: 55%; }
 .desarrollador .content {
+  position: relative;
   padding-bottom: 60px;
-  background-image: linear-gradient(to bottom, #fefefe, #fbfbfb), linear-gradient(#fbfbfb, #fbfbfb);
   border-bottom: 1px solid #D4D4D4; }
 .desarrollador .subtitle {
   text-align: center;
@@ -23,7 +28,7 @@
   text-align: center; }
 .desarrollador form {
   display: none;
-  width: 750px;
+  width: 790px;
   margin: 80px auto;
   padding: 40px 0 0;
   border: 1px solid #D4D4D4;
@@ -145,10 +150,10 @@
         margin-bottom: 0px; }
     form input {
       width: 256px !important; }
-    form a {
-      display: none; }
     form .button {
       float: none !important;
-      margin: 20px auto !important; } }
+      margin: 20px auto !important; }
+    form .contract .check p {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=desarrollador.css.map */

@@ -366,6 +366,8 @@
         display: none; }
     .info .square .extras .extra {
       display: block; }
+      .info .square .extras .extra span {
+        left: 94px !important; }
     .info .square .extras .icon {
       margin-top: 20px;
       margin-bottom: 20px; }

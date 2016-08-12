@@ -1,12 +1,19 @@
 = partial("header")
 
 %body.proyecto_contratos
+	#supervideo
+		#closevideo
+		#video
+		
 	= partial("menu")
 	.header_page
 		%h1	DESCARGA DE CONTRATOS
 		.center
 			%a{:href => '/proyecto'} < Regresar al proyecto
 	.content
+		.cover_text DOCUMENTOS
+		.center
+			%p.text_red Saúl, descarga los contratos de este proyecto, deberás firmalos y enviarlos a TOP FLOOR para continuar con tu inversión.
 		%a.card{:href => "/proyecto"}
 			%img{:src => '/images/demos/project.png'}
 			.text
@@ -22,9 +29,14 @@
 					%p Horizonte de tiempo 
 					%h4 5 años
 		.contrato
-			%p Saúl, descarga los contratos de este proyecto, deberás firmalos y enviarlos a TOP FLOOR para continuar con tu inversión.
 			.center
-				%a#download.button{:href => "http://www.werkspoorkathedraal.nl/user-files/uploads/2015/02/dummy_pdf.pdf", :download => ''} Descargar
+				%a#download.button.black{:href => "http://www.werkspoorkathedraal.nl/user-files/uploads/2015/02/dummy_pdf.pdf", :download => ''} Descargar contratos
+			.warning
+				.center
+					%p ¿Tienes preguntas de cómo funciona Top Floor? 
+					%a#triggervideo Ve nuestro video explicativo 
+					%p o lee las 
+					%a{:href => '/faq'}preguntas frecuentes.
 		.instructions
 			.center
 				%h2.subtitle Tu descarga contiene
