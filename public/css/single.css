@@ -53,9 +53,14 @@
       margin: 0; }
 
 @media all and (max-width: 767px) {
-  .subtitle {
+  .single .header_page {
+    padding: 22px 0; }
+    .single .header_page h1 {
+      font-size: 36px; }
+  .single .subtitle {
     padding: 40px 20px !important;
-    font-size: 16px !important; }
+    font-size: 16px !important;
+    line-height: 20px; }
 
   .table {
     padding: 0px !important; }

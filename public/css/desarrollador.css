@@ -137,26 +137,38 @@
       max-width: 750px; }
 
 @media all and (max-width: 767px) {
-  .registro h1 {
-    font-size: 28px;
-    padding: 0 20px;
+  .desarrollador .cover_text {
+    display: none !important; }
+  .desarrollador h1 {
+    font-size: 36px !important;
+    padding: 0 30px !important;
     margin: 40px 0; }
-
-  form {
+  .desarrollador .subtitle {
+    font-size: 16px;
+    margin: 40px auto;
+    padding: 20px; }
+  .desarrollador .head a {
+    display: none; }
+  .desarrollador .check p {
+    font-size: 10px; }
+  .desarrollador .thanks h2 {
+    font-size: 18px !important;
+    padding: 0 20px; }
+  .desarrollador form {
     width: 100% !important; }
-    form span {
+    .desarrollador form span {
       line-height: 18px; }
-    form .field {
+    .desarrollador form .field {
       width: 84% !important;
       margin: 20px 0 20px 20px; }
-      form .field:nth-child(2n) {
+      .desarrollador form .field:nth-child(2n) {
         margin-bottom: 0px; }
-    form input {
+    .desarrollador form input {
       width: 100% !important; }
-    form .button {
+    .desarrollador form .button {
       float: none !important;
       margin: 20px auto !important; }
-    form .contract .check p {
+    .desarrollador form .contract .check p {
       font-size: 12px; } }
 
 /*# sourceMappingURL=desarrollador.css.map */

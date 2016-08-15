@@ -11,7 +11,6 @@ body {
   width: 100%;
   position: fixed;
   z-index: 100;
-  overflow: hidden;
   top: 0; }
   #menu .mini_logo {
     float: left; }
@@ -25,7 +24,7 @@ body {
     margin-right: 40px; }
   #menu .login::after {
     content: "Iniciar sesión"; }
-  #menu #trigger_menu {
+  #menu #trigger_menu, #menu #trigger_menu_login {
     display: none;
     float: right;
     width: 52px;
@@ -47,6 +46,60 @@ body {
     color: rgba(18, 17, 14, 0.8); }
   #menu.fill #trigger_menu {
     background: url(../images/icons/menu.svg) center no-repeat; }
+
+#menu_mobile {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background: #FFF;
+  z-index: 100; }
+  #menu_mobile .center {
+    overflow: hidden; }
+  #menu_mobile #close_menu_mobile {
+    float: right;
+    width: 52px;
+    height: 52px;
+    background: url(../images/icons/menucloser.svg) center no-repeat;
+    cursor: pointer; }
+  #menu_mobile .log {
+    margin-top: 52px; }
+  #menu_mobile a {
+    display: block;
+    padding: 20px;
+    color: rgba(18, 17, 14, 0.8);
+    text-align: right;
+    font-size: 16px;
+    opacity: 0.8; }
+
+#menu_mobile_login {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background: #ED1C24;
+  z-index: 100; }
+  #menu_mobile_login .center {
+    overflow: hidden; }
+  #menu_mobile_login #close_menu_mobile {
+    float: right;
+    width: 52px;
+    height: 52px;
+    background: url(../images/icons/menuclose.svg) center no-repeat;
+    cursor: pointer; }
+  #menu_mobile_login .log {
+    margin-top: 52px; }
+  #menu_mobile_login .red {
+    background: #CB171E; }
+  #menu_mobile_login a {
+    display: block;
+    padding: 20px;
+    color: #FFF;
+    text-align: right;
+    font-size: 16px;
+    opacity: 0.8; }
 
 #footer {
   padding: 70px 0 100px; }
@@ -82,7 +135,7 @@ body {
         background: url(../images/social/fb.svg); }
 
 #footer.border {
-  border: 1px solid #D4D4D4; }
+  border-top: 1px solid #D4D4D4; }
 
 .login .content {
   padding-bottom: 200px;
@@ -576,9 +629,11 @@ body {
   #viewmore {
     margin-top: 20px !important; }
 
+  #menu .mini_logo {
+    margin: 0 !important; }
   #menu .login, #menu .company {
     display: none !important; }
-  #menu #trigger_menu {
+  #menu #trigger_menu, #menu #trigger_menu_login {
     display: block !important; }
 
   #complete {
@@ -606,14 +661,19 @@ body {
       height: 74px !important; }
 
   .login h1 {
-    width: 100%;
+    width: auto;
     margin-top: 100px;
     font-size: 34px;
     padding: 0 20px; }
   .login p {
     padding: 0 20px; }
-  .login .field input {
-    margin-left: 20px; }
+  .login .field {
+    overflow: hidden; }
+    .login .field input {
+      margin: 20px;
+      width: 86% !important; }
+    .login .field .erroricon {
+      display: none; }
   .login .button {
     margin-left: 20px; }
 
@@ -621,10 +681,11 @@ body {
     padding: 40px 0; }
 
   .card {
-    width: 280px;
-    height: auto; }
+    width: 84%;
+    height: auto;
+    margin: 0 auto; }
     .card img {
-      width: 280px; }
+      width: 100% !important; }
     .card .text {
       padding: 20px; }
       .card .text .field {
@@ -635,10 +696,13 @@ body {
         font-size: 16px; }
 
   .button {
-    margin-top: 40px; }
+    margin-top: 40px;
+    width: 86% !important;
+    padding: 14px 0; }
 
   .home h3 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding: 0 20px; }
 
   #featured h3 {
     margin: 20px 0 !important; }
@@ -650,16 +714,18 @@ body {
   #why .step {
     display: block !important;
     float: none !important;
-    width: 300px;
+    width: 86%;
     height: 304px;
     margin: 40px auto; }
     #why .step span {
       left: -10px;
       top: -70px; }
     #why .step .square {
-      width: 280px;
+      display: block !important;
+      width: 96%;
       height: 280px; }
       #why .step .square h2 {
+        font-size: 20px;
         padding: 20px 60px 20px 24px; }
     #why .step .icon {
       top: 10px;
@@ -674,7 +740,12 @@ body {
   #types .simple {
     padding: 0 20px; }
   #types .type {
+    width: 86%;
     margin: 0 auto 20px !important; }
+    #types .type .text {
+      width: 100%; }
+    #types .type .cover {
+      width: 100%; }
 
   .up {
     margin: 40px 20px 40px 0; }
@@ -693,7 +764,7 @@ body {
         #footer ul li br {
           display: block; }
         #footer ul li .icon {
-          margin-top: 10px; }
+          margin: 10px 10px 10px 0; }
         #footer ul li span {
           display: none; }
         #footer ul li a {

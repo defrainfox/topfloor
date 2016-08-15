@@ -16,7 +16,6 @@ body
 	width: 100%
 	position: fixed
 	z-index: 100
-	overflow: hidden
 	top: 0
 	.mini_logo
 		float: left
@@ -30,7 +29,7 @@ body
 		margin-right: 40px
 	.login::after
 		content: "Iniciar sesión"
-	#trigger_menu
+	#trigger_menu, #trigger_menu_login
 		display: none
 		float: right
 		width: 52px
@@ -52,7 +51,59 @@ body
 	#trigger_menu
 		background: url(../images/icons/menu.svg) center no-repeat
 
+#menu_mobile
+	position: absolute
+	overflow: hidden
+	top: 0
+	width: 100%
+	height: 0
+	background: #FFF
+	z-index: 100
+	.center
+		overflow: hidden
+	#close_menu_mobile
+		float: right
+		width: 52px
+		height: 52px
+		background: url(../images/icons/menucloser.svg) center no-repeat
+		cursor: pointer
+	.log
+		margin-top: 52px
+	a
+		display: block
+		padding: 20px
+		color: $black08
+		text-align: right
+		font-size: 16px
+		opacity: 0.8
 
+#menu_mobile_login
+	position: absolute
+	overflow: hidden
+	top: 0
+	width: 100%
+	height: 0
+	background: $red
+	z-index: 100
+	.center
+		overflow: hidden
+	#close_menu_mobile
+		float: right
+		width: 52px
+		height: 52px
+		background: url(../images/icons/menuclose.svg) center no-repeat
+		cursor: pointer
+	.log
+		margin-top: 52px
+	.red
+		background: #CB171E
+	a
+		display: block
+		padding: 20px
+		color: #FFF
+		text-align: right
+		font-size: 16px
+		opacity: 0.8
 #footer
 	padding: 70px 0 100px
 	.logo
@@ -86,7 +137,7 @@ body
 			.fb
 				background: url(../images/social/fb.svg)
 #footer.border
-	border: 1px solid $gray
+	border-top: 1px solid $gray
 
 .login
 	.content
@@ -588,9 +639,11 @@ body
 	#viewmore
 		margin-top: 20px !important
 	#menu
+		.mini_logo
+			margin: 0 !important
 		.login, .company
 			display: none !important
-		#trigger_menu
+		#trigger_menu, #trigger_menu_login
 			display: block !important
 	#complete
 		display: none
@@ -615,24 +668,29 @@ body
 			height: 74px !important
 	.login 
 		h1
-			width: 100%
+			width: auto
 			margin-top: 100px
 			font-size: 34px
 			padding: 0 20px
 		p
 			padding: 0 20px
 		.field
+			overflow: hidden
 			input
-				margin-left: 20px
+				margin: 20px
+				width: 86% !important
+			.erroricon
+				display: none
 		.button
 			margin-left: 20px
 	.section
 		padding: 40px 0
 	.card
-		width: 280px
+		width: 84%
 		height: auto
+		margin: 0 auto
 		img
-			width: 280px
+			width: 100% !important
 		.text
 			padding: 20px
 			.field
@@ -643,9 +701,12 @@ body
 				font-size: 16px
 	.button
 		margin-top: 40px
+		width: 86% !important
+		padding: 14px 0
 	.home
 		h3
 			font-size: 22px
+			padding: 0 20px
 	#featured
 		h3
 			margin: 20px 0 !important
@@ -658,16 +719,18 @@ body
 		.step
 			display: block !important
 			float: none !important
-			width: 300px
+			width: 86%
 			height: 304px
 			margin: 40px auto
 			span
 				left: -10px
 				top: -70px
 			.square
-				width: 280px
+				display: block !important
+				width: 96%
 				height: 280px
 				h2
+					font-size: 20px
 					padding: 20px 60px 20px 24px
 			.icon
 				top: 10px
@@ -682,7 +745,12 @@ body
 		.simple
 			padding: 0 20px
 		.type
+			width: 86%
 			margin: 0 auto 20px !important
+			.text
+				width: 100%
+			.cover
+				width: 100%
 	.up
 		margin: 40px 20px 40px 0
 
@@ -699,7 +767,7 @@ body
 				br
 					display: block
 				.icon
-					margin-top: 10px
+					margin: 10px 10px 10px 0
 				display: block
 				span
 					display: none

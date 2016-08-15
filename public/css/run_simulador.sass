@@ -314,12 +314,252 @@ $green: #14E06E
 					background: #14E06E
 					border: solid 1px #14E06E
 					color: #FFF !important
+	#timeline
+		display: none
 
 @media all and (max-width: 767px)
 	.next_simulador 
 		#ficha
 			width: 100%
+			.data
+				padding-bottom: 40px
+				.text
+					margin: 90px 20px 40px
+					h2
+						margin-bottom: 20px
+				.square
+					width: 76% !important
+					padding: 40px 20px
+					.money
+						span
+							left: -10px
+						input
+							width: 94%
+							font-size: 26px
+						h3
+							font-size: 26px
+					.button
+						width: 98% !important
+					.social
+						span
+							display: inline-block
+							margin-bottom: 10px
 		#canvas
-			float: left
-			height: 800px !important
-			width: 100%
+			display: none
+		#timeline
+			display: block
+			position: relative
+			padding: 100px 0
+			.cover_text
+				opacity: 1
+			.title
+				font-size: 20px
+				color: $red
+			.timeline
+				position: relative
+				padding: 120px 0 120px 0
+				.cover_text
+					opacity: 1
+					margin-top: 260px
+				.name
+					display: inline-block
+					.icon
+						float: left
+						width: 24px
+						height: 24px
+						border: 2px solid $red
+						background: url(../images/icons/clock.svg) center no-repeat
+					p
+						float: left
+						height: 18px
+						font-size: 12px
+						font-weight: 500
+						color: $black08
+						border-top: 2px solid $black08
+						border-right: 2px solid $black08
+						border-bottom: 2px solid $black08
+						padding: 6px 10px 0
+				.line
+					margin: -2px 0 0 26px
+					width: 2px
+					height: 120px
+					background: $red
+					&.top
+						margin-top: -24px
+				.point
+					display: inline-block
+					vertical-align: top
+					width: 70px
+					height: 70px
+					margin: -28px 0 0 -8px
+					position: relative
+					.icon
+						margin: 28px auto 0
+						width: 18px
+						height: 18px
+						border-radius: 100px
+						background: $red
+						&.active
+							-webkit-animation: pulsate 1s ease-out
+							-webkit-animation-iteration-count: infinite
+							opacity: 0.0
+					.pointer
+						position: absolute
+						width: 10px
+						height: 10px
+						background: $red
+						left: 50%
+						top: 32px
+						margin-left: -5px
+						border-radius: 100px
+				.step
+					margin-top: -40px
+					margin-left: 56px
+					display: inline-block
+					*
+						display: inline-block
+						font-size: 16px
+						padding: 10px 10px
+						color: $black08
+					span
+						display: block !important
+						width: 40px !important
+						margin: 0 !important
+					p
+						border: 1px solid $gray
+						box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15)
+					.simple
+						border-radius: 4px
+						width: 200px
+						padding: 24px 10px !important
+					.red
+						color: $red
+					.reach
+						width: 220px !important
+					.label, .timer, .photos, .icon, .minivideo
+						display: none !important
+				.line
+					height: 240px !important
+				#step3
+					margin-top: -54px
+				.reach
+					&.large
+						width: 220px
+					&.video
+						width: 262px
+					border-radius: 4px
+					position: relative
+					display: inline-block
+					border: 1px solid $gray
+					box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26)
+					width: 496px
+					padding: 10px 10px 20px
+					.label
+						position: absolute
+						width: 40px
+						height: 5px
+						background: $red
+						padding: 0
+						left: -20px
+						top: 50px
+					h2
+						font-size: 16px
+						color: $black08
+					.photos
+						width: 100%
+						margin: 20px auto
+						img
+							padding: 0
+							float: left
+							width: 115px
+							height: 83px
+							margin-right: 20px
+					.minivideo
+						margin: 10px 0 10px 62px
+						text-align: center
+					p
+						border: none
+						box-shadow: none
+						line-height: 20px
+						margin-top: 14px
+						font-size: 13px
+					strong
+						font-size: 13px
+						padding: 0
+						font-weight: 500
+					.icon
+						position: absolute
+						width: 20px
+						height: 20px
+						padding: 0
+						right: 10px
+						bottom: 10px
+						&.images
+							background: url(../images/icons/photo.svg) center no-repeat
+							background-size: cover
+						&.time
+							background: url(../images/icons/time.svg) center no-repeat
+							background-size: cover
+						&.play
+							background: url(../images/icons/video.svg) center no-repeat
+							background-size: cover
+					.timer
+						padding: 40px 0
+						*
+							display: inline-block
+							vertical-align: bottom
+						.counter
+							width: 132px
+							padding-bottom: 10px
+							border-bottom: 1px solid $red
+							margin: 0 20px
+							text-align: center
+							*
+								display: inline-block
+								padding: 0
+								margin: 0
+								width: auto
+								color: $red
+								font-size: 16px
+								vertical-align: middle
+							#hour
+								margin-right: -10px
+							#arrows
+								width: 13px
+								height: 26px
+								background: url(../images/icons/arrows.svg) center no-repeat
+								margin: 0 10px
+								cursor: pointer
+						.button
+							width: 140px
+							color: #FFF
+							text-align: center
+							margin: 0
+							cursor: pointer
+				// SPECIAL
+				#line4
+					margin-top: -88px
+					height: 400px
+				#line5
+					height: 180px
+					margin-top: -90px
+				#line6
+					height: 500px !important
+					margin-top: -360px
+				#line7
+					margin-top: -106px
+				#line8
+					height: 300px
+					margin-top: -192px
+				#point1
+					margin-top: -62px
+				#point5
+					margin-top: -46px
+
+				.green
+					p
+						border-radius: 4px
+						padding: 24px
+						background: #14E06E
+						border: solid 1px #14E06E
+						color: #FFF !important

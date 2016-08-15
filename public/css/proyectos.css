@@ -67,7 +67,7 @@
 
 @media all and (max-width: 767px) {
   .proyectos h1 {
-    font-size: 28px;
+    font-size: 36px !important;
     padding: 0 20px;
     margin: 40px 0; }
   .proyectos .submenu {
@@ -78,11 +78,11 @@
     padding: 20px 0; }
     .proyectos .cards .card {
       display: block;
-      width: 280px;
+      width: 86%;
       height: auto;
-      margin: 0 auto 20px !important; }
+      margin: 0 auto 40px !important; }
       .proyectos .cards .card img {
-        width: 280px; }
+        width: 100%; }
       .proyectos .cards .card .text {
         padding: 20px; }
         .proyectos .cards .card .text .field {
@@ -90,7 +90,11 @@
         .proyectos .cards .card .text h2 {
           font-size: 22px; }
         .proyectos .cards .card .text p {
-          font-size: 16px; } }
+          font-size: 16px; }
+  .proyectos .warning {
+    padding: 0 20px 80px; }
+    .proyectos .warning * {
+      line-height: 20px; } }
 @media all and (min-width: 768px) and (max-width: 1079px) {
   .proyectos .submenu li {
     margin: 0 10px; }

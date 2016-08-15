@@ -34,6 +34,8 @@ $green: #14E06E
 			color: $red
 			line-height: 24px
 			margin-top: 100px
+			max-width: 760px
+			margin: 100px auto 0
 		.explication
 			.subtitle
 				width: 700px
@@ -104,7 +106,7 @@ $green: #14E06E
 		.card
 			margin: 80px auto 0
 	.contrato
-		padding: 0 0 80px
+		padding: 0
 		p
 			width: 670px
 			margin: 0 auto
@@ -150,16 +152,18 @@ $green: #14E06E
 			font-size: 20px
 			text-align: left
 			margin-bottom: 80px
+			color: $red
 		.pack
-			text-align: center
 			width: 100%
 			margin-bottom: 80px
+			text-align: left
 			div
 				vertical-align: top
 				display: inline-block
-				width: 300px
-				padding: 0 20px
+				width: 350px
+				padding-right: 40px
 				h2
+					color: $red
 					text-align: left
 					font-size: 16px
 					height: 40px
@@ -198,8 +202,22 @@ $green: #14E06E
 			display: block
 @media all and (max-width: 767px)
 	.proyecto_contratos
+		.header_page
+			h1
+				font-size: 36px
+		.content
+			.text_red
+				margin-top: 40px
+				padding: 0 20px
+				font-size: 16px !important
+			.card
+				margin-top: 40px
 		.contrato, .instructions
 			p
 				width: 90%
 			.subtitle
 				padding-left: 20px
+		.warning
+			padding: 80px 20px !important
+			*
+				line-height: 18px !important

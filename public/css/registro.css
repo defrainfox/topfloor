@@ -119,22 +119,27 @@
 
 @media all and (max-width: 767px) {
   .registro h1 {
-    font-size: 28px;
-    padding: 0 20px;
-    margin: 40px 0; }
-
-  form {
-    width: 100% !important; }
-    form span {
+    font-size: 36px !important;
+    padding: 0 30px !important; }
+  .registro form {
+    width: 100% !important;
+    margin: 0 auto !important; }
+    .registro form span {
       line-height: 18px; }
-    form .field {
-      margin: 20px 0 20px 20px; }
-      form .field:nth-child(2n) {
+    .registro form .field {
+      display: block;
+      margin: 20px auto !important;
+      width: 86% !important; }
+      .registro form .field:nth-child(2n) {
         margin-bottom: 0px; }
-    form input {
-      width: 256px !important; }
-    form .button {
+    .registro form input {
+      width: 92% !important; }
+    .registro form .button {
       float: none !important;
-      margin: 20px auto !important; } }
+      margin: 20px auto !important; }
+  .registro .contract .head a {
+    display: none; }
+  .registro .contract .check p {
+    font-size: 10px !important; } }
 
 /*# sourceMappingURL=registro.css.map */
