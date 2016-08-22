@@ -36,9 +36,11 @@ body
 		height: 52px
 		background: url(../images/icons/menu_w.svg) center no-repeat
 		cursor: pointer
+	&.bg
+		background: rgba(228, 29, 39, 0.4)
 #menu.red
 	.mini_logo
-		margin-left: 40px
+		margin-left: 20px
 #menu.fill
 	height: 50px
 	background: rgba(255,255,255,0.9)
@@ -76,6 +78,8 @@ body
 		text-align: right
 		font-size: 16px
 		opacity: 0.8
+		&:hover
+			background: #EFEFEF
 
 #menu_mobile_login
 	position: absolute
@@ -104,6 +108,8 @@ body
 		text-align: right
 		font-size: 16px
 		opacity: 0.8
+		&:hover
+			background: #CB171E
 #footer
 	padding: 70px 0 100px
 	.logo
@@ -674,13 +680,20 @@ body
 			padding: 0 20px
 		p
 			padding: 0 20px
+		#footer
+			p
+				padding: 0
 		.field
 			overflow: hidden
+			width: 94%
+			margin: 10px 0
 			input
 				margin: 20px
 				width: 86% !important
 			.erroricon
 				display: none
+		.content
+			padding-bottom: 60px
 		.button
 			margin-left: 20px
 	.section
@@ -774,28 +787,3 @@ body
 				a
 					display: block
 					margin-bottom: 10px
-		
-			
-
-@media all and (min-width: 768px) and (max-width:1079px)
-	.center
-		width: 720px
-	.card
-		width: 720px
-		.text
-			h2
-				font-size: 30px
-	#why
-		padding-bottom: 0px
-		.step
-			float: none !important
-			margin: 80px auto 160px
-	#types
-		.type
-			margin: 0 20px 40px !important
-
-//@media all and (min-width: 1080px) and (max-width:1279px)
-
-
-
-

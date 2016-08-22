@@ -28,16 +28,27 @@
         .next_simulador #ficha .data .text a:hover {
           text-decoration: underline; }
     .next_simulador #ficha .data .square {
+      position: relative;
       width: 360px;
       background: #FFF;
       margin: 0 auto;
       padding: 40px 32px;
       border: 1px solid #D4D4D4;
       color: rgba(18, 17, 14, 0.8); }
+      .next_simulador #ficha .data .square .label {
+        top: 20px;
+        left: 0;
+        position: absolute;
+        width: 156px;
+        padding: 10px 0;
+        background: #12110E;
+        font-size: 14px;
+        color: #FFF;
+        text-align: center; }
       .next_simulador #ficha .data .square h2 {
         font-size: 18px;
         font-weight: 500;
-        margin-bottom: 10px; }
+        margin: 50px 0 10px; }
       .next_simulador #ficha .data .square a {
         color: #FFF; }
       .next_simulador #ficha .data .square .button {
@@ -310,7 +321,8 @@
 
 @media all and (max-width: 767px) {
   .next_simulador #ficha {
-    width: 100%; }
+    width: 100%;
+    float: none; }
     .next_simulador #ficha .data {
       padding-bottom: 40px; }
       .next_simulador #ficha .data .text {
@@ -342,7 +354,8 @@
       opacity: 1; }
     .next_simulador #timeline .title {
       font-size: 20px;
-      color: #ED1C24; }
+      color: #ED1C24;
+      margin-left: 20px; }
     .next_simulador #timeline .timeline {
       position: relative;
       padding: 120px 0 120px 0; }

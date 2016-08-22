@@ -16,7 +16,7 @@
     left: 55%; }
   .desarrollador .content {
     position: relative;
-    padding-bottom: 60px;
+    padding: 80px 0 160px;
     border-bottom: 1px solid #D4D4D4; }
   .desarrollador .subtitle {
     text-align: center;
@@ -59,9 +59,9 @@
         font-size: 16px;
         color: rgba(18, 17, 14, 0.8);
         letter-spacing: -0.5px;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        border-radius: 8px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
         outline: none; }
         .desarrollador form .field input:focus {
           border-color: #ED1C24; }
@@ -83,7 +83,8 @@
         width: 22px;
         height: 22px;
         background: #ED1C24;
-        vertical-align: middle; }
+        vertical-align: middle;
+        background: url(../images/icons/add.svg) center no-repeat; }
     .desarrollador form .contract .head {
       overflow: hidden;
       padding: 30px 20px; }
@@ -119,6 +120,10 @@
         width: 20px;
         height: 20px;
         border: 1px solid #D4D4D4; }
+        .desarrollador form .contract .check .icon.active {
+          border-color: transparent;
+          background: url(../images/icons/check.svg) center no-repeat;
+          background-size: cover; }
     .desarrollador form .button {
       width: 180px !important;
       text-align: center;
@@ -137,6 +142,10 @@
       max-width: 750px; }
 
 @media all and (max-width: 767px) {
+  .desarrollador .content {
+    padding-bottom: 80px !important; }
+  .desarrollador .header_page {
+    padding: 20px 0; }
   .desarrollador .cover_text {
     display: none !important; }
   .desarrollador h1 {
@@ -145,8 +154,8 @@
     margin: 40px 0; }
   .desarrollador .subtitle {
     font-size: 16px;
-    margin: 40px auto;
-    padding: 20px; }
+    margin: 0 auto 20px;
+    padding: 0 20px 20px; }
   .desarrollador .head a {
     display: none; }
   .desarrollador .check p {
@@ -155,7 +164,11 @@
     font-size: 18px !important;
     padding: 0 20px; }
   .desarrollador form {
-    width: 100% !important; }
+    width: 100% !important;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 0; }
     .desarrollador form span {
       line-height: 18px; }
     .desarrollador form .field {
@@ -167,7 +180,8 @@
       width: 100% !important; }
     .desarrollador form .button {
       float: none !important;
-      margin: 20px auto !important; }
+      margin: 20px auto !important;
+      width: 86% !important; }
     .desarrollador form .contract .check p {
       font-size: 12px; } }
 

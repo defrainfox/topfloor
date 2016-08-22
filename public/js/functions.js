@@ -100,6 +100,15 @@
 
         $('.submenu li').on('click',function(){
             $('.submenu li').removeClass('active');
+            console.log($(this).hasClass('urban'));
+            if( $(this).hasClass('urban') ){
+                $('.text_reg').fadeIn(0);
+                $('.rege').fadeOut(0);
+            }
+            else{
+                $('.text_reg').fadeOut();
+                $('.rege').fadeIn(0);
+            }
             $(this).addClass('active');
             $('.cards').fadeOut(200,function(){
                 $('.cards').fadeIn();
@@ -282,6 +291,10 @@
             $('.addproyect').attr('rel',3);
         })
 
+        $('.check').on('click',function(){
+            $('.icon', this).addClass('active');
+        })
+
         $('#addnew').on('click',function(){
             $('.desarrollador .content').fadeOut(0);
             $('.thanks').fadeIn();
@@ -391,10 +404,10 @@
         })
 
         
-        if( $('.next_simulador').length == 1 && $( window ).height()>768 ){
+        if( $('.next_simulador').length == 1 && $( window ).width()>768 ){
             var w_height = $( window ).height();
-            $('#ficha').css('height',w_height+'px');
-            $('#canvas').css('height',w_height+'px');
+            $('#ficha').css('height','1000px');
+            $('#canvas').css('height','1000px');
             
             animate_point(360,'step1',function(){
                 $('#line2').animate({height: 280},3000,function(){

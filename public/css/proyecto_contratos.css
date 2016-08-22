@@ -194,8 +194,12 @@
     display: block; }
 
 @media all and (max-width: 767px) {
-  .proyecto_contratos .header_page h1 {
-    font-size: 36px; }
+  .proyecto_contratos .header_page {
+    padding: 20px 0; }
+    .proyecto_contratos .header_page h1 {
+      font-size: 36px; }
+    .proyecto_contratos .header_page a {
+      margin-left: 20px; }
   .proyecto_contratos .content .text_red {
     margin-top: 40px;
     padding: 0 20px;
@@ -206,6 +210,10 @@
     width: 90%; }
   .proyecto_contratos .contrato .subtitle, .proyecto_contratos .instructions .subtitle {
     padding-left: 20px; }
+  .proyecto_contratos .contrato .pack div, .proyecto_contratos .instructions .pack div {
+    padding: 0 0 40px; }
+    .proyecto_contratos .contrato .pack div *, .proyecto_contratos .instructions .pack div * {
+      padding: 0 20px; }
   .proyecto_contratos .warning {
     padding: 80px 20px !important; }
     .proyecto_contratos .warning * {

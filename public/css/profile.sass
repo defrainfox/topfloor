@@ -148,10 +148,10 @@ $gray_low: rgba(239, 239, 239, 0.25)
 			right: 0
 			width: 20px
 			height: 20px
-			background: url(../images/icons/next.png) center no-repeat
+			background: url(../images/icons/arrow_next_b.svg) center no-repeat
 			background-size: cover
 			&:hover
-				background: url(../images/icons/next_red.png) center no-repeat
+				background: url(../images/icons/arrow_next.svg) center no-repeat
 				background-size: cover
 	.proyects
 		overflow: hidden
@@ -549,9 +549,9 @@ $gray_low: rgba(239, 239, 239, 0.25)
 				font-size: 16px
 				color: $black08
 				letter-spacing: -0.5px
-				-webkit-border-radius: 8px
-				-moz-border-radius: 8px
-				border-radius: 8px
+				-webkit-border-radius: 4px
+				-moz-border-radius: 4px
+				border-radius: 4px
 				outline: none
 				&:focus
 					border-color: $red
@@ -747,6 +747,7 @@ $gray_low: rgba(239, 239, 239, 0.25)
 				.content
 					position: relative
 					text-align: center
+					width: 100% !important
 					h2
 						font-size: 34px
 						width: 100%
@@ -793,6 +794,11 @@ $gray_low: rgba(239, 239, 239, 0.25)
 						margin-bottom: 20px
 						h3
 							font-size: 20px
+						span
+							left: 0
+					.first
+						margin-left: 0
+						padding-left: 0
 		.step
 			margin-left: 56px !important
 			span
@@ -804,6 +810,7 @@ $gray_low: rgba(239, 239, 239, 0.25)
 				padding: 24px 10px !important
 		.reach
 			width: 220px !important
+			padding-bottom: 10px !important
 			.label, .timer, .photos, .icon, .minivideo
 				display: none !important
 		.line

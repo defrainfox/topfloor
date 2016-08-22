@@ -139,10 +139,10 @@
     right: 0;
     width: 20px;
     height: 20px;
-    background: url(../images/icons/next.png) center no-repeat;
+    background: url(../images/icons/arrow_next_b.svg) center no-repeat;
     background-size: cover; }
     .profile .submenu .right:hover {
-      background: url(../images/icons/next_red.png) center no-repeat;
+      background: url(../images/icons/arrow_next.svg) center no-repeat;
       background-size: cover; }
 .profile .proyects {
   overflow: hidden;
@@ -534,9 +534,9 @@
       font-size: 16px;
       color: rgba(18, 17, 14, 0.8);
       letter-spacing: -0.5px;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      border-radius: 8px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
       outline: none; }
       .profile .edit .field input:focus {
         border-color: #ED1C24; }
@@ -727,7 +727,8 @@
       height: auto; }
       .profile .header .center .content {
         position: relative;
-        text-align: center; }
+        text-align: center;
+        width: 100% !important; }
         .profile .header .center .content h2 {
           font-size: 34px;
           width: 100%;
@@ -773,6 +774,11 @@
           margin-bottom: 20px; }
           .profile .big_card .card .money div h3 {
             font-size: 20px; }
+          .profile .big_card .card .money div span {
+            left: 0; }
+        .profile .big_card .card .money .first {
+          margin-left: 0;
+          padding-left: 0; }
   .profile .step {
     margin-left: 56px !important; }
     .profile .step span {
@@ -783,7 +789,8 @@
       width: 200px;
       padding: 24px 10px !important; }
   .profile .reach {
-    width: 220px !important; }
+    width: 220px !important;
+    padding-bottom: 10px !important; }
     .profile .reach .label, .profile .reach .timer, .profile .reach .photos, .profile .reach .icon, .profile .reach .minivideo {
       display: none !important; }
   .profile .line {

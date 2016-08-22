@@ -21,7 +21,7 @@ $green: #14E06E
 	position: relative
 	overflow: hidden
 	height: 100%
-	min-height: 100%
+	min-height: 1000px
 	background: url(../images/demos/project_full.png) center right no-repeat
 	background-size: cover
 	color: #FFF
@@ -112,7 +112,7 @@ $green: #14E06E
 .map
 	color: #FFF
 	.gmap
-		width: 94%
+		width: 92%
 		height: 561px
 		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
 		filter: $gray
@@ -140,9 +140,7 @@ $green: #14E06E
 		color: $red
 		z-index: 101
 	.social
-		position: absolute
-		left: 10px
-		bottom: 10px
+		margin-left: 40px
 		color: #FFF
 		p
 			font-size: 12px
@@ -179,7 +177,7 @@ $green: #14E06E
 	height: 100%
 	width: 500px
 	overflow-y: auto
-	min-height: 100%
+	min-height: 1000px
 	background: #EFEFEF
 	color: $black08
 	padding: 0 40px
@@ -219,6 +217,9 @@ $green: #14E06E
 		display: none
 		padding: 0 25px
 		margin-bottom: 30px
+		padding-top: 20px
+		&.subline
+			border-top: 1px dashed #D4D4D4
 		p
 			font-size: 14px
 			margin-top: 6px
@@ -325,16 +326,21 @@ $green: #14E06E
 @media all and (max-width: 767px)
 	.proyecto
 		min-height: 300px
+		.center
+			width: 100%
 	.gallery
 		width: 100%
 		height: auto !important
 		min-height: auto
 		overflow: hidden
 		.cover
-			padding: 40px 0
+			padding: 0
 			.text
-				padding: 0 20px 40px
+				width: auto
+				padding: 40px 20px 40px
 				position: relative
+				.label
+					display: none
 				h1
 					font-size: 30px
 					margin-top: 60px
@@ -348,9 +354,10 @@ $green: #14E06E
 					display: block
 					padding: 60px 0
 					float: none
-					text-align: center
-					> p
-						display: none
+					text-align: left
+					p
+						display: block
+						margin-bottom: 10px
 		.gmap
 			width: 80%
 			height: 300px
@@ -364,7 +371,7 @@ $green: #14E06E
 		width: 100%
 		height: auto
 		padding: 0 0 40px
-		top: 600px
+		top: 650px
 		h3
 			margin: 80px 20px 0
 			font-size: 26px
@@ -372,10 +379,14 @@ $green: #14E06E
 			font-size: 22px
 			margin: 0 20px
 		.square
+			border-left: none
+			border-right: none
 			.head
-				padding: 10px
+				padding: 10px 10px 20px
 				.icon
 					display: none
+				h2
+					padding-top: 10px
 			.extras
 				.extra
 					display: block
@@ -392,60 +403,4 @@ $green: #14E06E
 
 			.button
 				width: 140px
-				font-size: 12px
-@media all and (min-width: 768px) and (max-width:1079px)
-	.proyecto
-		min-height: 300px
-	.gallery
-		width: 100%
-		height: auto
-		min-height: auto
-		overflow: hidden
-		.cover
-			padding: 40px 0
-			.text
-				position: relative
-				h1
-					font-size: 30px
-					margin-top: 60px
-				h2
-					font-size: 18px
-				.line
-					width: 200px
-				.selectors
-					display: none
-	.info
-		position: absolute
-		height: auto
-		padding: 0 0 40px
-		top: 500px
-		width: 100%
-		h3
-			margin: 50px 20px 0
-		h4
-			margin: 0 20px
-		.crowdfunding
-			margin: 0 50px
-		.square
-			.head
-				padding: 10px
-				.icon
-					display: none
-			.extras
-				.extra
-					display: block
-				.icon
-					margin-top: 20px
-					margin-bottom: 20px
-			.details
-				.detail
-					display: block
-					margin: 0 auto 20px
-					width: 180px
-
-			.button
-				width: 140px
-				font-size: 12px
-
-
-
+				font-size: 14px

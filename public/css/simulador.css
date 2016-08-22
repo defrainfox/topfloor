@@ -86,26 +86,28 @@
       margin-left: 20px; }
 
 @media all and (max-width: 767px) {
-  .header_page a {
-    margin-left: 20px; }
-
-  .content {
+  .simulador .header_page {
+    padding: 20px 0; }
+    .simulador .header_page a {
+      margin-left: 20px; }
+  .simulador .content {
     width: 100% !important; }
-
-  form .center {
+    .simulador .content h2, .simulador .content p {
+      padding: 0 20px !important; }
+  .simulador form .center {
     width: 100% !important; }
-    form .center .field {
+    .simulador form .center .field {
       margin: 30px 0 !important;
-      width: 90%;
+      width: 90% !important;
       margin: 0 auto; }
-      form .center .field * {
-        margin-left: 20px; }
-
-  #money * {
-    font-size: 35px !important; }
-
-  .bar {
-    width: 90%;
+      .simulador form .center .field input {
+        width: 92% !important; }
+    .simulador form .center .button {
+      margin-left: 0 !important; }
+  .simulador #money * {
+    font-size: 30px !important; }
+  .simulador .bar {
+    width: 80%;
     margin: 0 auto; } }
 
 /*# sourceMappingURL=simulador.css.map */

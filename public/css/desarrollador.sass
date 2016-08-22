@@ -22,7 +22,7 @@ $green: #14E06E
 		left: 55%
 	.content
 		position: relative
-		padding-bottom: 60px
+		padding: 80px 0 160px
 		border-bottom: 1px solid $gray
 	.subtitle
 		text-align: center
@@ -65,9 +65,9 @@ $green: #14E06E
 				font-size: 16px
 				color: $black08
 				letter-spacing: -0.5px
-				-webkit-border-radius: 8px
-				-moz-border-radius: 8px
-				border-radius: 8px
+				-webkit-border-radius: 4px
+				-moz-border-radius: 4px
+				border-radius: 4px
 				outline: none
 				&:focus
 					border-color: $red
@@ -91,7 +91,7 @@ $green: #14E06E
 				height: 22px
 				background: $red
 				vertical-align: middle
-
+				background: url(../images/icons/add.svg) center no-repeat
 		.contract
 			.head
 				overflow: hidden
@@ -129,6 +129,10 @@ $green: #14E06E
 					width: 20px
 					height: 20px
 					border: 1px solid $gray
+					&.active
+						border-color: transparent
+						background: url(../images/icons/check.svg) center no-repeat
+						background-size: cover
 		.button
 			width: 180px !important
 			text-align: center
@@ -149,6 +153,10 @@ $green: #14E06E
 
 @media all and (max-width: 767px)
 	.desarrollador
+		.content
+			padding-bottom: 80px !important
+		.header_page
+			padding: 20px 0
 		.cover_text
 			display: none !important
 		h1
@@ -157,8 +165,8 @@ $green: #14E06E
 			margin: 40px 0
 		.subtitle
 			font-size: 16px
-			margin: 40px auto
-			padding: 20px
+			margin: 0 auto 20px
+			padding: 0 20px 20px
 		.head
 			a
 				display: none
@@ -171,6 +179,10 @@ $green: #14E06E
 				padding: 0 20px
 		form
 			width: 100% !important
+			border-left: none
+			border-right: none
+			border-bottom: none
+			margin-bottom: 0
 			span
 				line-height: 18px
 			.field
@@ -183,6 +195,7 @@ $green: #14E06E
 			.button
 				float: none !important
 				margin: 20px auto !important
+				width: 86% !important
 			.contract
 				.check
 					p

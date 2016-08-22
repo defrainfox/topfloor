@@ -35,16 +35,27 @@ $green: #14E06E
 					&:hover
 						text-decoration: underline
 			.square
+				position: relative
 				width: 360px
 				background: #FFF
 				margin: 0 auto
 				padding: 40px 32px
 				border: 1px solid $gray
 				color: $black08
+				.label
+					top: 20px
+					left: 0
+					position: absolute
+					width: 156px
+					padding: 10px 0
+					background: #12110E
+					font-size: 14px
+					color: #FFF
+					text-align: center
 				h2
 					font-size: 18px
 					font-weight: 500
-					margin-bottom: 10px
+					margin: 50px 0 10px
 				a
 					color: #FFF
 				.button
@@ -321,6 +332,7 @@ $green: #14E06E
 	.next_simulador 
 		#ficha
 			width: 100%
+			float: none
 			.data
 				padding-bottom: 40px
 				.text
@@ -355,6 +367,7 @@ $green: #14E06E
 			.title
 				font-size: 20px
 				color: $red
+				margin-left: 20px
 			.timeline
 				position: relative
 				padding: 120px 0 120px 0

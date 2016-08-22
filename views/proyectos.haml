@@ -23,8 +23,24 @@
 		%option Regeneración Urbana
 	.cards
 		.center
-			- 4.times do
+			.text_reg Aquí explicamos la diferencia entre los proyectos de Regeneración urbana y los demás tipos de inversión.
+			- 2.times do
 				%a.card{:href => "/proyecto"}
+					%img{:src => '/images/demos/project-copy.png'}
+					.text
+						%h2 TORRE CAMPOS ELISEOS
+						%p Marhnos Inmobiliaria, S.A. de C.V.
+						.field
+							%p TIR 
+							%h4 41.16%
+						.field
+							%p ROI 
+							%h4 3.12
+						.field
+							%p Horizonte de tiempo 
+							%h4 5 años
+			- 2.times do
+				%a.card.rege{:href => "/proyecto"}
 					%img{:src => '/images/demos/project-copy.png'}
 					.text
 						%h2 TORRE CAMPOS ELISEOS

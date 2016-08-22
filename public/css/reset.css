@@ -80,3 +80,19 @@ src:url("fonts/DINNextRoundedLTPro-Light.otf");
     50% {opacity: 1.0;}
     100% {-webkit-transform: scale(2.6, 2.6); opacity: 0;}
 }
+
+::-webkit-input-placeholder {
+   color: rgba(200, 200, 200, 0.6);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(200, 200, 200, 0.6);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(200, 200, 200, 0.6);  
+}
+
+:-ms-input-placeholder {  
+   color: rgba(200, 200, 200, 0.6);  
+}

@@ -31,9 +31,11 @@ body {
     height: 52px;
     background: url(../images/icons/menu_w.svg) center no-repeat;
     cursor: pointer; }
+  #menu.bg {
+    background: rgba(228, 29, 39, 0.4); }
 
 #menu.red .mini_logo {
-  margin-left: 40px; }
+  margin-left: 20px; }
 
 #menu.fill {
   height: 50px;
@@ -72,6 +74,8 @@ body {
     text-align: right;
     font-size: 16px;
     opacity: 0.8; }
+    #menu_mobile a:hover {
+      background: #EFEFEF; }
 
 #menu_mobile_login {
   position: absolute;
@@ -100,6 +104,8 @@ body {
     text-align: right;
     font-size: 16px;
     opacity: 0.8; }
+    #menu_mobile_login a:hover {
+      background: #CB171E; }
 
 #footer {
   padding: 70px 0 100px; }
@@ -667,13 +673,19 @@ body {
     padding: 0 20px; }
   .login p {
     padding: 0 20px; }
+  .login #footer p {
+    padding: 0; }
   .login .field {
-    overflow: hidden; }
+    overflow: hidden;
+    width: 94%;
+    margin: 10px 0; }
     .login .field input {
       margin: 20px;
       width: 86% !important; }
     .login .field .erroricon {
       display: none; }
+  .login .content {
+    padding-bottom: 60px; }
   .login .button {
     margin-left: 20px; }
 
@@ -770,22 +782,5 @@ body {
         #footer ul li a {
           display: block;
           margin-bottom: 10px; } }
-@media all and (min-width: 768px) and (max-width: 1079px) {
-  .center {
-    width: 720px; }
-
-  .card {
-    width: 720px; }
-    .card .text h2 {
-      font-size: 30px; }
-
-  #why {
-    padding-bottom: 0px; }
-    #why .step {
-      float: none !important;
-      margin: 80px auto 160px; }
-
-  #types .type {
-    margin: 0 20px 40px !important; } }
 
 /*# sourceMappingURL=home.css.map */

@@ -40,6 +40,15 @@
     text-align: center; }
 .proyectos .cards {
   padding: 60px 0; }
+  .proyectos .cards .text_reg {
+    display: none;
+    font-size: 20px;
+    color: #ED1C24;
+    padding-bottom: 80px;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 28px; }
   .proyectos .cards .card {
     display: inline-block;
     width: 586px;
@@ -66,6 +75,8 @@
       text-decoration: underline; }
 
 @media all and (max-width: 767px) {
+  .proyectos .header_page {
+    padding: 20px 0; }
   .proyectos h1 {
     font-size: 36px !important;
     padding: 0 20px;
@@ -95,11 +106,5 @@
     padding: 0 20px 80px; }
     .proyectos .warning * {
       line-height: 20px; } }
-@media all and (min-width: 768px) and (max-width: 1079px) {
-  .proyectos .submenu li {
-    margin: 0 10px; }
-  .proyectos .cards .card {
-    display: block;
-    margin: 0 auto 20px !important; } }
 
 /*# sourceMappingURL=proyectos.css.map */
