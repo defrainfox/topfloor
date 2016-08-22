@@ -123,6 +123,11 @@
 .proyecto_contratos .instructions {
   padding: 80px 0;
   display: none; }
+  .proyecto_contratos .instructions a {
+    display: block;
+    color: #ED1C24;
+    margin: 60px auto;
+    text-decoration: underline; }
   .proyecto_contratos .instructions #fakefiles {
     display: inline-block;
     font-size: 14px;

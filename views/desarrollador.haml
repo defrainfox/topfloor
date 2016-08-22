@@ -3,16 +3,16 @@
 %body.desarrollador
 	= partial("menu")
 	.header_page
-		%h1	REGÍSTRATE EN TOP FLOOR
+		%h1	BIENVENIDO A TOP FLOOR
 	.content
 		.cover_text REGISTRO
 		.center
-			%h2.subtitle Registrarte en TOP FLOOR te da beneficios en este copy explicamos por que el desarrollador se debe registrar y los beneficios que obtiene.
-			.enter.button{:href => '/proyectos'} Registrarse
+			%h2.subtitle Obtener inversión para tus proyectos es más fácil en TOP FLOOR. Llega más rápido a las metas necesarias para arrancar y mantener tus proyectos inmobiliarios a través de una plataforma confiable y fácil de usar.
+			.enter.button{:href => '/proyectos'} Únete a TOP FLOOR
 			%form
 				%span Completa los campos para crear tu cuenta:
 				.field
-					%p Nombre de la Empresa
+					%p Nombre de la empresa
 					%input{:type => "text", :placeholder => "Razón social"}
 				.field
 					%p Nombre del contacto
@@ -27,10 +27,10 @@
 					.line
 					%span Registra uno o varios de tus proyectos.
 					.field
-						%p Nombre del Proyecto
+						%p Nombre del proyecto
 						%input{:type => "text", :placeholder => "Torre Campos Eliseos"}
 					.field
-						%p Tiempo
+						%p Duración
 						%input{:type => "text", :placeholder => "XX AÑOS"}
 					.field
 						%p ROI
@@ -38,10 +38,10 @@
 				.proyect#proyect2
 					.line
 					.field
-						%p Nombre del Proyecto
+						%p Nombre del proyecto
 						%input{:type => "text", :placeholder => "Torre Campos Eliseos"}
 					.field
-						%p Tiempo
+						%p Duración
 						%input{:type => "text", :placeholder => "XX AÑOS"}
 					.field
 						%p ROI
@@ -49,10 +49,10 @@
 				.proyect#proyect3
 					.line
 					.field
-						%p Nombre del Proyecto
+						%p Nombre del proyecto
 						%input{:type => "text", :placeholder => "Torre Campos Eliseos"}
 					.field
-						%p Tiempo
+						%p Duración
 						%input{:type => "text", :placeholder => "XX AÑOS"}
 					.field
 						%p ROI
@@ -78,10 +78,10 @@
 						.icon
 						%p Acepto los términos y condiciones
 				.line
-				#addnew.button.black{:href => '/profile'} Crear cuenta
+				#addnew.button.black{:href => '/profile'} Crear mi cuenta
 	.thanks
-		%h2 Gracias por crear tu cuenta, en breve nos pondremos en contacto contigo, mientras tanto puedes ver nuestos proyectos activos.
-		%a.button{:href => '/proyectos'} Ver todos los proyectos
+		%h2 Tu cuenta fue creada con éxito. En breve te contactaremos para finalizar el proceso de alta de tu proyecto.
+		%a{:href => '/proyectos'} Ver otros proyectos
 
 	= partial("footer")
 

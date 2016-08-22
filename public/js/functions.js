@@ -372,7 +372,7 @@
 
         $('#inputinversion').on('keyup',function(){
             $('.content').stop();
-            $('#reload').addClass('black').html('Volver a simular').attr('href','/next_simulador');
+            $('#reload').addClass('black').html('Calcular mi retorno').attr('href','/next_simulador');
         })
 
         function animate_point(h,obj,callback){
@@ -390,7 +390,7 @@
             input += 10000;
             input_value = input.toLocaleString();
             $('#inputinversion').val('$'+input_value+' MXN').attr('tag',input);
-            $('#reload').addClass('black').html('Volver a simular').attr('href','/next_simulador');
+            $('#reload').addClass('black').html('Calcular mi retorno').attr('href','/next_simulador');
             $('.content').stop();
         })
 
@@ -399,7 +399,7 @@
             input -= 10000;
             input_value = input.toLocaleString();
             $('#inputinversion').val('$'+input_value+' MXN').attr('tag',input);
-            $('#reload').addClass('black').html('Volver a simular').attr('href','/next_simulador');
+            $('#reload').addClass('black').html('Calcular mi retorno').attr('href','/next_simulador');
             $('.content').stop();
         })
 

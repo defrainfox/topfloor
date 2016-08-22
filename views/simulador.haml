@@ -4,7 +4,7 @@
 	= partial("menu")
 	.header_page
 		.center
-			%h1	SIMULA TU INVERSION
+			%h1	SIMULA TU INVERSIÓN
 			%a{:href => '/proyecto'} < Regresar al proyecto
 	.content
 		.cover_text SIMULADOR
@@ -20,14 +20,14 @@
 				%input{:id => 'slide', :type => "text"}
 	%form
 		.center
-			%p PARA SIMULAR TU RETORNO, DINOS TU NOMBRE Y TU CORREO
+			%p PARA SIMULAR TU RETORNO, INGRESA TUS DATOS:
 			.field
 				%span Nombre
 				%input{:type => 'text', :placeholder => 'Nombre'}
 			.field
 				%span Correo electrónico
 				%input{:type => 'text', :placeholder => 'Ingresa aquí tu correo'}
-			%a.button.black{:href => '/next_simulador'} Iniciar simulación
+			%a.button.black{:href => '/next_simulador'} Calcular mi retorno
 	= partial("footer")
 
 
