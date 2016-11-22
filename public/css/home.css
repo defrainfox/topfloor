@@ -36,6 +36,11 @@ body {
 
 #menu.red .mini_logo {
   margin-left: 20px; }
+#menu.red .back {
+  display: inline-block;
+  margin: 20px 0 0 20px;
+  color: #FFF;
+  font-size: 12px; }
 
 #menu.fill {
   height: 50px;
@@ -160,7 +165,7 @@ body {
   font-size: 60px;
   color: #ED1C24;
   width: 500px;
-  margin-top: 300px; }
+  margin-top: 200px; }
 .login p {
   font-size: 16px;
   margin: 30px 0; }
@@ -206,6 +211,11 @@ body {
 .login .button {
   text-align: center;
   margin: 0; }
+.login .forget {
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 0;
+  color: #000; }
 
 .home h3 {
   font-size: 46px;
@@ -479,6 +489,13 @@ body {
     height: 414px;
     text-align: left;
     margin-top: 40px; }
+    #types .type.red .text {
+      border: 1px solid #ED1C24; }
+      #types .type.red .text h2 {
+        color: #ED1C24; }
+      #types .type.red .text p {
+        background: #ED1C24;
+        color: #FFF; }
     #types .type .text, #types .type .cover {
       position: absolute;
       width: 280px;

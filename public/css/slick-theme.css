@@ -30,25 +30,27 @@
     width: 20px;
     height: 20px;
     padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    
 
     cursor: pointer;
 
-    color: transparent;
+    color: #000;
     border: none;
     outline: none;
-    background: transparent;
+}
+.slick-next{
+    background: url(../images/icons/arrow_next_b.svg) center no-repeat
+}
+.slick-prev{
+    background: url(../images/icons/arrow_next_b.svg) center no-repeat;
+    transform: rotate(180deg);
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
-    outline: none;
-    background: transparent;
+ 
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -88,11 +90,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    
 }
 
 .slick-next
@@ -106,11 +108,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    
 }
 
 /* Dots */

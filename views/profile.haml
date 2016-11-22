@@ -14,10 +14,12 @@
 					
 			%a.menu_profile{:href => '/datos'} Datos y documentos
 			%a.menu_profile.active{:href => '/profile'} Historial de inversiones
+			%a.menu_profile{:href => '/proyectos'} Proyectos
 		#trigger_menu_login
 		#menu_mobile_login
 			.center
 				#close_menu_mobile
+				%a.log{:href => '/proyectos'} Proyectos
 				%a.log{:href => '/profile'} Historial de inversiones
 				%a{:href => '/datos'} Datos y documentos
 				%a.red{:href => '/editar'} Editar cuenta
@@ -27,8 +29,8 @@
 			.content.name
 				%img{:src => '/images/demos/user.png'}
 				%h2 SAÚL GONZÁLEZ
-				%p.first saulsaulsaul@gmail.com
-				%p +01 (55) 7178118
+				%p.first 
+				%p 
 			.content.return.inversion
 				%h2 $50,000 MXN
 				%p INVERSIÓN TOTAL
@@ -39,7 +41,8 @@
 		.center
 			.left
 			%p TORRE CAMPOS ELISEOS
-			%a.right{:href => '/profile'}
+			%a.right{:href => '/profile'} 
+				%span Siguiente
 	.proyects
 		.center
 			.big_card
@@ -74,6 +77,9 @@
 								%strong 70% 
 								Completado
 							.time Quedan XX días
+			%a.share{:href => '/'}
+				.icon
+				%p Comparte estas inversiones
 	#timeline
 		.cover_text INVERSIONES
 		.center 
@@ -148,9 +154,6 @@
 							%img.play{:src => '/images/icons/play.svg'}
 						.icon.play
 			.extrafooter
-				%a.share{:href => '/'}
-					.icon
-					%p Comparte estas inversiones
 				.call
 					%p ¿Te interesa seguir invirtiendo?
 					%a.button{:href => '/proyectos'} Ver otros proyectos

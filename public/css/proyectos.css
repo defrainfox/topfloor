@@ -29,7 +29,8 @@
     background: #EFEFEF;
     padding: 28px 20px 24px;
     margin: 0;
-    opacity: 0.6; }
+    opacity: 1;
+    border-color: #ED1C24; }
 .proyectos select {
   display: none;
   width: 200px;
@@ -73,6 +74,12 @@
     color: #ED1C24; }
     .proyectos .warning a:hover {
       text-decoration: underline; }
+  .proyectos .warning #triggervideo {
+    color: #FFF;
+    background: #ED1C24;
+    padding: 14px 28px; }
+    .proyectos .warning #triggervideo:hover {
+      text-decoration: none; }
 
 @media all and (max-width: 767px) {
   .proyectos .header_page {

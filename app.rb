@@ -19,6 +19,10 @@ class TopTloor < Sinatra::Base
 		haml :login
 	end
 
+	get '/recuperar' do
+		haml :recuperar
+	end
+
 	get '/proyecto' do
 		haml :proyecto
 	end
@@ -57,6 +61,10 @@ class TopTloor < Sinatra::Base
 
 	get '/registro' do
 		haml :registro
+	end
+
+	get '/datos_bancarios' do
+		haml :datos_bancarios
 	end
 
 	get '/desarrollador' do

@@ -14,10 +14,12 @@
 					
 			%a.menu_profile{:href => '/datos'} Datos y documentos
 			%a.menu_profile{:href => '/profile'} Historial de inversiones
+			%a.menu_profile{:href => '/proyectos'} Proyectos
 		#trigger_menu_login
 		#menu_mobile_login
 			.center
 				#close_menu_mobile
+				%a.log{:href => '/proyectos'} Proyectos
 				%a.log{:href => '/profile'} Historial de inversiones
 				%a{:href => '/datos'} Datos y documentos
 				%a.red{:href => '/editar'} Editar cuenta
@@ -37,9 +39,10 @@
 				%p RETORNO TOTAL
 	.edit
 		.center
+			
 			.field.right
 				%p Nombre completo
-				%input{:type => 'text', :value => 'SAÚL GONZÁLEZ'}
+				%input{:disabled=>'disabled',:type => 'text', :value => 'SAÚL ALEJANDRO GONZÁLEZ COMPLETO'}
 			.field.right
 				%p Teléfono
 				%input{:type => 'text', :value => '55-72727374'}

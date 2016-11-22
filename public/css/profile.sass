@@ -69,7 +69,7 @@ $gray_low: rgba(239, 239, 239, 0.25)
 		background-image: linear-gradient(176deg, $red, #DB1E2A)
 		.center 
 			position: relative
-			height: 228px
+			height: 170px
 		.content
 			position: absolute
 			bottom: 0
@@ -80,14 +80,14 @@ $gray_low: rgba(239, 239, 239, 0.25)
 			img
 				position: absolute
 				bottom: -18px
-				width: 134px
-				height: 134px
+				width: 100px
+				height: 100px
 				z-index: 12
 				border: 8px solid #FFF
 				border-radius: 100px
 			h2
 				width: 500px
-				font-size: 50px
+				font-size: 40px
 				font-weight: 500
 				padding: 10px 10px 4px 170px
 				color: #FFF
@@ -129,6 +129,8 @@ $gray_low: rgba(239, 239, 239, 0.25)
 		padding-top: 28px
 		text-align: center
 		padding-bottom: 20px
+		p
+			color: transparent
 		.center
 			position: relative
 		.left
@@ -153,6 +155,10 @@ $gray_low: rgba(239, 239, 239, 0.25)
 			&:hover
 				background: url(../images/icons/arrow_next.svg) center no-repeat
 				background-size: cover
+			span
+				display: block
+				margin: 3px 0 0 -120px
+				font-size: 14px
 	.proyects
 		overflow: hidden
 		margin: 70px 0 70px
@@ -227,6 +233,21 @@ $gray_low: rgba(239, 239, 239, 0.25)
 		&:nth-child(2n)
 			.fill
 				width: 100% !important
+	
+	.share
+		float: left
+		margin: 40px 0 0 200px
+		*
+			display: inline-block
+			vertical-align: middle
+		p
+			font-size: 14px
+			color: $red
+		.icon
+			width: 22px
+			height: 16px
+			background: url(../images/icons/email.svg) center no-repeat
+
 	.mini_card
 		cursor: pointer
 		float: right
@@ -481,7 +502,8 @@ $gray_low: rgba(239, 239, 239, 0.25)
 				height: 16px
 				background: url(../images/icons/email.svg) center no-repeat
 		.call
-			float: right
+			text-align: center
+			margin: 0 auto
 			*
 				display: inline-block
 				vertical-align: middle

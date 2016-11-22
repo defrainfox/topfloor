@@ -61,7 +61,7 @@
   background-image: linear-gradient(176deg, #ED1C24, #DB1E2A); }
   .profile .header .center {
     position: relative;
-    height: 228px; }
+    height: 170px; }
   .profile .header .content {
     position: absolute;
     bottom: 0;
@@ -71,14 +71,14 @@
     .profile .header .content img {
       position: absolute;
       bottom: -18px;
-      width: 134px;
-      height: 134px;
+      width: 100px;
+      height: 100px;
       z-index: 12;
       border: 8px solid #FFF;
       border-radius: 100px; }
     .profile .header .content h2 {
       width: 500px;
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 500;
       padding: 10px 10px 4px 170px;
       color: #FFF; }
@@ -120,6 +120,8 @@
   padding-top: 28px;
   text-align: center;
   padding-bottom: 20px; }
+  .profile .submenu p {
+    color: transparent; }
   .profile .submenu .center {
     position: relative; }
   .profile .submenu .left {
@@ -144,6 +146,10 @@
     .profile .submenu .right:hover {
       background: url(../images/icons/arrow_next.svg) center no-repeat;
       background-size: cover; }
+    .profile .submenu .right span {
+      display: block;
+      margin: 3px 0 0 -120px;
+      font-size: 14px; }
 .profile .proyects {
   overflow: hidden;
   margin: 70px 0 70px; }
@@ -216,6 +222,19 @@
       text-align: right; }
 .profile .big_card:nth-child(2n) .fill {
   width: 100% !important; }
+.profile .share {
+  float: left;
+  margin: 40px 0 0 200px; }
+  .profile .share * {
+    display: inline-block;
+    vertical-align: middle; }
+  .profile .share p {
+    font-size: 14px;
+    color: #ED1C24; }
+  .profile .share .icon {
+    width: 22px;
+    height: 16px;
+    background: url(../images/icons/email.svg) center no-repeat; }
 .profile .mini_card {
   cursor: pointer;
   float: right;
@@ -467,7 +486,8 @@
       height: 16px;
       background: url(../images/icons/email.svg) center no-repeat; }
   .profile .extrafooter .call {
-    float: right; }
+    text-align: center;
+    margin: 0 auto; }
     .profile .extrafooter .call * {
       display: inline-block;
       vertical-align: middle; }

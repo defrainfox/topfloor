@@ -1,0 +1,17 @@
+= partial("header")
+
+%body.login
+	#menu.red.fill
+		.center
+			%a.mini_logo{:href => '/'}
+				%img{:src => '/images/general/menu_logo_r.svg'}
+
+	.content
+		.center
+			%h1.din-medium RECUPERA TU CONTRASEÑA
+			%p Completa los campos y te mandaremos tu nueva contraseña.
+			.field
+				%p Correo
+				%input{:type => 'text'}
+			%a.button.black{:href => '/'} Recuperar contraseña
+	= partial("footer")

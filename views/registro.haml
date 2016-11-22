@@ -29,17 +29,18 @@
 					%input#file{:type => 'file'}
 					#prevfile IFE
 					%a#fakefile Subir imagen
-				.line
-				%span Datos bancarios
-				.field
-					%p CLABE interbancaria 
-					%input{:type => "text", :placeholder => "CABLE"}
-				.field
-					%p Número de cuenta 
-					%input{:type => "text", :placeholder => "Número de cuenta"}
-				.field
-					%p Nombre del banco
-					%input{:type => "text", :placeholder => "Nombre del Banco"}
+				-#
+					.line
+					%span Datos bancarios
+					.field
+						%p CLABE interbancaria 
+						%input{:type => "text", :placeholder => "CABLE"}
+					.field
+						%p Número de cuenta 
+						%input{:type => "text", :placeholder => "Número de cuenta"}
+					.field
+						%p Nombre del banco
+						%input{:type => "text", :placeholder => "Nombre del Banco"}
 				
 				.line
 				.contract
@@ -59,7 +60,7 @@
 						.icon
 						%p Entiendo y acepto los riesgos de invertir
 				.line
-				%a.button.black{:href => '/proyecto_contratos'} Crear mi cuenta
+				%a.button.black{:href => '/datos_bancarios'} Continuar
 	= partial("footer")
 
 

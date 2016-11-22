@@ -1,0 +1,30 @@
+= partial("header")
+
+%body.registro
+	= partial("menu")
+	.header_page
+		%h1	DATOS BANCARIOS
+	.content
+		.center
+			%form
+				.field
+					%p Monto a invertir
+					%input{:type => "text", :placeholder => "Desde $50,000 pesos"}	
+				.field
+					%p CLABE interbancaria 
+					%input{:type => "text", :placeholder => "CABLE"}
+				.field
+					%p Número de cuenta 
+					%input{:type => "text", :placeholder => "Número de cuenta"}
+				.field
+					%p Nombre del banco
+					%input{:type => "text", :placeholder => "Nombre del Banco"}
+				
+				.line
+				%a.button.black{:href => '/proyecto_contratos'} Crear mi cuenta
+	= partial("footer")
+
+
+
+
+		
