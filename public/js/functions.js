@@ -223,6 +223,18 @@
             },offset: '-325px'
         });
 
+        var waypoints = $('#why').waypoint({
+            handler: function(direction) {
+                if(direction=='down'){
+                    $('#menu').addClass('fill');
+                    $('#menu img').attr('src','/images/general/menu_logo_r.svg');
+                } else {
+                    $('#menu').removeClass('fill');
+                    $('#menu img').attr('src','/images/general/menu_logo.svg');
+                }
+            }
+        });
+
         $('#trigger_menu').on('click',function(){
             $('#menu_mobile').animate({height: $( window ).height()});
         })
